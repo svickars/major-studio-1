@@ -12,7 +12,7 @@
         [World Development Indicators - Gender Participation at Various Education Levels](http://databank.worldbank.org/data/reports.aspx?Report_Name=Gross-Enrolment-Ratio&Id=cb705e48)  
         This data set compares gross enrolment ratios, the gender parity index, net enrolment rates, and rates of children/adolescents that are out of school across Sub-Saharan Africa  
         [International Labour Organization's 2012 Report on Global Employment Trends for Women](http://www.ilo.org/wcmsp5/groups/public/---dgreports/---dcomm/documents/publication/wcms_195447.pdf)  
-        This data set compares male employment-to-population ratios to email employment-to-population ratios around the world to show global employment trends for women.
+        This data set compares male employment-to-population ratios to female employment-to-population ratios around the world to show global employment trends for women.
     
     - **Changes in Governance and Governance Indicators**  
         Since 1990, the African continent as transitioned toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House). That being said, trends across three of four governance indicators (corruption, effectiveness, and regulatory quality) are worsening, while positive trends are shown in one: voice and accountability. This increasing ability to participate in electing governments and greater freedom of expression suggests a clear link to increase in democratic leadership.
