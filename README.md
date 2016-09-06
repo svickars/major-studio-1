@@ -6,7 +6,7 @@
 
     - **Gender Inequality in the Education System and its Effects on the Labour Market**  
         The UN’s Gender Inequality Index measures the inequality in achievement between men and women in reproductive health, empowerment, and the labour market. Out of 152 countries measured, only three African countries score above the median, while 28 of 39 African countries score in the worst quartile. An important factor in this inequality is access to education. The data set shows progress over the last two decades at the primary school level, but the opposite at the secondary and tertiary levels. The second data set predictably shows a gender imbalance in the employment trends in Africa, where only 14% of working women are in wage employment, compared to 29% of working men.   
-        *Note: Some references link a decrease in female school attendance to a decrease in rainfall. Sufficient data?*
+        *Note: Some references link a decrease in female school attendance to a decrease in rainfall. Sufficient data? Is this important?*
         
         Data Sources  
         [World Development Indicators - Gender Participation at Various Education Levels](http://databank.worldbank.org/data/reports.aspx?Report_Name=Gross-Enrolment-Ratio&Id=cb705e48)  
@@ -41,6 +41,6 @@
       **3.2** "Manufacturing Value (World Bank Data)" <http://wdi.worldbank.org/table/3.14>
 3. Questions
 
-    **1.** Most graphs comparing gender enrolment in african schools directly compare the number of boys attending to the number of girls attending. Would showing the fraction of girls attending school (vs. not attending school), and how that number is (or is not) improving be more telling?  
+    **1.** Most graphs comparing gender enrolment in african schools directly compare the number of boys attending to the number of girls attending. Would showing the fraction of girls attending school (vs. not attending school), and how that number is (or is not) improving be more telling?  Why is there such a gap between students attending primary school and students attending secondary and tertiary school?
     **2.** How are governance indicators like corruption control, government effectiveness, and voice and accountability measured? And how accurate is this data?  
     **3.** Are countries more politcally-restricted because of their high dependency on natural resources or are they more dependent on natural resources because of their low political freedom?  
