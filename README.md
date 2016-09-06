@@ -41,6 +41,6 @@
       **3.2** "Manufacturing Value (World Bank Data)" <http://wdi.worldbank.org/table/3.14>
 3. Questions
 
-    **1.** Most graphs comparing gender enrolment in african schools directly compare the number of boys attending to the number of girls attending. Would showing the fraction of girls attending school (vs. not attending school), and how that number is (or is not) improving be more telling?  Why is there such a gap between students attending primary school and students attending secondary and tertiary school?
+    **1.** Most graphs comparing gender enrolment in african schools directly compare the number of boys attending to the number of girls attending. Would showing the fraction of girls attending school (vs. not attending school), and how that number is (or is not) improving be more telling?  Why is there such a gap between students attending primary school and students attending secondary and tertiary school?  
     **2.** How are governance indicators like corruption control, government effectiveness, and voice and accountability measured? And how accurate is this data?  
     **3.** Are countries more politcally-restricted because of their high dependency on natural resources or are they more dependent on natural resources because of their low political freedom?  
