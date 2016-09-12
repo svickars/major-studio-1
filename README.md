@@ -1,9 +1,12 @@
 # Major Studio 1
 
 ## Data Review
+[Changes in Governance Indicators](#gov)  
+[Politcal Freedoms and Resources Dependency](#freedoms)  
+[Questions](#questions)  
 
-**–––**
-#### Changes in Governance and Governance Indicators  
+**–––**<a name="gov"></a>
+#### Changes in Governance and Governance Indicators
 ###### Since 1990, the African continent has transitioned toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House). That being said, trends across three of four governance indicators shown (corruption, effectiveness, and regulatory quality) are worsening, while positive trends are shown in one: voice and accountability. This increasing ability to participate in electing governments and greater freedom of expression suggests a clear link to increase in democratic leadership.  
 
 ##### *Data Source*  
@@ -14,21 +17,8 @@ This data set shows Control of Corruption, Government Effectiveness, Political S
 * ["Freedom in the World 2014"](https://freedomhouse.org/sites/default/files/FIW2014%20Booklet.pdf)
 * ["Democracy Index 2015"](http://www.eiu.com/Handlers/WhitepaperHandler.ashx?fi=EIU-Democracy-Index-2015.pdf&mode=wp&campaignid=DemocracyIndex2015)  
 
-##### *Questions*
-* Freedom House’s Freedom in the World report is referenced in the paper. Can we assume this is a reliable, trusted source and the data it presents is accurate?
-  * What is the methodology for scoring political rights and civil liberties and how does this lead to defining a country as free, partly free, or not free?
-      * The Freedom House report referenced was published in 2014 using data measured in 2013. Is this a reasonable time frame to work from? i.e. is the political situation in Africa stable enough to use data that is upwards of three years old, or is there more recent data available?
-      * According to the Freedom House report:  
-        *Freedom in the World 2014 evaluates the state of freedom in 195 countries and 14 territories during 2013. Each country and territory is assigned two numerical ratings—from 1 to 7—for political rights and civil liberties, with 1 representing the most free and 7 the least free. The two ratings are based on scores assigned to 25 more detailed indicators. The average of a country or territory’s political rights and civil liberties ratings determines whether it is Free, Partly Free, or Not Free*
-        * What are these 25 detailed indicators and are these scores available somewhere?
-    1. Is this affected by the [World Bank’s] World Governance Indicators report? How are these government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?
-    2. Is there a theory as to how or why the number of African democracies is increasing, but most countries are seeing a negative trend in three of the four governance indicators shown in the paper?
-         * Figure 14, Page 26, World Bank 2014
-
-
-
 ___
-**–––**
+**–––**<a name="freedoms"></a>
 #### Politcial Freedoms
 ###### Table 3 compares the resource dependency of African countries to their political rights scores (out of 7, 1 being the best), finding that the more dependant on natural resources a country is, the higher their political rights score, on average. According to Freedom House’s methodology, most of the high-scoring countries are not considered “free”.  
 
@@ -40,11 +30,21 @@ This report compares the relative freedom of countries across the world, assigni
 * ["World Development Indicators (World Bank)"](http://wdi.worldbank.org/table/3.14)
 * ["Manufacturing Value (World Bank Data)"](http://wdi.worldbank.org/table/3.14)
 
-##### *Questions*
-* Are countries more restricted politically because of their high-dependancy on natural resources or are they more dependent on natural resources because of their low political freedom?
-
-
 ___
+**___**<a name="questions"></a>
+##### *Questions*
+* Freedom House’s Freedom in the World report is referenced in the paper. Can we assume this is a reliable, trusted source and the data it presents is accurate?
+  * What is the methodology for scoring political rights and civil liberties and how does this lead to defining a country as free, partly free, or not free?
+      * The Freedom House report referenced was published in 2014 using data measured in 2013. Is this a reasonable time frame to work from? i.e. is the political situation in Africa stable enough to use data that is upwards of three years old, or is there more recent data available?
+      * According to the Freedom House report:  
+        *Freedom in the World 2014 evaluates the state of freedom in 195 countries and 14 territories during 2013. Each country and territory is assigned two numerical ratings—from 1 to 7—for political rights and civil liberties, with 1 representing the most free and 7 the least free. The two ratings are based on scores assigned to 25 more detailed indicators. The average of a country or territory’s political rights and civil liberties ratings determines whether it is Free, Partly Free, or Not Free*
+        * What are these 25 detailed indicators and are these scores available somewhere?
+  * Is this affected by the [World Bank’s] World Governance Indicators report? How are these government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?
+  * Is there a theory as to how or why the number of African democracies is increasing, but most countries are seeing a negative trend in three of the four governance indicators shown in the paper? Is there a specific indicator that tells this story or is it a combination of them all?  
+    *Figure 14, Page 26, World Bank 2014*
+
+---
+
 **–––**
 ###### ~~Gender Inequality in the Education System and its Effects on the Labour Market~~
 ~~The UN’s Gender Inequality Index measures the inequality in achievement between men and women in reproductive health, empowerment, and the labour market. Out of 152 countries measured, only three African countries score above the median, while 28 of 39 African countries score in the worst quartile. An important factor in this inequality is access to education. The data set shows progress over the last two decades at the primary school level, but the opposite at the secondary and tertiary levels. The second data set predictably shows a gender imbalance in the employment trends in Africa, where only 14% of working women are in wage employment, compared to 29% of working men.   
