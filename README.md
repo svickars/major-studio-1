@@ -4,6 +4,7 @@
 [Changes in Governance Indicators](#gov)  
 [Politcal Freedoms and Resources Dependency](#freedoms)  
 [Questions](#questions)  
+[Sources](#sources)
 
 **–––**<a name="gov"></a>
 #### Changes in Governance and Governance Indicators
@@ -39,12 +40,18 @@ ___
         * According to the Freedom House report:  
         *Freedom in the World 2014 evaluates the state of freedom in 195 countries and 14 territories during 2013. Each country and territory is assigned two numerical ratings—from 1 to 7—for political rights and civil liberties, with 1 representing the most free and 7 the least free. The two ratings are based on scores assigned to 25 more detailed indicators. The average of a country or territory’s political rights and civil liberties ratings determines whether it is Free, Partly Free, or Not Free*
     * What are these 25 detailed indicators and are these scores available somewhere?
-* Is this affected by the [World Bank’s] World Governance Indicators report? How are these government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?
+* How are the World Bank's government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?
 * Is there a theory as to how or why the number of African democracies is increasing, but most countries are seeing a negative trend in three of the four governance indicators shown in the paper? Is there a specific indicator that tells this story or is it a combination of them all?  
     *Figure 14, Page 26, World Bank 2014*
 
 ---
+**___**<a name="sources"></a>
+##### *Sources*
+* [Electoral Democracy Table - Freedom House](https://github.com/svickars/major-studio-1/blob/master/quantitativeDataSources/ElectoralDemocracyTable_FH.xlsx)
+* [Governance Indicators Estimate - World Bank](https://github.com/svickars/major-studio-1/blob/master/quantitativeDataSources/GovernanceIndicators-worldbank.txt)
+* [Sub-Category Scores - Freedom House](https://github.com/svickars/major-studio-1/blob/master/quantitativeDataSources/SubCategoryScores_FH.xlsx)
 
+---
 **–––**
 ###### ~~Gender Inequality in the Education System and its Effects on the Labour Market~~
 ~~The UN’s Gender Inequality Index measures the inequality in achievement between men and women in reproductive health, empowerment, and the labour market. Out of 152 countries measured, only three African countries score above the median, while 28 of 39 African countries score in the worst quartile. An important factor in this inequality is access to education. The data set shows progress over the last two decades at the primary school level, but the opposite at the secondary and tertiary levels. The second data set predictably shows a gender imbalance in the employment trends in Africa, where only 14% of working women are in wage employment, compared to 29% of working men.   
