@@ -42,7 +42,7 @@ ___
         * According to the Freedom House report:  
         *Freedom in the World 2014 evaluates the state of freedom in 195 countries and 14 territories during 2013. Each country and territory is assigned two numerical ratings—from 1 to 7—for political rights and civil liberties, with 1 representing the most free and 7 the least free. The two ratings are based on scores assigned to 25 more detailed indicators. The average of a country or territory’s political rights and civil liberties ratings determines whether it is Free, Partly Free, or Not Free*
         * What are these 25 detailed indicators and are these scores available somewhere?
-* **How are the World Bank's government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?**
+* **How are the World Bank's government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?** Which of these measures are most important?
 * **Is there a theory as to how or why the number of African democracies is increasing, but most countries are seeing a negative trend in three of the four governance indicators shown in the paper? Is there a specific indicator that tells this story or is it a combination of them all?**  
     *Figure 14, Page 26, World Bank 2014*
 
