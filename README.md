@@ -8,7 +8,8 @@
 
 **–––**<a name="gov"></a>
 #### Trends in Governance Indicators vs Number of Electoral Democracies
-###### Since 1990, the African continent has transitioned toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House). That being said, trends across three of four governance indicators shown (corruption, effectiveness, and regulatory quality) are worsening, while positive trends are shown in one: voice and accountability. This increasing ability to participate in electing governments and greater freedom of expression suggests a clear link to increase in democratic leadership.  
+###### Since 1990, the African continent has transitioned toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House). That being said, trends across three of four governance indicators shown (corruption, effectiveness, and regulatory quality) are worsening, while positive trends are shown in one: voice and accountability. This increasing ability to participate in electing governments and greater freedom of expression suggests a clear link to increase in democratic leadership. Why, then, is there a negative trend in corruption control, government effectiveness, political stability, and regulatory quality?  
+###### Do trends in governance indicators have anything to do with natural resource dependency?
 
 ##### *Data Source*  
 * [Worldwide Governance Indicators](http://databank.worldbank.org/data/Governance/id/398b56e9)  
