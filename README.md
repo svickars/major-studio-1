@@ -7,7 +7,7 @@
 [Sources](#sources)
 
 **–––**<a name="gov"></a>
-#### Changes in Governance and Governance Indicators
+#### Trends in Governance Indicators vs Number of Electoral Democracies
 ###### Since 1990, the African continent has transitioned toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House). That being said, trends across three of four governance indicators shown (corruption, effectiveness, and regulatory quality) are worsening, while positive trends are shown in one: voice and accountability. This increasing ability to participate in electing governments and greater freedom of expression suggests a clear link to increase in democratic leadership.  
 
 ##### *Data Source*  
@@ -22,6 +22,7 @@ ___
 **–––**<a name="freedoms"></a>
 #### Politcial Freedoms
 ###### Table 3 compares the resource dependency of African countries to their political rights scores (out of 7, 1 being the best), finding that the more dependant on natural resources a country is, the higher their political rights score, on average. According to Freedom House’s methodology, most of the high-scoring countries are not considered “free”.  
+###### Is politcal stability affected by the "status" of natural resources?
 
 ##### *Data Source*
 * [Freedom House’s Freedom in the World 2014 Report](https://freedomhouse.org/sites/default/files/FIW2014%20Booklet.pdf)  
@@ -35,13 +36,13 @@ ___
 **___**<a name="questions"></a>
 ##### *Questions*
 * Freedom House’s Freedom in the World report is referenced in the paper. Can we assume this is a reliable, trusted source and the data it presents is accurate?
-* What is the methodology for scoring political rights and civil liberties and how does this lead to defining a country as free, partly free, or not free?
+* **What is the methodology for scoring political rights and civil liberties and how does this lead to defining a country as free, partly free, or not free?**
     * The Freedom House report referenced was published in 2014 using data measured in 2013. Is this a reasonable time frame to work from? i.e. is the political situation in Africa stable enough to use data that is upwards of three years old, or is there more recent data available?
         * According to the Freedom House report:  
         *Freedom in the World 2014 evaluates the state of freedom in 195 countries and 14 territories during 2013. Each country and territory is assigned two numerical ratings—from 1 to 7—for political rights and civil liberties, with 1 representing the most free and 7 the least free. The two ratings are based on scores assigned to 25 more detailed indicators. The average of a country or territory’s political rights and civil liberties ratings determines whether it is Free, Partly Free, or Not Free*
     * What are these 25 detailed indicators and are these scores available somewhere?
-* How are the World Bank's government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?
-* Is there a theory as to how or why the number of African democracies is increasing, but most countries are seeing a negative trend in three of the four governance indicators shown in the paper? Is there a specific indicator that tells this story or is it a combination of them all?  
+* **How are the World Bank's government indicators (control of corruption, political stability, government effectiveness, voice and accountability, etc.) measured?**
+* **Is there a theory as to how or why the number of African democracies is increasing, but most countries are seeing a negative trend in three of the four governance indicators shown in the paper? Is there a specific indicator that tells this story or is it a combination of them all?**  
     *Figure 14, Page 26, World Bank 2014*
 
 ---
