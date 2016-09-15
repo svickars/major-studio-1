@@ -26,7 +26,7 @@ function draw() {
     text('(' + mouseX + ',' + mouseY + ')',mouseX,mouseY)
     // rectangle follows mouse - "mouseX-50" (subtract half of height and half of width) puts the rectangle at centre of mouse ---> use rectMode(CENTER) in function setup
     // fifth paramter adds a radius to the rectangle (20)
-// rect(mouseX,mouseY,100,100,20);
+    rect(mouseX,mouseY,100,100,20);
     // beginShape starts drawing a shape
 // beginShape(LINES);
     // // vertex contains x, y
