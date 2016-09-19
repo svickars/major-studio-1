@@ -22,7 +22,7 @@ function draw() {
     // how to erase trail and start again
     background(150);
     // mouseX measures 60 times a second
-    line(windowHeight/2,windowWidth/2,mouseX,mouseY);
+    line(width/2,height/2,mouseX,mouseY);
     text('(' + mouseX + ',' + mouseY + ')',mouseX,mouseY)
     // rectangle follows mouse - "mouseX-50" (subtract half of height and half of width) puts the rectangle at centre of mouse ---> use rectMode(CENTER) in function setup
     // fifth paramter adds a radius to the rectangle (20)
