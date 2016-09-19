@@ -51,12 +51,32 @@ function showData(data) {
             vertex(map(col, 4, 19, 200, width-50), map(val, minVal, maxVal, rowHeight, rowHeight-100));
         }
         endShape();
+        fill(0);
+
+        // dividing line
+        // stroke(0);
+        // strokeWeight(1);
+        // line(200,rowHeight*(i+1),width-55,rowHeight*(i+1));
+        
+        // zero line
+        stroke(255,0,0);
+        line(200,rowHeight*(i+1)-50,width-55,rowHeight*(i+1)-50);
+        noStroke();
+        fill(255,0,0);
+        textSize(7);
+        textAlign(RIGHT);
+        text('0', 195, rowHeight*(i+1)-47.5);
         
         // country names
         fill(0);
         textAlign(RIGHT);
-        text(country, 195, rowHeight*(i+1))
+        textStyle(BOLD);
+        textSize(10);
+        text(country, 180, rowHeight*(i+1)-47.5)
     }
+    
+    
+    console.log("minimum: " + minVal + " | maximum: " + maxVal);
 }
 
 
