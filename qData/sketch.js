@@ -1,7 +1,8 @@
 // store extrema in global variables. Min and Max very likely not to be true, so big
 var minVal = -3;
 var maxVal = 3;
-var alpha = .25
+var alpha = .25;
+var graphWeight = 1;
 var cCC = 'rgba(0,255,0,'+ alpha +')';
 var cGE = 'rgba(0,255,0,'+ alpha +')';
 var cPS = 'rgba(0,255,0,'+ alpha +')';
@@ -70,7 +71,7 @@ function showData(data) {
 
         // graphs
         noFill();
-        strokeWeight(1);
+        strokeWeight(graphWeight);
         stroke(cCC);
         beginShape();
         // loop through all the columns
@@ -102,8 +103,8 @@ function showDataGE(data) {
     for (var i=0; i<count; i++) {
         // graphs
         noFill();
-        strokeWeight(1);
-        stroke(217,208,199,.8);
+        strokeWeight(graphWeight);
+        stroke(cGE);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -124,8 +125,8 @@ function showDataPS(data) {
     for (var i=0; i<count; i++) {
         // graphs
         noFill();
-        strokeWeight(1);
-        stroke(85,108,161,.8);
+        strokeWeight(graphWeight);
+        stroke(cPS);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -146,8 +147,8 @@ function showDataRQ(data) {
     for (var i=0; i<count; i++) {
         // graphs
         noFill();
-        strokeWeight(1);
-        stroke(229,195,103,.8);
+        strokeWeight(graphWeight);
+        stroke(cRQ);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -168,8 +169,8 @@ function showDataRL(data) {
     for (var i=0; i<count; i++) {
         // graphs
         noFill();
-        strokeWeight(1);
-        stroke(123,144,158,.8);
+        strokeWeight(graphWeight);
+        stroke(cRL);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -190,8 +191,8 @@ function showDataV(data) {
     for (var i=0; i<count; i++) {
         // graphs
         noFill();
-        strokeWeight(1);
-        stroke(0,.8);
+        strokeWeight(graphWeight);
+        stroke(cV);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
