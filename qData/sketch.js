@@ -1,7 +1,14 @@
 // store extrema in global variables. Min and Max very likely not to be true, so big
 var minVal = -3;
 var maxVal = 3;
-var cCC = 0;
+var alpha = .25
+var cCC = 'rgba(0,255,0,'+ alpha +')';
+var cGE = 'rgba(0,255,0,'+ alpha +')';
+var cPS = 'rgba(0,255,0,'+ alpha +')';
+var cRQ = 'rgba(0,255,0,'+ alpha +')';
+var cRL = 'rgba(0,255,0,'+ alpha +')';
+var cV = 'rgba(0,255,0,'+ alpha +')';
+
 
 function setup() {
     noLoop();
@@ -96,7 +103,7 @@ function showDataGE(data) {
         // graphs
         noFill();
         strokeWeight(1);
-        stroke(217,208,199);
+        stroke(217,208,199,.8);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -118,7 +125,7 @@ function showDataPS(data) {
         // graphs
         noFill();
         strokeWeight(1);
-        stroke(85,108,161);
+        stroke(85,108,161,.8);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -140,7 +147,7 @@ function showDataRQ(data) {
         // graphs
         noFill();
         strokeWeight(1);
-        stroke(229,195,103);
+        stroke(229,195,103,.8);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -162,7 +169,7 @@ function showDataRL(data) {
         // graphs
         noFill();
         strokeWeight(1);
-        stroke(123,144,158);
+        stroke(123,144,158,.8);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
@@ -184,7 +191,7 @@ function showDataV(data) {
         // graphs
         noFill();
         strokeWeight(1);
-        stroke(0);
+        stroke(0,.8);
         beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
