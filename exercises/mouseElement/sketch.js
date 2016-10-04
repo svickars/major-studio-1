@@ -1,31 +1,55 @@
-var id;
+var test;
+var shape1;
 var slider;
 
 function setup() {
-     id = select('#kafka');
+    test = select('#kafka');
+    shape1 = select('.shape');
     //  callback named click, function created below
-     id.mousePressed(click);
-     id.mouseReleased(release);
+    test.mouseOver(click);
+    test.mouseOut(release);
+    // shape1.mouseOver(shapeOver);
+    // shape1.mouseOut(shapeOut);
+    //  id.mousePressed(click);
+    //  id.mouseReleased(release);
     //  attributes: min, max, [value], [step]
      slider = createSlider(0, windowWidth/2, 128);
      slider.position(windowWidth/2, windowHeight/2);
      slider.changed(change);
-     id.position(slider.value() , windowHeight/2);
-     noCanvas();
+     test.position(slider.value() , windowHeight/2);
+     createCanvas(windowWidth,windowHeight);
 }
+
+function draw() {
+    noFill();
+    strokeWeight(2);
+    beginShape();
+    vertex(30, 20);
+    vertex(85, 20);
+    endShape();
+}
+
 
 function click() {
     console.log('click');
     // attaching a CSS style tag to the id
-    id.style('color', 'orange');
+    test.style('color', 'orange');
 }
 
 function release() {
     // attaching a CSS style tag to the id
-    id.style('color', 'blue');
+    test.style('color', 'black');
     // id.style('font-size', '90px');
 }
 
+function shapeOver() {
+    strokeWeight(4);
+}
+
+function shapeOut() {
+    strokeWeight(2);
+}
+
 function change() {
-    id.position(slider.value() , windowHeight/2);
+    test.position(slider.value() , windowHeight/2);
 }

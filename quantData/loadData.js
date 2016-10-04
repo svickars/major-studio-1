@@ -1,14 +1,23 @@
+// min and max of line graphs
 var minVal = -3;
 var maxVal = 3;
-var alpha = .50;
+
+// line weights for easy adjustments
 var graphWeight = 2;
-var cCC = 'rgba(253,126,73,'+ alpha +')';
+
+// colours for easy adjustments
+var alpha = .50;
+var cCC = 'rgba(255,0,0,'+ alpha +')';
 var cGE = 'rgba(57,132,140,'+ alpha +')';
 var cPS = 'rgba(177,182,131,'+ alpha +')';
 var cRQ = 'rgba(231,121,51,'+ alpha +')';
 var cRL = 'rgba(23,20,38,'+ alpha +')';
 var cV = 'rgba(180,90,204,'+ alpha +')';
+
+// based on row height
 var hHeight = 120;
+
+var CC;
 
 
 function setup() {
@@ -17,12 +26,15 @@ function setup() {
     textSize(10);
     textFont("PT Sans");
     createCanvas(windowWidth, 4850+hHeight);
+    
+    // load data
     loadTable("dataSources/WBCorruptionControl.txt", "tsv", "header", showData);
     loadTable("dataSources/WBGovernmentEffectiveness.txt", "tsv", "header", showDataGE);
     loadTable("dataSources/WBPoliticalStability.txt", "tsv", "header", showDataPS);
     loadTable("dataSources/WBRegulatoryQuality.txt", "tsv", "header", showDataRQ);
     loadTable("dataSources/WBRuleOfLaw.txt", "tsv", "header", showDataRL);
     loadTable("dataSources/WBVoice.txt", "tsv", "header", showDataV);
+    
 }
 
 function draw() {
@@ -137,12 +149,12 @@ function showData(data) {
             if (maxVal < val)
                 maxVal = val;
         }
-
+        
         // graphs
         noFill();
         strokeWeight(graphWeight);
         stroke(cCC);
-        beginShape();
+        ccLine = beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
             val = data.getString(i, col);
@@ -151,6 +163,7 @@ function showData(data) {
             // vertex(map(col, 3, 25, 0, width), map(val, minVal, maxVal, height, 0));
         }
         endShape();
+        // ccLine.class("ccLine")
         
         // country names
         noStroke();
@@ -159,10 +172,22 @@ function showData(data) {
         textStyle(BOLD);
         textSize(10);
         text(country, 130, rowHeight*(i+1)-47.5+hHeight)
+        
+        // CC = select(".ccLine");
+        // CC.mouseOver(ccOver);
+        // CC.mouseOut(ccOut);
     }
     
     
     console.log("minimum: " + minVal + " | maximum: " + maxVal);
+}
+
+// change colours CC
+function ccOver() {
+    cCC = 'rgba(255,0,0,'+ '1' +')';
+}
+function ccOut() {
+    cCC = 'rgba(255,0,0,'+ alpha +')';
 }
 
 // Government Effectiveness
@@ -174,7 +199,7 @@ function showDataGE(data) {
         noFill();
         strokeWeight(graphWeight);
         stroke(cGE);
-        beginShape();
+        geLine = beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
             val = data.getString(i, col);
@@ -196,7 +221,7 @@ function showDataPS(data) {
         noFill();
         strokeWeight(graphWeight);
         stroke(cPS);
-        beginShape();
+        psLine = beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
             val = data.getString(i, col);
@@ -218,7 +243,7 @@ function showDataRQ(data) {
         noFill();
         strokeWeight(graphWeight);
         stroke(cRQ);
-        beginShape();
+        rqLine = beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
             val = data.getString(i, col);
@@ -240,7 +265,7 @@ function showDataRL(data) {
         noFill();
         strokeWeight(graphWeight);
         stroke(cRL);
-        beginShape();
+        rlLine = beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
             val = data.getString(i, col);
@@ -262,7 +287,7 @@ function showDataV(data) {
         noFill();
         strokeWeight(graphWeight);
         stroke(cV);
-        beginShape();
+        vLine = beginShape();
         // loop through all the columns
         for (var col = 4; col < 20; col++) {
             val = data.getString(i, col);
