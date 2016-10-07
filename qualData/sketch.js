@@ -3,11 +3,11 @@ var cF = 'rgba(66,173,73,'+ cAlpha +')';
 var cNF = 'rgba(255,0,0,'+ cAlpha +')';
 var cPF = 'rgba(19,116,147,'+ cAlpha +')';
 
-var txt = 'test';
+var txt;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(250,235,215);
+    background(255);
     textAlign(CENTER,CENTER);
     textFont('Noto Sans');
     loadTable('dataSources/freedom2016.tsv', 'tsv', 'header', showData);
@@ -16,7 +16,7 @@ function setup() {
 function draw() {
     // header
     push();
-    fill(cPF);
+    fill(76,76,76);
     noStroke();
     rect(0,0,width,150);
     fill(255);
@@ -56,12 +56,8 @@ function showData(data) {
         
         // textSize(((4*cSize)/500000)+5);
         txt = createDiv(text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
-        txt.id("countries");
+        txt.class("countries");
     }
-    
-        hoverBox = select('#countries');
-        hoverBox.mouseOver(hoverIn);
-        // hoverBox.mouseOut(hoverOut);
 }
 
 function hoverIn() {
