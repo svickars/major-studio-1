@@ -4,7 +4,7 @@ var textX = 100;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    loadStrings('sotu.txt', callback);
+    loadStrings('poem.txt', callback);
 }
 
 function callback(poem) {
@@ -57,7 +57,7 @@ function draw () {
     translate(textX, height/2);
     
     for(var i=0; i<sorted.length; i++){
-        var txtSize = sorted[i][1] * 1;
+        var txtSize = sorted[i][1] * 10;
         textSize(txtSize);
         text(sorted[i][0], 0, 0);
         
