@@ -53,7 +53,7 @@ function showData(data) {
         // textSize(((4*cSize)/500000)+5);
         txt = createDiv(text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
         txt.class("countries");
-        txt.style("font-family", '"Noto Sans", sans-serif')
+        // txt.style("font-family", '"Noto Sans", sans-serif');
     }
 }
 
