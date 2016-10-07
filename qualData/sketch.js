@@ -3,6 +3,7 @@ var cF = 'rgba(66,173,73,'+ cAlpha +')';
 var cNF = 'rgba(255,0,0,'+ cAlpha +')';
 var cPF = 'rgba(19,116,147,'+ cAlpha +')';
 
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(250,235,215);
@@ -34,10 +35,24 @@ function showData(data) {
             }
         }
         
+        var cNameTrans = textWidth(cName)/2;
+        var cSize2 = (4*cSize/500000)+5;
+        var cSizeTrans = (((4*cSize)/500000)+5)/2;
+        
+        // textSize(((4*cSize)/500000)+5);
+        // text = createDiv(cName.toUpperCase());
+        txt = createDiv(text(cName.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
+        txt.addClass('countries')
+        txt.style('font-size', ((4*cSize)/500000)+5+"px");
+        // text.style('transform','translate('+cNameTrans+','+cSizeTrans+')');
+        txt.style('color', cColour);
+        
+        
         fill(cColour);
         textFont('Noto Sans');
-        textSize(((4*cSize)/500000)+5);
-        text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2));
+        // textSize(((4*cSize)/500000)+5);
+        // text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2));
+        
     }
 }
 
