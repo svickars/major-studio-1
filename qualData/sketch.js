@@ -3,9 +3,16 @@ var cF = 'rgba(66,173,73,'+ cAlpha +')';
 var cNF = 'rgba(255,0,0,'+ cAlpha +')';
 var cPF = 'rgba(19,116,147,'+ cAlpha +')';
 
+var hoverBox;
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(255);
+    
+    hoverBox = select('.countries');
+    hoverBox.mouseOver(hoverIn);
+    // hoverBox.mouseOut(hoverOut);
+    
     textAlign(CENTER,CENTER);
     loadTable('dataSources/freedom2016.tsv', 'tsv', 'header', showData);
 }
@@ -58,7 +65,9 @@ function showData(data) {
 }
 
 function hoverIn() {
+    push();
     fill(0);
     stroke(0);
     rect(mouseX,mouseY,100,100);
+    pop();
 }
