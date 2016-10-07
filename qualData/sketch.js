@@ -35,19 +35,14 @@ function showData(data) {
             }
         }
         
-        var cNameTrans = textWidth(cName)/2;
-        var cSize2 = (4*cSize/500000)+5;
-        var cSizeTrans = (((4*cSize)/500000)+5)/2;
+        var txt;
         
         // textSize(((4*cSize)/500000)+5);
-        // text = createDiv(cName.toUpperCase());
         txt = createDiv(text(cName.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
-        txt.addClass('.countries');
-        
-        // text.position(((cLng*2)+(width/2)-cNameTrans),((cLat*-2)+(height/2)-cSizeTrans));
-        txt.style('font-family', 'Noto Sans');
+        txt.class("countries");
+        // txt.style();
+        // txt.style('font-family', 'Noto Sans');
         txt.style('font-size', ((4*cSize)/500000)+5+"px");
-        // text.style('transform','translate('+cNameTrans+','+cSizeTrans+')');
         txt.style('color', cColour);
         
         
