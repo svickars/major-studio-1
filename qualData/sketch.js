@@ -43,6 +43,7 @@ function showData(data) {
         // text = createDiv(cName.toUpperCase());
         txt = createDiv(text(cName.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
         txt.addClass('countries')
+        
         txt.style('font-size', ((4*cSize)/500000)+5+"px");
         // text.style('transform','translate('+cNameTrans+','+cSizeTrans+')');
         txt.style('color', cColour);
