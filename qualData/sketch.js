@@ -3,12 +3,28 @@ var cF = 'rgba(66,173,73,'+ cAlpha +')';
 var cNF = 'rgba(255,0,0,'+ cAlpha +')';
 var cPF = 'rgba(19,116,147,'+ cAlpha +')';
 
+var txt = 'test';
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(250,235,215);
     textAlign(CENTER,CENTER);
+    textFont('Noto Sans');
     loadTable('dataSources/freedom2016.tsv', 'tsv', 'header', showData);
+}
+
+function draw() {
+    // header
+    push();
+    fill(cPF);
+    noStroke();
+    rect(0,0,width,150);
+    fill(255);
+    textFont('Noto Serif');
+    textSize(42);
+    text('Freedom in the World', width/2, 50);
+    pop();
+    textFont('Noto Sans');
 }
 
 function showData(data) {
@@ -35,26 +51,24 @@ function showData(data) {
             }
         }
         
-        var txt;
-        
-        // textSize(((4*cSize)/500000)+5);
-        txt = createDiv(text(cName.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
-        txt.class("countries");
-        // txt.style();
-        // txt.style('font-family', 'Noto Sans');
-        txt.style('font-size', ((4*cSize)/500000)+5+"px");
-        txt.style('color', cColour);
-        
-        
         fill(cColour);
-        textFont('Noto Sans');
-        // textSize(((4*cSize)/500000)+5);
-        // text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2));
+        textSize(((4*cSize)/500000)+5);
         
+        // textSize(((4*cSize)/500000)+5);
+        txt = createDiv(text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
+        txt.id("countries");
     }
+    
+        hoverBox = select('#countries');
+        hoverBox.mouseOver(hoverIn);
+        // hoverBox.mouseOut(hoverOut);
 }
 
-
+function hoverIn() {
+    fill(0);
+    stroke(0);
+    rect(mouseX,mouseY,100,100);
+}
 
 
 

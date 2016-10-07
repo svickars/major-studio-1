@@ -34,12 +34,14 @@ function click() {
     console.log('click');
     // attaching a CSS style tag to the id
     test.style('color', 'orange');
+    rect(mouseX,mouseY,100,100);
 }
 
 function release() {
     // attaching a CSS style tag to the id
     test.style('color', 'black');
     // id.style('font-size', '90px');
+    background(255);
 }
 
 function shapeOver() {
