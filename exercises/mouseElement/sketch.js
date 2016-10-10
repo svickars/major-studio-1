@@ -1,13 +1,17 @@
 var test;
 var shape1;
 var slider;
+var box;
+var hover;
 
 function setup() {
     test = select('#kafka');
     shape1 = select('.shape');
+    hover = select('#bx');
     //  callback named click, function created below
     test.mouseOver(click);
     test.mouseOut(release);
+    hover.mouseOver(over);
     // shape1.mouseOver(shapeOver);
     // shape1.mouseOut(shapeOut);
     //  id.mousePressed(click);
@@ -27,6 +31,14 @@ function draw() {
     vertex(30, 20);
     vertex(85, 20);
     endShape();
+    
+    
+    box = createDiv(rect(100,100,100,100));
+    box.id('bx');
+}
+
+function over() {
+    fill(0);
 }
 
 
@@ -34,12 +46,14 @@ function click() {
     console.log('click');
     // attaching a CSS style tag to the id
     test.style('color', 'orange');
+    rect(mouseX,mouseY,100,100);
 }
 
 function release() {
     // attaching a CSS style tag to the id
     test.style('color', 'black');
     // id.style('font-size', '90px');
+    background(255);
 }
 
 function shapeOver() {

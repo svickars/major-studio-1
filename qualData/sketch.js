@@ -3,12 +3,24 @@ var cF = 'rgba(66,173,73,'+ cAlpha +')';
 var cNF = 'rgba(255,0,0,'+ cAlpha +')';
 var cPF = 'rgba(19,116,147,'+ cAlpha +')';
 
-
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(250,235,215);
+    background(255);
     textAlign(CENTER,CENTER);
     loadTable('dataSources/freedom2016.tsv', 'tsv', 'header', showData);
+}
+
+function draw() {
+    // header
+    // push();
+    // fill(76,76,76);
+    // noStroke();
+    // rect(0,0,width,150);
+    // fill(255);
+    // textFont('Noto Serif');
+    // textSize(42);
+    // text('Freedom in the World', width/2, 50);
+    // pop();
 }
 
 function showData(data) {
@@ -35,92 +47,11 @@ function showData(data) {
             }
         }
         
-        var txt;
-        
-        // textSize(((4*cSize)/500000)+5);
-        txt = createDiv(text(cName.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
-        txt.class("countries");
-        // txt.style();
-        // txt.style('font-family', 'Noto Sans');
-        txt.style('font-size', ((4*cSize)/500000)+5+"px");
-        txt.style('color', cColour);
-        
-        
         fill(cColour);
+        textSize(((4*cSize)/500000)+5);
         textFont('Noto Sans');
-        // textSize(((4*cSize)/500000)+5);
-        // text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2));
         
+        // textSize(((4*cSize)/500000)+5);
+        txt = createElement('h2',text(cStatus.toUpperCase(),(cLng*2)+(width/2),(cLat*-2)+(height/2)));
     }
 }
-
-
-
-
-
-// function callback(poem) {
-//     console.log(poem);
-    
-//     // go through all members of poem array
-//     for( var i in poem) {
-//         console.log(i + ' : ' + poem[i])
-//     }
-    
-//     for (i in poem) {
-//         // split removes all the whitespace in between
-//         // each line is split into individual words
-//         var li = poem[i].split(' ');
-//         // now in line (ass opposed to whole poem)
-//         for (var k in li) {
-//             // remove special characters. li[k] means each word of each line. g means gloablly
-//             var clean = li[k].replace(/[.,-?!@#$%^&*()_~{}:;"']/g, '');
-            
-//             // clean contains each word
-//             if (hash[clean] >= 1)
-//                 hash[clean] += 1;
-//             else
-//                 hash[clean] = 1;
-//         }
-//     }
-//     console.log('HASH ---------------');
-//     for (i in hash)
-//         console.log(i + ' : ' + hash[i]);
-    
-//     console.log('HASH SORTED ---------------');
-    
-//     for  (var key in hash) 
-//         sorted.push([key, hash[key]]);
-    
-//     // compare function
-//     sorted.sort(function(a,b) {
-//         a = a[1];
-//         b = b[1];
-        
-//         return a < b ? 1 : (a > b ? -1 : 0);
-//     });
-    
-//     for(var i=0; i<sorted.length; i++)
-//         console.log(sorted[i][0] + ' : ' + sorted[i][1]);
-// }
-
-// function draw () {
-//     background(255);
-//     translate(textX, height/2);
-    
-//     for(var i=0; i<sorted.length; i++){
-//         var txtSize = sorted[i][1] * 10;
-//         textSize(txtSize);
-//         text(sorted[i][0], 0, 0);
-        
-//         var txtWidth = textWidth(sorted[i][0]);
-//         translate(txtWidth, 0);
-        
-//         if (mouseIsPressed)
-//             line(0, txtSize * .25, 0, -txtSize * .75);
-//     }
-// }
-
-// function mouseDragged() {
-//     // current mouseX minus previouse mouseX
-//     textX += mouseX - pmouseX;
-// }
