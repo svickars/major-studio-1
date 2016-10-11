@@ -9,6 +9,8 @@ var cSizeM;
 var cSizeD;
 var cSizeA;
 
+var cName;
+
 function setup() {
     cnv = createCanvas(windowWidth, windowHeight);
     background(255);
@@ -67,7 +69,7 @@ function showData2016(data) {
     console.log(count);
 
     for (var i = 0; i < count; i++) {
-        var cName = data.getString(i, 0);
+        cName = data.getString(i, 0);
         var cStatus = data.getString(i, 4);
         var cLat = data.getNum(i, 5);
         var cLng = data.getNum(i, 6);
@@ -99,16 +101,12 @@ function showData2016(data) {
         sta.style("color", cColour);
         sta.style("font-family", "Noto Sans");
         sta.style("text-transform", "Uppercase");
-        sta.style("cursor","default");
-
-        // var cStatusBox = font.textBounds(cStatus, (cLng * latLngM) + (width / 2) - textWidth(cStatus)/2, (cLat * -latLngM) + (height / 2) - (cSizeM*cSize/cSizeD)+cSizeA);
-        // fill(255);
-        // stroke(0);
-        // rect(cStatusBox.x, cStatusBox.y, cStatusBox.w, cStatusBox.h);
+        sta.style("line-height", ((cSizeM * cSize) / cSizeD) + cSizeA + 'px');
+        sta.style("cursor", "default");
         
         
         cou = createDiv(cName);
-        cou.position(mouseX,mouseY);
+        cou.position(100,100);
         cou.style("background",cColour);
         cou.style("cursor","default");
         cou.style("padding","5px");
@@ -118,6 +116,12 @@ function showData2016(data) {
 
         sta.mouseOver(hoverIn);
         sta.mouseOut(hoverOut);
+        
+        // if (mouseX >= (cLng * latLngM) + (width / 2) - textWidth(cStatus)/2 && mouseX <= (cLng * latLngM) + (width / 2) + textWidth(cStatus)/2 && mouseY >= (cLat * -latLngM) + (height / 2) - (cSizeM*cSize/cSizeD)+cSizeA && mouseY <= (cLat * -latLngM) + (height / 2) + (cSizeM*cSize/cSizeD)+cSizeA) {
+        //     cou.position(mouseX,mouseY);
+        //     cou.style("visibility", "visible");
+        // }
+        
     }
 }
 
