@@ -3,11 +3,11 @@ var score = 0;
 var pongBalls = [];
 
 function setup() {
-    createCanvas(500,500);
+    createCanvas(windowWidth, windowHeight);
     rectMode(CENTER);
-    textAlign(CENTER);
+    textAlign(CENTER, CENTER);
     
-    for (var i=0; i < 10; i++) {
+    for (var i=0; i < num; i++) {
         
         // add pong balls to the array
         // add instances of PongBall to the pongBalls[] array
@@ -22,6 +22,12 @@ function draw() {
         pongBalls[i].update();
         pongBalls[i].display();
     }
+    
+    // paddle
+    rect(mouse)
+    
+    
+    
 //     background('orange');
 //     fill(255);
 //     noStroke();
@@ -61,6 +67,17 @@ function PongBall(myX, myY) {
     this.y = myY;
     this.speedX = random(-10,10);
     this.speedY = random(-10,10);
+    this.newScore = 0;
+    this.vector = createVector();
+    this.targetX = 0;
+    this.targetY = 0;
+    
+    // custom class function to display elements
+    this.display = function() {
+        this.vector.set(this.speedX, this.speedY);
+        push;
+        translate(this.X, this.Y);
+    }
     
     console.log(this.x + ' | ' + this.y);
     
