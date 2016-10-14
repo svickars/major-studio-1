@@ -104,8 +104,8 @@ function showData2016(data) {
         // sta.position((cLng * latLngM) + (width / 2) - textWidth(cStatus)/2, (cLat * -latLngM) + (height / 2) - (cSizeM*cSize/cSizeD)+cSizeA );
         // sta.style("font-size", ((cSizeM * cSize) / cSizeD) + cSizeA + 'px');
         // sta.style("color", cColour);
-        // sta.style("font-family", "Noto Sans");
-        // sta.style("text-transform", "Uppercase");
+        // // sta.style("font-family", "Noto Sans");
+        // // sta.style("text-transform", "Uppercase");
         // sta.style("line-height", ((cSizeM * cSize) / cSizeD) + cSizeA + 'px');
         // sta.style("cursor", "default");
         
@@ -130,18 +130,7 @@ function showData2016(data) {
     }
     
     for (var i=0; i < cStati.length; i++) {
-        ellipseMode(CENTER);
-        ellipse(cLngs[i]*latLngM+(width/2),cLats[i]*-latLngM+height/2,5);
-        span = createSpan(cStati[i]);
-        // span = createSpan(text(cStati[i].toUpperCase(),(cLngs[i]*2)+(width/2),(cLats[i]*-2)+(height/2)));
-        span.position((cLngs[i] * latLngM) + (width / 2) - textWidth(cStati[i])/2, (cLats[i] * -latLngM) + (height / 2) - ((cSizeM*cSizes[i]/cSizeD)+cSizeA)/2);
-        span.style("font-size", ((cSizeM * cSizes[i]) / cSizeD) + cSizeA + 'px');
-        // span.style("text-align", "center");
-        span.style("font-family", "Noto Sans");
-        span.style("text-transform", "Uppercase");
-        span.style("line-height", ((cSizeM * cSizes[i]) / cSizeD) + cSizeA + 'px');
-        span.style("cursor", "default");
-        
+       
         if (cStati[i] == 'Free') {
             var cColour = cF;
         }
@@ -154,9 +143,17 @@ function showData2016(data) {
             }
         }
         
-        span.style("color", cColour);
+        textSize(((cSizeM * cSizes[i]) / cSizeD) + cSizeA);
+        fill(cColour);
+        textFont('Noto Sans');
+        // span = createSpan(cStati[i]);
+        span = createSpan(text(cStati[i].toUpperCase(),(cLngs[i]*2)+(width/2),(cLats[i]*-2)+(height/2)));
+        span.style("font-family", "Noto Sans");
+        span.style("cursor", "default");
+    
+        // span.mouseOver(hoverIn);
+        // span.mouseOut(hoverOut);
         
-        console.log(textWidth(span));
     }
     
     console.log(cStati);
