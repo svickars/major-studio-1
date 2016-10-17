@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                background-color: black;
+            }
+        </style>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <script>
+            d3.select('body')
+                .append('svg')
+                // innerWidth = windowWidth
+                .attr('height',innerHeight)
+                .attr('width',innerWidth)
+                // append SVG to do something on mousemove - partical is what to do when the mouse moves (made up)
+                .on('mousemove', particle);
+                
+            var svg = d3.select('svg');
+                
+            var color = "#";
+            for (k = 0; k < 3; k++) {
+                color += ("0" + (Math.random() * 256 | 0).toString(16)).substr(-2);
+            }
+                
+            function particle() {
+                // this refers to the particle sketch, object-specific
+                var m = d3.mouse(this);
+                
+                svg.append('circle')
+                    .attr('r',5)
+                    .attr('cx',m[0])
+                    .attr('cy',m[1])
+                    .style('stroke',color)
+                    .style('stroke-width',2)
+                    .style('stroke-opacity',1)
+                .transition()
+                    .duration(1000)
+                    .ease(Math.sqrt)
+                    .attr('r',100)
+                    .style('stroke-opacity',0)
+                    .remove();
+            }
+            
+        </script>
+        
+        
+        
+    </body>
+</html>
