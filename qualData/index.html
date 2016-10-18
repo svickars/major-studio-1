@@ -28,6 +28,23 @@
         font-family: "Noto Serif";
       }
       
+      button{
+        font-family: "Noto Sans";
+        color: white;
+        border: 1px solid white;
+        background: none;
+      }
+      
+      button:hover{
+        color: #777777;
+        background: white;
+      }
+      button:focus{
+        color: #777777;
+        background: white;
+        
+      }
+      
       h1 {
         font-family: "Noto Serif";
         margin-top: 6px;
@@ -55,9 +72,10 @@
       }
       div {
         text-align: center;
-        background-color: #dfffff;
+        background-color: #fafafa;
         padding-bottom: 5px;
         padding-right: 5px;
+        padding-top:2px;
       }
       #lFree {
         font-family: "Noto Sans";
@@ -118,6 +136,28 @@
         margin-left: 1em;
         margin-right: .5em;
         background: rgba(34,139,34,.35);
+      }
+      #uiCountry{
+        font-family: "Noto Serif";
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: .75em;
+        color: #999999;
+        -webkit-transform: translate(-50%,0);
+      }
+      #idNameSpan {
+        font-family: "Noto Sans";
+        color: white;
+        font-size: 12px;
+        visibility: hidden;
+        cursor: default;
+      }
+      #idStatusSpan {
+        font-family: "Noto Sans";
+        text-transform: uppercase;
+        -webkit-transform: translate(-50%,-50%);
+        white-space: nowrap;
+        cursor: default;
       }
     </style>
   </head>
