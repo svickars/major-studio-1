@@ -1,6 +1,7 @@
+>I am studying trends in governance indicator scores over the last 20 years because I want to find out how these trends lead to changes in a country's democratic status in order to understand what defines a country as *free*, *partly free*, or *not free*. I am using corruption control, political stability, government effectiveness, and voice and accountability variables. My visualization is based on the World Bank's Governance Indicator Data, Freedom House's Freedom in the World report, and The Economist's Democracy Index.
+
 # Major Studio 1
 
->“I am studying trends in governance indicator scores over the last 20 years because I want to find out how these trends lead to changes in a country's democratic status in order to understand what defines a country as *free*, *partly free*, or *not free*. I am using corruption control, political stability, government effectiveness, and voice and accountability variables. My visualization is based on the World Bank's Governance Indicator Data, Freedom House's Freedom in the World report, and The Economist's Democracy Index."
 
 ## Data Review
 [Changes in Governance Indicators](#gov)  
