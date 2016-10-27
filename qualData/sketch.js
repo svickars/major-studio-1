@@ -61,7 +61,7 @@ function setup() {
     rectMode(CENTER);
     // fill(100);
     // rect(width/2, height-50, 300, 25);
-    var div = createDiv('<span id="lFree">FREE</span><span id="lNFree">NOT FREE</span><span id="lPFree">PARTLY FREE</span><br><span id="prop">Proper Noun</span><span id="adj">Adjective</span><span id="verb">Verb</span><span id="fw">Foreign Word</span>');
+    var div = createDiv('<span id="prop">Proper Noun</span><span id="adj">Adjective</span><span id="verb">Verb</span><span id="fw">Foreign Word</span>');
     div.position(width/2, height-60);
     div.style('-webkit-transform', 'translate(-50%,0)');
     pop();
@@ -105,10 +105,10 @@ function showData2016(data) {
     console.log(count);
     
     var button = createButton(popButtonText);
-    button.position(width-225,25);
+    button.position(width-225,23);
     
     var button2 = createButton(sizeButtonText);
-    button2.position(width-100,25);
+    button2.position(width-100,23);
     
     
     for (var i = 0; i < count; i++) {
@@ -178,6 +178,7 @@ function showData2016(data) {
         uiName.style('visibility', 'hidden');
         uiName.style('text-transform', 'uppercase');
         uiName.style('letter-spacing', '1px');
+        uiName.id('uiname');
         
         var str = cOverviews[i];
         var rs = RiString(str);
@@ -197,9 +198,6 @@ function showData2016(data) {
         
         sta.mouseClicked(function click(){
             if(firstClick){
-                uiName.style('visibility', 'visible');
-                uiName.id('uiname');
-                var b = select('#uiname');
                 for (var k in ritaCounts) {
                     if (ritaCounts.hasOwnProperty(k)) {
                         if (ritaCounts[k] / ritaTotal > 0.01) {
@@ -230,11 +228,6 @@ function showData2016(data) {
                 }
                 firstClick = false;
             }else{
-                var b = select('#uiname');
-                b.remove();
-                uiName.style('visibility', 'visible');
-                uiName.id('uiname');
-                var oldUiName = select('#uiname');
                 for (var k in ritaCounts) {
                     if (ritaCounts.hasOwnProperty(k)) {
                         if (ritaCounts[k] / ritaTotal > 0.01) {
@@ -273,7 +266,6 @@ function showData2016(data) {
             // sta.style("color",cColour);
         });
     }
-    
     
     console.log(cNames);
 }

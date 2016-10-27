@@ -1,4 +1,4 @@
-var map;
+var leafletMap;
 var canvas;
 var mags = [];
 var quakes = [];
@@ -7,19 +7,17 @@ var data;
 
 function setup(){
     canvas = createCanvas(windowWidth,windowHeight);
-    canvas.parent('map');
+    canvas.parent('leafletMap');
     initLeaflet();
     loadStrings('https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.csv', parseSource, data);
-    slider = createSlider(0,10,1);
-    slider.position(width-400,25);
+    slider = createSlider(0,10,0);
+    slider.position(width/2-50,25);
     slider.id('top');
+    slider.changed(updateQuakes);
+    
+    console.log("slider value = "+slider.value());
 }
 
-function draw() {
-    for (var i=1; i<data.length; i++) {
-        quakes[i].setRadius(mags[i]);
-    }
-}
 
 function parseSource(data) {
     // start at 1 to skip the header
@@ -40,20 +38,36 @@ function parseSource(data) {
         var place = row[13];
         
         quakes[i]
-            .addTo(map)
+            .addTo(leafletMap)
             .setRadius(mags[i])
             .bindPopup('<b>'+row[4]+'</b> magnitude '+place);
     }
 }
 
+// function draw() {
+//     for (var i=1; i<data.length; i++) {
+//         quakes[i].setRadius(mags[i]);
+//     }
+// }
+
 function initLeaflet(){
     L.mapbox.accessToken = 'pk.eyJ1Ijoic3ZpY2thcnMiLCJhIjoiY2l1aW5saDhkMDAwMTNvbDdmcTlncnp1cyJ9.wIpJKF-DW1C2uPgKnUtNWg';
     // mapbox params = map, style // setView pararms = coords, zoom level
-    map = L.mapbox.map('map', 'mapbox.light').setView([20, 0], 2)
+    leafletMap = L.mapbox.map('leafletMap', 'mapbox.light').setView([20, 0], 2)
     
     function onMapClick(e) {
         // no need but we need the function
     }
     
-    map.on('click', onMapClick);
+    leafletMap.on('click', onMapClick);
+}
+
+function updateQuakes() {
+    for (var i=1; i<quakes.length; i++) {
+        // check if slider values exceeds individual mag
+        if (mags[i] > slider.value())
+            quakes[i].setRadius(mags[i]);
+        else
+            quakes[i].setRadius(0);
+    }
 }
