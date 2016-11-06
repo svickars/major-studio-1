@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+    </head>
+    <body>
+        <script>
+            
+            var min = 1000000;
+            var max = 0;
+            
+            d3.tsv("LaborInNonAgricultSector.tsv", function(error, data) {
+              if (error) throw error;
+            
+                // console.log(data);
+                
+                var mapX = d3.scaleLinear()
+                            .domain([0, 24])
+                            .range([0, 400]);
+                            
+                data.forEach(function(d) {
+                    for (var col = 0; col < 24; col++){
+                        var val = Object.keys(d)[col];
+                        if (min > parseFloat(d[val]))
+                            min = parseFloat(d[val]);
+                        if (max < parseFloat(d[val]))
+                            max = parseFloat(d[val]);
+                    }
+                });
+                
+                console.log('min: ' + min + ' max: ' + max);
+                            
+                var mapY = d3.scaleLinear()
+                            .domain([min, max])
+                            .range([300, 0]);
+                
+                var line = d3.line()
+                    .curve(d3.curveBasis)
+                    .x(function() { return mapX(col); })
+                    .y(function() { return mapY(d[Object.keys(d)[col]]); });
+                    
+                // from http://bl.ocks.org/biovisualize/1016860
+                var tooltip = d3.select('body')
+                	.append('div')
+                	.style("position", "absolute")
+                	.style("z-index", "10")
+                	.style("visibility", "hidden");
+                
+                var r = d3.select('body')
+                    .selectAll('svg')
+                        .data(data)
+                        .enter()
+                        .append('svg')
+                            .attr('width', 400)
+                            .attr('height', 300)
+                            .each(function(d) {
+                                // console.log(d);
+                                
+                                d3.select(this)
+                                    .append('rect')
+                                        .attr('x', 0)
+                                        .attr('y', 0)
+                                        .attr('width', 400)
+                                        .attr('height', 300)
+                                        .attr('fill', 'white')
+                                        .attr('stroke', 'black')
+                                        
+                                d3.select(this)
+                                    .append('text')
+                                        .attr('x', 25)
+                                        .attr('y', 25)
+                                        .attr('font-family', 'sans-serif')
+                                        .text(d['Country Name'])
+                                        
+                                for (var col = 0; col < 24; col++) {
+                                    d3.select(this)
+                                        .append('circle')
+                                            .attr('cx', function() { return mapX(col); })
+                                            .attr('cy', function() { return mapY(d[Object.keys(d)[col]]); })
+                                            .attr('r', 5)
+                                        // .on('mouseover', function() { d3.select(this).style('fill', 'green') })
+                                        // .on('mouseout', function() { d3.select(this).style('fill', 'black')})
+                                        .on("mouseover", function(){return tooltip.style("visibility", "visible").text('test');})
+                                    	.on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
+                                    	.on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+                                   
+                                    d3.select(this)
+                                        .append()
+                                }        
+                            });
+            });
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,1337 @@
+country,year,value
+Afghanistan,2015,2.77
+Afghanistan,2014,2.77
+Afghanistan,2013,2.48
+Afghanistan,2012,2.48
+Afghanistan,2011,2.48
+Afghanistan,2010,2.48
+Afghanistan,2008,3.02
+Afghanistan,2006,3.06
+Albania,2015,5.91
+Albania,2014,5.67
+Albania,2013,5.67
+Albania,2012,5.67
+Albania,2011,5.81
+Albania,2010,5.86
+Albania,2008,5.91
+Albania,2006,5.91
+Algeria,2015,3.95
+Algeria,2014,3.83
+Algeria,2013,3.83
+Algeria,2012,3.83
+Algeria,2011,3.44
+Algeria,2010,3.44
+Algeria,2008,3.32
+Algeria,2006,3.17
+Angola,2015,3.35
+Angola,2014,3.35
+Angola,2013,3.35
+Angola,2012,3.35
+Angola,2011,3.32
+Angola,2010,3.32
+Angola,2008,3.35
+Angola,2006,2.41
+Argentina,2015,7.02
+Argentina,2014,6.84
+Argentina,2013,6.84
+Argentina,2012,6.84
+Argentina,2011,6.84
+Argentina,2010,6.84
+Argentina,2008,6.63
+Argentina,2006,6.63
+Armenia,2015,4
+Armenia,2014,4.13
+Armenia,2013,4.02
+Armenia,2012,4.09
+Armenia,2011,4.09
+Armenia,2010,4.09
+Armenia,2008,4.09
+Armenia,2006,4.15
+Australia,2015,9.01
+Australia,2014,9.01
+Australia,2013,9.13
+Australia,2012,9.22
+Australia,2011,9.22
+Australia,2010,9.22
+Australia,2008,9.09
+Australia,2006,9.09
+Austria,2015,8.54
+Austria,2014,8.54
+Austria,2013,8.48
+Austria,2012,8.62
+Austria,2011,8.49
+Austria,2010,8.49
+Austria,2008,8.49
+Austria,2006,8.69
+Azerbaijan,2015,2.71
+Azerbaijan,2014,2.83
+Azerbaijan,2013,3.06
+Azerbaijan,2012,3.15
+Azerbaijan,2011,3.15
+Azerbaijan,2010,3.15
+Azerbaijan,2008,3.19
+Azerbaijan,2006,3.31
+Bahrain,2015,2.79
+Bahrain,2014,2.87
+Bahrain,2013,2.87
+Bahrain,2012,2.53
+Bahrain,2011,2.92
+Bahrain,2010,3.49
+Bahrain,2008,3.38
+Bahrain,2006,3.53
+Bangladesh,2015,5.73
+Bangladesh,2014,5.78
+Bangladesh,2013,5.86
+Bangladesh,2012,5.86
+Bangladesh,2011,5.86
+Bangladesh,2010,5.87
+Bangladesh,2008,5.52
+Bangladesh,2006,6.11
+Belarus,2015,3.62
+Belarus,2014,3.69
+Belarus,2013,3.04
+Belarus,2012,3.04
+Belarus,2011,3.16
+Belarus,2010,3.34
+Belarus,2008,3.34
+Belarus,2006,3.34
+Belgium,2015,7.93
+Belgium,2014,7.93
+Belgium,2013,8.05
+Belgium,2012,8.05
+Belgium,2011,8.05
+Belgium,2010,8.05
+Belgium,2008,8.16
+Belgium,2006,8.15
+Benin,2015,5.72
+Benin,2014,5.65
+Benin,2013,5.87
+Benin,2012,6
+Benin,2011,6.06
+Benin,2010,6.17
+Benin,2008,6.06
+Benin,2006,6.16
+Bhutan,2015,4.93
+Bhutan,2014,4.87
+Bhutan,2013,4.82
+Bhutan,2012,4.65
+Bhutan,2011,4.57
+Bhutan,2010,4.68
+Bhutan,2008,4.3
+Bhutan,2006,2.62
+Bolivia,2015,5.75
+Bolivia,2014,5.79
+Bolivia,2013,5.79
+Bolivia,2012,5.84
+Bolivia,2011,5.84
+Bolivia,2010,5.92
+Bolivia,2008,6.15
+Bolivia,2006,5.98
+Bosnia & Hercegovina,2015,4.83
+Bosnia & Hercegovina,2014,4.78
+Bosnia & Hercegovina,2013,5.02
+Bosnia & Hercegovina,2012,5.11
+Bosnia & Hercegovina,2011,5.24
+Bosnia & Hercegovina,2010,5.32
+Bosnia & Hercegovina,2008,5.7
+Bosnia & Hercegovina,2006,5.78
+Botswana,2015,7.87
+Botswana,2014,7.87
+Botswana,2013,7.98
+Botswana,2012,7.85
+Botswana,2011,7.63
+Botswana,2010,7.63
+Botswana,2008,7.47
+Botswana,2006,7.6
+Brazil,2015,6.96
+Brazil,2014,7.38
+Brazil,2013,7.12
+Brazil,2012,7.12
+Brazil,2011,7.12
+Brazil,2010,7.12
+Brazil,2008,7.38
+Brazil,2006,7.38
+Bulgaria,2015,7.14
+Bulgaria,2014,6.73
+Bulgaria,2013,6.83
+Bulgaria,2012,6.72
+Bulgaria,2011,6.78
+Bulgaria,2010,6.84
+Bulgaria,2008,7.02
+Bulgaria,2006,7.1
+Burkina Faso,2015,4.7
+Burkina Faso,2014,4.09
+Burkina Faso,2013,4.15
+Burkina Faso,2012,3.52
+Burkina Faso,2011,3.59
+Burkina Faso,2010,3.59
+Burkina Faso,2008,3.6
+Burkina Faso,2006,3.72
+Burundi,2015,2.49
+Burundi,2014,3.33
+Burundi,2013,3.41
+Burundi,2012,3.6
+Burundi,2011,4.01
+Burundi,2010,4.01
+Burundi,2008,4.51
+Burundi,2006,4.51
+Cabo Verde,2015,7.81
+Cabo Verde,2014,7.81
+Cabo Verde,2013,7.92
+Cabo Verde,2012,7.92
+Cabo Verde,2011,7.92
+Cabo Verde,2010,7.94
+Cabo Verde,2008,7.81
+Cabo Verde,2006,7.43
+Cambodia,2015,4.27
+Cambodia,2014,4.78
+Cambodia,2013,4.6
+Cambodia,2012,4.96
+Cambodia,2011,4.87
+Cambodia,2010,4.87
+Cambodia,2008,4.87
+Cambodia,2006,4.77
+Cameroon,2015,3.66
+Cameroon,2014,3.41
+Cameroon,2013,3.41
+Cameroon,2012,3.44
+Cameroon,2011,3.41
+Cameroon,2010,3.41
+Cameroon,2008,3.46
+Cameroon,2006,3.27
+Canada,2015,9.08
+Canada,2014,9.08
+Canada,2013,9.08
+Canada,2012,9.08
+Canada,2011,9.08
+Canada,2010,9.08
+Canada,2008,9.07
+Canada,2006,9.07
+CAR,2015,1.57
+CAR,2014,1.49
+CAR,2013,1.49
+CAR,2012,1.99
+CAR,2011,1.82
+CAR,2010,1.82
+CAR,2008,1.86
+CAR,2006,1.61
+Chad,2015,1.5
+Chad,2014,1.5
+Chad,2013,1.5
+Chad,2012,1.62
+Chad,2011,1.62
+Chad,2010,1.52
+Chad,2008,1.52
+Chad,2006,1.65
+Chile,2015,7.84
+Chile,2014,7.8
+Chile,2013,7.8
+Chile,2012,7.54
+Chile,2011,7.54
+Chile,2010,7.67
+Chile,2008,7.89
+Chile,2006,7.89
+China,2015,3.14
+China,2014,3
+China,2013,3
+China,2012,3
+China,2011,3.14
+China,2010,3.14
+China,2008,3.04
+China,2006,2.97
+Colombia,2015,6.62
+Colombia,2014,6.55
+Colombia,2013,6.55
+Colombia,2012,6.63
+Colombia,2011,6.63
+Colombia,2010,6.55
+Colombia,2008,6.54
+Colombia,2006,6.4
+Comoros,2015,3.71
+Comoros,2014,3.52
+Comoros,2013,3.52
+Comoros,2012,3.52
+Comoros,2011,3.52
+Comoros,2010,3.41
+Comoros,2008,3.58
+Comoros,2006,3.9
+Congo (Brazzaville),2015,2.91
+Congo (Brazzaville),2014,2.89
+Congo (Brazzaville),2013,2.89
+Congo (Brazzaville),2012,2.89
+Congo (Brazzaville),2011,2.89
+Congo (Brazzaville),2010,2.89
+Congo (Brazzaville),2008,2.94
+Congo (Brazzaville),2006,3.19
+Congo DRC,2015,2.11
+Congo DRC,2014,1.75
+Congo DRC,2013,1.83
+Congo DRC,2012,1.92
+Congo DRC,2011,2.15
+Congo DRC,2010,2.15
+Congo DRC,2008,2.28
+Congo DRC,2006,2.76
+Costa Rica,2015,7.96
+Costa Rica,2014,8.03
+Costa Rica,2013,8.03
+Costa Rica,2012,8.1
+Costa Rica,2011,8.1
+Costa Rica,2010,8.04
+Costa Rica,2008,8.04
+Costa Rica,2006,8.04
+Côte d’Ivoire,2015,3.31
+Côte d’Ivoire,2014,3.53
+Côte d’Ivoire,2013,3.25
+Côte d’Ivoire,2012,3.25
+Côte d’Ivoire,2011,3.08
+Côte d’Ivoire,2010,3.02
+Côte d’Ivoire,2008,3.27
+Côte d’Ivoire,2006,3.38
+Croatia,2015,6.93
+Croatia,2014,6.93
+Croatia,2013,6.93
+Croatia,2012,6.93
+Croatia,2011,6.73
+Croatia,2010,6.81
+Croatia,2008,7.04
+Croatia,2006,7.04
+Cuba,2015,3.52
+Cuba,2014,3.52
+Cuba,2013,3.52
+Cuba,2012,3.52
+Cuba,2011,3.52
+Cuba,2010,3.52
+Cuba,2008,3.52
+Cuba,2006,3.52
+Cyprus,2015,7.53
+Cyprus,2014,7.4
+Cyprus,2013,7.29
+Cyprus,2012,7.29
+Cyprus,2011,7.29
+Cyprus,2010,7.29
+Cyprus,2008,7.7
+Cyprus,2006,7.6
+Czech Republic,2015,7.94
+Czech Republic,2014,7.94
+Czech Republic,2013,8.06
+Czech Republic,2012,8.19
+Czech Republic,2011,8.19
+Czech Republic,2010,8.19
+Czech Republic,2008,8.19
+Czech Republic,2006,8.17
+Denmark,2015,9.11
+Denmark,2014,9.11
+Denmark,2013,9.38
+Denmark,2012,9.52
+Denmark,2011,9.52
+Denmark,2010,9.52
+Denmark,2008,9.52
+Denmark,2006,9.52
+Djibouti,2015,2.9
+Djibouti,2014,2.99
+Djibouti,2013,2.96
+Djibouti,2012,2.74
+Djibouti,2011,2.68
+Djibouti,2010,2.2
+Djibouti,2008,2.37
+Djibouti,2006,2.37
+Dom Rep,2015,6.67
+Dom Rep,2014,6.67
+Dom Rep,2013,6.74
+Dom Rep,2012,6.49
+Dom Rep,2011,6.2
+Dom Rep,2010,6.2
+Dom Rep,2008,6.2
+Dom Rep,2006,6.13
+Ecuador,2015,5.87
+Ecuador,2014,5.87
+Ecuador,2013,5.87
+Ecuador,2012,5.78
+Ecuador,2011,5.72
+Ecuador,2010,5.77
+Ecuador,2008,5.64
+Ecuador,2006,5.64
+Egypt,2015,3.18
+Egypt,2014,3.16
+Egypt,2013,3.27
+Egypt,2012,4.56
+Egypt,2011,3.95
+Egypt,2010,3.07
+Egypt,2008,3.89
+Egypt,2006,3.9
+El Salvador,2015,6.64
+El Salvador,2014,6.53
+El Salvador,2013,6.53
+El Salvador,2012,6.47
+El Salvador,2011,6.47
+El Salvador,2010,6.47
+El Salvador,2008,6.4
+El Salvador,2006,6.22
+Equatorial Guinea,2015,1.77
+Equatorial Guinea,2014,1.66
+Equatorial Guinea,2013,1.77
+Equatorial Guinea,2012,1.83
+Equatorial Guinea,2011,1.77
+Equatorial Guinea,2010,1.84
+Equatorial Guinea,2008,2.19
+Equatorial Guinea,2006,2.09
+Eritrea,2015,2.37
+Eritrea,2014,2.44
+Eritrea,2013,2.4
+Eritrea,2012,2.4
+Eritrea,2011,2.34
+Eritrea,2010,2.31
+Eritrea,2008,2.31
+Eritrea,2006,2.31
+Estonia,2015,7.85
+Estonia,2014,7.74
+Estonia,2013,7.61
+Estonia,2012,7.61
+Estonia,2011,7.61
+Estonia,2010,7.68
+Estonia,2008,7.68
+Estonia,2006,7.74
+Ethiopia,2015,3.83
+Ethiopia,2014,3.72
+Ethiopia,2013,3.83
+Ethiopia,2012,3.72
+Ethiopia,2011,3.79
+Ethiopia,2010,3.68
+Ethiopia,2008,4.52
+Ethiopia,2006,4.72
+Fiji,2015,5.69
+Fiji,2014,5.61
+Fiji,2013,3.61
+Fiji,2012,3.67
+Fiji,2011,3.67
+Fiji,2010,3.62
+Fiji,2008,5.11
+Fiji,2006,5.66
+Finland,2015,9.03
+Finland,2014,9.03
+Finland,2013,9.03
+Finland,2012,9.06
+Finland,2011,9.06
+Finland,2010,9.19
+Finland,2008,9.25
+Finland,2006,9.25
+France,2015,7.92
+France,2014,8.04
+France,2013,7.92
+France,2012,7.88
+France,2011,7.77
+France,2010,7.77
+France,2008,8.07
+France,2006,8.07
+Gabon,2015,3.76
+Gabon,2014,3.76
+Gabon,2013,3.76
+Gabon,2012,3.56
+Gabon,2011,3.48
+Gabon,2010,3.29
+Gabon,2008,3
+Gabon,2006,2.72
+Gambia,2015,2.97
+Gambia,2014,3.05
+Gambia,2013,3.31
+Gambia,2012,3.31
+Gambia,2011,3.38
+Gambia,2010,3.38
+Gambia,2008,4.19
+Gambia,2006,4.39
+Georgia,2015,5.88
+Georgia,2014,5.82
+Georgia,2013,5.95
+Georgia,2012,5.53
+Georgia,2011,4.74
+Georgia,2010,4.59
+Georgia,2008,4.62
+Georgia,2006,4.9
+Germany,2015,8.64
+Germany,2014,8.64
+Germany,2013,8.31
+Germany,2012,8.34
+Germany,2011,8.34
+Germany,2010,8.38
+Germany,2008,8.82
+Germany,2006,8.82
+Ghana,2015,6.86
+Ghana,2014,6.33
+Ghana,2013,6.33
+Ghana,2012,6.02
+Ghana,2011,6.02
+Ghana,2010,6.02
+Ghana,2008,5.35
+Ghana,2006,5.35
+Greece,2015,7.45
+Greece,2014,7.45
+Greece,2013,7.65
+Greece,2012,7.65
+Greece,2011,7.65
+Greece,2010,7.92
+Greece,2008,8.13
+Greece,2006,8.13
+Guatemala,2015,5.92
+Guatemala,2014,5.81
+Guatemala,2013,5.81
+Guatemala,2012,5.88
+Guatemala,2011,5.88
+Guatemala,2010,6.05
+Guatemala,2008,6.07
+Guatemala,2006,6.07
+Guinea,2015,3.14
+Guinea,2014,3.01
+Guinea,2013,2.84
+Guinea,2012,2.79
+Guinea,2011,2.79
+Guinea,2010,2.79
+Guinea,2008,2.09
+Guinea,2006,2.02
+Guinea-Bissau,2015,1.93
+Guinea-Bissau,2014,1.93
+Guinea-Bissau,2013,1.26
+Guinea-Bissau,2012,1.43
+Guinea-Bissau,2011,1.99
+Guinea-Bissau,2010,1.99
+Guinea-Bissau,2008,1.99
+Guinea-Bissau,2006,2
+Guyana,2015,6.05
+Guyana,2014,5.91
+Guyana,2013,6.05
+Guyana,2012,6.05
+Guyana,2011,6.05
+Guyana,2010,6.05
+Guyana,2008,6.12
+Guyana,2006,6.15
+Haiti,2015,3.94
+Haiti,2014,3.82
+Haiti,2013,3.94
+Haiti,2012,3.96
+Haiti,2011,4
+Haiti,2010,4
+Haiti,2008,4.19
+Haiti,2006,4.19
+Honduras,2015,5.84
+Honduras,2014,5.84
+Honduras,2013,5.84
+Honduras,2012,5.84
+Honduras,2011,5.84
+Honduras,2010,5.76
+Honduras,2008,6.18
+Honduras,2006,6.25
+Hong Kong,2015,6.5
+Hong Kong,2014,6.46
+Hong Kong,2013,6.42
+Hong Kong,2012,6.42
+Hong Kong,2011,5.92
+Hong Kong,2010,5.92
+Hong Kong,2008,5.85
+Hong Kong,2006,6.03
+Hungary,2015,6.84
+Hungary,2014,6.9
+Hungary,2013,6.96
+Hungary,2012,6.96
+Hungary,2011,7.04
+Hungary,2010,7.21
+Hungary,2008,7.44
+Hungary,2006,7.53
+Iceland,2015,9.58
+Iceland,2014,9.58
+Iceland,2013,9.65
+Iceland,2012,9.65
+Iceland,2011,9.65
+Iceland,2010,9.65
+Iceland,2008,9.65
+Iceland,2006,9.71
+India,2015,7.74
+India,2014,7.92
+India,2013,7.69
+India,2012,7.52
+India,2011,7.3
+India,2010,7.28
+India,2008,7.8
+India,2006,7.68
+Indonesia,2015,7.03
+Indonesia,2014,6.95
+Indonesia,2013,6.82
+Indonesia,2012,6.76
+Indonesia,2011,6.53
+Indonesia,2010,6.53
+Indonesia,2008,6.34
+Indonesia,2006,6.41
+Iran,2015,2.16
+Iran,2014,1.98
+Iran,2013,1.98
+Iran,2012,1.98
+Iran,2011,1.98
+Iran,2010,1.94
+Iran,2008,2.83
+Iran,2006,2.93
+Iraq,2015,4.08
+Iraq,2014,4.23
+Iraq,2013,4.1
+Iraq,2012,4.1
+Iraq,2011,4.03
+Iraq,2010,4
+Iraq,2008,4
+Iraq,2006,4.01
+Ireland,2015,8.85
+Ireland,2014,8.72
+Ireland,2013,8.68
+Ireland,2012,8.56
+Ireland,2011,8.56
+Ireland,2010,8.79
+Ireland,2008,9.01
+Ireland,2006,9.01
+Israel,2015,7.77
+Israel,2014,7.63
+Israel,2013,7.53
+Israel,2012,7.53
+Israel,2011,7.53
+Israel,2010,7.48
+Israel,2008,7.48
+Israel,2006,7.28
+Italy,2015,7.98
+Italy,2014,7.85
+Italy,2013,7.85
+Italy,2012,7.74
+Italy,2011,7.74
+Italy,2010,7.83
+Italy,2008,7.98
+Italy,2006,7.73
+Jamaica,2015,7.39
+Jamaica,2014,7.39
+Jamaica,2013,7.39
+Jamaica,2012,7.39
+Jamaica,2011,7.13
+Jamaica,2010,7.21
+Jamaica,2008,7.21
+Jamaica,2006,7.34
+Japan,2015,7.96
+Japan,2014,8.08
+Japan,2013,8.08
+Japan,2012,8.08
+Japan,2011,8.08
+Japan,2010,8.08
+Japan,2008,8.25
+Japan,2006,8.15
+Jordan,2015,3.86
+Jordan,2014,3.76
+Jordan,2013,3.76
+Jordan,2012,3.76
+Jordan,2011,3.89
+Jordan,2010,3.74
+Jordan,2008,3.93
+Jordan,2006,3.92
+Kazakhstan,2015,3.06
+Kazakhstan,2014,3.17
+Kazakhstan,2013,3.06
+Kazakhstan,2012,2.95
+Kazakhstan,2011,3.24
+Kazakhstan,2010,3.3
+Kazakhstan,2008,3.45
+Kazakhstan,2006,3.62
+Kenya,2015,5.33
+Kenya,2014,5.13
+Kenya,2013,5.13
+Kenya,2012,4.71
+Kenya,2011,4.71
+Kenya,2010,4.71
+Kenya,2008,4.79
+Kenya,2006,5.08
+Kuwait,2015,3.85
+Kuwait,2014,3.78
+Kuwait,2013,3.78
+Kuwait,2012,3.78
+Kuwait,2011,3.74
+Kuwait,2010,3.88
+Kuwait,2008,3.39
+Kuwait,2006,3.09
+Kyrgyz,2015,5.33
+Kyrgyz,2014,5.24
+Kyrgyz,2013,4.69
+Kyrgyz,2012,4.69
+Kyrgyz,2011,4.34
+Kyrgyz,2010,4.31
+Kyrgyz,2008,4.05
+Kyrgyz,2006,4.08
+Laos,2015,2.21
+Laos,2014,2.21
+Laos,2013,2.21
+Laos,2012,2.32
+Laos,2011,2.1
+Laos,2010,2.1
+Laos,2008,2.1
+Laos,2006,2.1
+Latvia,2015,7.37
+Latvia,2014,7.48
+Latvia,2013,7.05
+Latvia,2012,7.05
+Latvia,2011,7.05
+Latvia,2010,7.05
+Latvia,2008,7.23
+Latvia,2006,7.37
+Lebanon,2015,4.86
+Lebanon,2014,5.12
+Lebanon,2013,5.05
+Lebanon,2012,5.05
+Lebanon,2011,5.32
+Lebanon,2010,5.82
+Lebanon,2008,5.62
+Lebanon,2006,5.82
+Lesotho,2015,6.59
+Lesotho,2014,6.66
+Lesotho,2013,6.66
+Lesotho,2012,6.66
+Lesotho,2011,6.33
+Lesotho,2010,6.02
+Lesotho,2008,6.29
+Lesotho,2006,6.48
+Liberia,2015,4.95
+Liberia,2014,4.95
+Liberia,2013,4.95
+Liberia,2012,4.95
+Liberia,2011,5.07
+Liberia,2010,5.07
+Liberia,2008,5.25
+Liberia,2006,5.22
+Libya,2015,2.25
+Libya,2014,3.8
+Libya,2013,4.82
+Libya,2012,5.15
+Libya,2011,3.55
+Libya,2010,1.94
+Libya,2008,2
+Libya,2006,1.84
+Lithuania,2015,7.54
+Lithuania,2014,7.54
+Lithuania,2013,7.54
+Lithuania,2012,7.24
+Lithuania,2011,7.24
+Lithuania,2010,7.24
+Lithuania,2008,7.36
+Lithuania,2006,7.43
+Luxembourg,2015,8.88
+Luxembourg,2014,8.88
+Luxembourg,2013,8.88
+Luxembourg,2012,8.88
+Luxembourg,2011,8.88
+Luxembourg,2010,8.88
+Luxembourg,2008,9.1
+Luxembourg,2006,9.1
+Macedonia,2015,6.02
+Macedonia,2014,6.25
+Macedonia,2013,6.16
+Macedonia,2012,6.16
+Macedonia,2011,6.16
+Macedonia,2010,6.16
+Macedonia,2008,6.21
+Macedonia,2006,6.33
+Madagascar,2015,4.85
+Madagascar,2014,4.42
+Madagascar,2013,4.32
+Madagascar,2012,3.93
+Madagascar,2011,3.93
+Madagascar,2010,3.94
+Madagascar,2008,5.57
+Madagascar,2006,5.82
+Malawi,2015,5.55
+Malawi,2014,5.66
+Malawi,2013,6
+Malawi,2012,6.08
+Malawi,2011,5.84
+Malawi,2010,5.84
+Malawi,2008,5.13
+Malawi,2006,4.97
+Malaysia,2015,6.43
+Malaysia,2014,6.49
+Malaysia,2013,6.49
+Malaysia,2012,6.41
+Malaysia,2011,6.19
+Malaysia,2010,6.19
+Malaysia,2008,6.36
+Malaysia,2006,5.98
+Mali,2015,5.7
+Mali,2014,5.79
+Mali,2013,5.9
+Mali,2012,5.12
+Mali,2011,6.36
+Mali,2010,6.01
+Mali,2008,5.87
+Mali,2006,5.99
+Malta,2015,8.39
+Malta,2014,8.39
+Malta,2013,8.28
+Malta,2012,8.28
+Malta,2011,8.28
+Malta,2010,8.28
+Malta,2008,8.39
+Malta,2006,8.39
+Mauritania,2015,3.96
+Mauritania,2014,4.17
+Mauritania,2013,4.17
+Mauritania,2012,4.17
+Mauritania,2011,4.17
+Mauritania,2010,3.86
+Mauritania,2008,3.91
+Mauritania,2006,3.12
+Mauritius,2015,8.28
+Mauritius,2014,8.17
+Mauritius,2013,8.17
+Mauritius,2012,8.17
+Mauritius,2011,8.04
+Mauritius,2010,8.04
+Mauritius,2008,8.04
+Mauritius,2006,8.04
+Mexico,2015,6.55
+Mexico,2014,6.68
+Mexico,2013,6.91
+Mexico,2012,6.9
+Mexico,2011,6.93
+Mexico,2010,6.93
+Mexico,2008,6.78
+Mexico,2006,6.67
+Moldova,2015,6.35
+Moldova,2014,6.32
+Moldova,2013,6.32
+Moldova,2012,6.32
+Moldova,2011,6.32
+Moldova,2010,6.33
+Moldova,2008,6.5
+Moldova,2006,6.5
+Mongolia,2015,6.62
+Mongolia,2014,6.62
+Mongolia,2013,6.51
+Mongolia,2012,6.35
+Mongolia,2011,6.23
+Mongolia,2010,6.36
+Mongolia,2008,6.6
+Mongolia,2006,6.6
+Montenegro,2015,6.01
+Montenegro,2014,5.94
+Montenegro,2013,5.94
+Montenegro,2012,6.05
+Montenegro,2011,6.15
+Montenegro,2010,6.27
+Montenegro,2008,6.43
+Montenegro,2006,6.57
+Morocco,2015,4.66
+Morocco,2014,4
+Morocco,2013,4.07
+Morocco,2012,4.07
+Morocco,2011,3.83
+Morocco,2010,3.79
+Morocco,2008,3.88
+Morocco,2006,3.9
+Mozambique,2015,4.6
+Mozambique,2014,4.66
+Mozambique,2013,4.77
+Mozambique,2012,4.88
+Mozambique,2011,4.9
+Mozambique,2010,4.9
+Mozambique,2008,5.49
+Mozambique,2006,5.28
+Myanmar,2015,4.14
+Myanmar,2014,3.05
+Myanmar,2013,2.76
+Myanmar,2012,2.35
+Myanmar,2011,1.77
+Myanmar,2010,1.77
+Myanmar,2008,1.77
+Myanmar,2006,1.77
+Namibia,2015,6.31
+Namibia,2014,6.24
+Namibia,2013,6.24
+Namibia,2012,6.24
+Namibia,2011,6.24
+Namibia,2010,6.23
+Namibia,2008,6.48
+Namibia,2006,6.54
+Nepal,2015,4.77
+Nepal,2014,4.77
+Nepal,2013,4.77
+Nepal,2012,4.16
+Nepal,2011,4.24
+Nepal,2010,4.24
+Nepal,2008,4.05
+Nepal,2006,3.42
+Netherlands,2015,8.92
+Netherlands,2014,8.92
+Netherlands,2013,8.84
+Netherlands,2012,8.99
+Netherlands,2011,8.99
+Netherlands,2010,8.99
+Netherlands,2008,9.53
+Netherlands,2006,9.66
+New Zealand,2015,9.26
+New Zealand,2014,9.26
+New Zealand,2013,9.26
+New Zealand,2012,9.26
+New Zealand,2011,9.26
+New Zealand,2010,9.26
+New Zealand,2008,9.19
+New Zealand,2006,9.01
+Nicaragua,2015,5.26
+Nicaragua,2014,5.32
+Nicaragua,2013,5.46
+Nicaragua,2012,5.56
+Nicaragua,2011,5.56
+Nicaragua,2010,5.73
+Nicaragua,2008,6.07
+Nicaragua,2006,5.68
+Niger,2015,3.85
+Niger,2014,4.02
+Niger,2013,4.08
+Niger,2012,4.16
+Niger,2011,4.16
+Niger,2010,3.38
+Niger,2008,3.41
+Niger,2006,3.54
+Nigeria,2015,4.62
+Nigeria,2014,3.76
+Nigeria,2013,3.77
+Nigeria,2012,3.77
+Nigeria,2011,3.83
+Nigeria,2010,3.47
+Nigeria,2008,3.53
+Nigeria,2006,3.52
+North Korea,2015,1.08
+North Korea,2014,1.08
+North Korea,2013,1.08
+North Korea,2012,1.08
+North Korea,2011,1.08
+North Korea,2010,1.08
+North Korea,2008,0.86
+North Korea,2006,1.03
+Norway,2015,9.93
+Norway,2014,9.93
+Norway,2013,9.93
+Norway,2012,9.93
+Norway,2011,9.8
+Norway,2010,9.8
+Norway,2008,9.68
+Norway,2006,9.55
+Oman,2015,3.04
+Oman,2014,3.15
+Oman,2013,3.26
+Oman,2012,3.26
+Oman,2011,3.26
+Oman,2010,2.86
+Oman,2008,2.98
+Oman,2006,2.77
+Pakistan,2015,4.4
+Pakistan,2014,4.64
+Pakistan,2013,4.64
+Pakistan,2012,4.57
+Pakistan,2011,4.55
+Pakistan,2010,4.55
+Pakistan,2008,4.46
+Pakistan,2006,3.92
+Palestine,2015,4.57
+Palestine,2014,4.72
+Palestine,2013,4.8
+Palestine,2012,4.8
+Palestine,2011,4.97
+Palestine,2010,5.44
+Palestine,2008,5.83
+Palestine,2006,6.01
+Panama,2015,7.19
+Panama,2014,7.08
+Panama,2013,7.08
+Panama,2012,7.08
+Panama,2011,7.08
+Panama,2010,7.15
+Panama,2008,7.35
+Panama,2006,7.35
+Papua New Guinea,2015,6.03
+Papua New Guinea,2014,6.03
+Papua New Guinea,2013,6.36
+Papua New Guinea,2012,6.32
+Papua New Guinea,2011,6.32
+Papua New Guinea,2010,6.54
+Papua New Guinea,2008,6.54
+Papua New Guinea,2006,6.54
+Paraguay,2015,6.33
+Paraguay,2014,6.26
+Paraguay,2013,6.26
+Paraguay,2012,6.26
+Paraguay,2011,6.4
+Paraguay,2010,6.4
+Paraguay,2008,6.4
+Paraguay,2006,6.16
+Peru,2015,6.58
+Peru,2014,6.54
+Peru,2013,6.54
+Peru,2012,6.47
+Peru,2011,6.59
+Peru,2010,6.4
+Peru,2008,6.31
+Peru,2006,6.11
+Philippines,2015,6.84
+Philippines,2014,6.77
+Philippines,2013,6.41
+Philippines,2012,6.3
+Philippines,2011,6.12
+Philippines,2010,6.12
+Philippines,2008,6.12
+Philippines,2006,6.48
+Poland,2015,7.09
+Poland,2014,7.47
+Poland,2013,7.12
+Poland,2012,7.12
+Poland,2011,7.12
+Poland,2010,7.05
+Poland,2008,7.3
+Poland,2006,7.3
+Portugal,2015,7.79
+Portugal,2014,7.79
+Portugal,2013,7.65
+Portugal,2012,7.92
+Portugal,2011,7.81
+Portugal,2010,8.02
+Portugal,2008,8.05
+Portugal,2006,8.16
+Qatar,2015,3.18
+Qatar,2014,3.18
+Qatar,2013,3.18
+Qatar,2012,3.18
+Qatar,2011,3.18
+Qatar,2010,3.09
+Qatar,2008,2.92
+Qatar,2006,2.78
+Romania,2015,6.68
+Romania,2014,6.68
+Romania,2013,6.54
+Romania,2012,6.54
+Romania,2011,6.54
+Romania,2010,6.6
+Romania,2008,7.06
+Romania,2006,7.06
+Russia,2015,3.31
+Russia,2014,3.39
+Russia,2013,3.59
+Russia,2012,3.74
+Russia,2011,3.92
+Russia,2010,4.26
+Russia,2008,4.48
+Russia,2006,5.02
+Rwanda,2015,3.07
+Rwanda,2014,3.25
+Rwanda,2013,3.38
+Rwanda,2012,3.36
+Rwanda,2011,3.25
+Rwanda,2010,3.25
+Rwanda,2008,3.71
+Rwanda,2006,3.82
+Saudi Arabia,2015,1.93
+Saudi Arabia,2014,1.82
+Saudi Arabia,2013,1.82
+Saudi Arabia,2012,1.71
+Saudi Arabia,2011,1.77
+Saudi Arabia,2010,1.84
+Saudi Arabia,2008,1.9
+Saudi Arabia,2006,1.92
+Senegal,2015,6.08
+Senegal,2014,6.15
+Senegal,2013,6.15
+Senegal,2012,6.09
+Senegal,2011,5.51
+Senegal,2010,5.27
+Senegal,2008,5.37
+Senegal,2006,5.37
+Serbia,2015,6.71
+Serbia,2014,6.71
+Serbia,2013,6.67
+Serbia,2012,6.33
+Serbia,2011,6.33
+Serbia,2010,6.33
+Serbia,2008,6.49
+Serbia,2006,6.62
+Sierra Leone,2015,4.55
+Sierra Leone,2014,4.56
+Sierra Leone,2013,4.64
+Sierra Leone,2012,4.71
+Sierra Leone,2011,4.51
+Sierra Leone,2010,4.51
+Sierra Leone,2008,4.11
+Sierra Leone,2006,3.57
+Singapore,2015,6.14
+Singapore,2014,6.03
+Singapore,2013,5.92
+Singapore,2012,5.88
+Singapore,2011,5.89
+Singapore,2010,5.89
+Singapore,2008,5.89
+Singapore,2006,5.89
+Slovakia,2015,7.29
+Slovakia,2014,7.35
+Slovakia,2013,7.35
+Slovakia,2012,7.35
+Slovakia,2011,7.35
+Slovakia,2010,7.35
+Slovakia,2008,7.33
+Slovakia,2006,7.4
+Slovenia,2015,7.57
+Slovenia,2014,7.57
+Slovenia,2013,7.88
+Slovenia,2012,7.88
+Slovenia,2011,7.76
+Slovenia,2010,7.69
+Slovenia,2008,7.96
+Slovenia,2006,7.96
+South Africa,2015,7.56
+South Africa,2014,7.82
+South Africa,2013,7.9
+South Africa,2012,7.79
+South Africa,2011,7.79
+South Africa,2010,7.79
+South Africa,2008,7.91
+South Africa,2006,7.91
+South Korea,2015,7.97
+South Korea,2014,8.06
+South Korea,2013,8.06
+South Korea,2012,8.13
+South Korea,2011,8.06
+South Korea,2010,8.11
+South Korea,2008,8.01
+South Korea,2006,7.88
+Spain,2015,8.3
+Spain,2014,8.05
+Spain,2013,8.02
+Spain,2012,8.02
+Spain,2011,8.02
+Spain,2010,8.16
+Spain,2008,8.45
+Spain,2006,8.34
+Sri Lanka,2015,6.42
+Sri Lanka,2014,5.69
+Sri Lanka,2013,5.69
+Sri Lanka,2012,5.75
+Sri Lanka,2011,6.58
+Sri Lanka,2010,6.64
+Sri Lanka,2008,6.61
+Sri Lanka,2006,6.58
+Sudan,2015,2.37
+Sudan,2014,2.54
+Sudan,2013,2.54
+Sudan,2012,2.38
+Sudan,2011,2.38
+Sudan,2010,2.42
+Sudan,2008,2.81
+Sudan,2006,2.9
+Suriname,2015,6.77
+Suriname,2014,6.77
+Suriname,2013,6.77
+Suriname,2012,6.65
+Suriname,2011,6.65
+Suriname,2010,6.65
+Suriname,2008,6.58
+Suriname,2006,6.52
+Swaziland,2015,3.09
+Swaziland,2014,3.09
+Swaziland,2013,3.2
+Swaziland,2012,3.2
+Swaziland,2011,3.26
+Swaziland,2010,2.9
+Swaziland,2008,3.04
+Swaziland,2006,2.93
+Sweden,2015,9.45
+Sweden,2014,9.73
+Sweden,2013,9.73
+Sweden,2012,9.73
+Sweden,2011,9.5
+Sweden,2010,9.5
+Sweden,2008,9.88
+Sweden,2006,9.88
+Switzerland,2015,9.09
+Switzerland,2014,9.09
+Switzerland,2013,9.09
+Switzerland,2012,9.09
+Switzerland,2011,9.09
+Switzerland,2010,9.09
+Switzerland,2008,9.15
+Switzerland,2006,9.02
+Syria,2015,1.43
+Syria,2014,1.74
+Syria,2013,1.86
+Syria,2012,1.63
+Syria,2011,1.99
+Syria,2010,2.31
+Syria,2008,2.18
+Syria,2006,2.36
+Taiwan,2015,7.83
+Taiwan,2014,7.65
+Taiwan,2013,7.57
+Taiwan,2012,7.57
+Taiwan,2011,7.46
+Taiwan,2010,7.52
+Taiwan,2008,7.82
+Taiwan,2006,7.82
+Tajikistan,2015,1.95
+Tajikistan,2014,2.37
+Tajikistan,2013,2.51
+Tajikistan,2012,2.51
+Tajikistan,2011,2.51
+Tajikistan,2010,2.51
+Tajikistan,2008,2.45
+Tajikistan,2006,2.45
+Tanzania,2015,5.58
+Tanzania,2014,5.77
+Tanzania,2013,5.77
+Tanzania,2012,5.88
+Tanzania,2011,5.64
+Tanzania,2010,5.64
+Tanzania,2008,5.28
+Tanzania,2006,5.18
+Thailand,2015,5.09
+Thailand,2014,5.39
+Thailand,2013,6.25
+Thailand,2012,6.55
+Thailand,2011,6.55
+Thailand,2010,6.55
+Thailand,2008,6.81
+Thailand,2006,5.67
+Timor-Leste,2015,7.24
+Timor-Leste,2014,7.24
+Timor-Leste,2013,7.24
+Timor-Leste,2012,7.16
+Timor-Leste,2011,7.22
+Timor-Leste,2010,7.22
+Timor-Leste,2008,7.22
+Timor-Leste,2006,6.41
+Togo,2015,3.41
+Togo,2014,3.45
+Togo,2013,3.45
+Togo,2012,3.45
+Togo,2011,3.45
+Togo,2010,3.45
+Togo,2008,2.43
+Togo,2006,1.75
+Trinidad and Tobago,2015,7.1
+Trinidad and Tobago,2014,6.99
+Trinidad and Tobago,2013,6.99
+Trinidad and Tobago,2012,6.99
+Trinidad and Tobago,2011,7.16
+Trinidad and Tobago,2010,7.16
+Trinidad and Tobago,2008,7.21
+Trinidad and Tobago,2006,7.18
+Tunisia,2015,6.72
+Tunisia,2014,6.31
+Tunisia,2013,5.76
+Tunisia,2012,5.67
+Tunisia,2011,5.53
+Tunisia,2010,2.79
+Tunisia,2008,2.96
+Tunisia,2006,3.06
+Turkey,2015,5.12
+Turkey,2014,5.12
+Turkey,2013,5.63
+Turkey,2012,5.76
+Turkey,2011,5.73
+Turkey,2010,5.73
+Turkey,2008,5.69
+Turkey,2006,5.7
+Turkmenistan,2015,1.83
+Turkmenistan,2014,1.83
+Turkmenistan,2013,1.72
+Turkmenistan,2012,1.72
+Turkmenistan,2011,1.72
+Turkmenistan,2010,1.72
+Turkmenistan,2008,1.72
+Turkmenistan,2006,1.83
+UAE,2015,2.75
+UAE,2014,2.64
+UAE,2013,2.52
+UAE,2012,2.58
+UAE,2011,2.58
+UAE,2010,2.52
+UAE,2008,2.6
+UAE,2006,2.42
+Uganda,2015,5.22
+Uganda,2014,5.22
+Uganda,2013,5.22
+Uganda,2012,5.16
+Uganda,2011,5.13
+Uganda,2010,5.05
+Uganda,2008,5.03
+Uganda,2006,5.14
+UK,2015,8.31
+UK,2014,8.31
+UK,2013,8.31
+UK,2012,8.21
+UK,2011,8.16
+UK,2010,8.16
+UK,2008,8.15
+UK,2006,8.08
+Ukraine,2015,5.7
+Ukraine,2014,5.42
+Ukraine,2013,5.84
+Ukraine,2012,5.91
+Ukraine,2011,5.94
+Ukraine,2010,6.3
+Ukraine,2008,6.94
+Ukraine,2006,6.94
+Uruguay,2015,8.17
+Uruguay,2014,8.17
+Uruguay,2013,8.17
+Uruguay,2012,8.17
+Uruguay,2011,8.17
+Uruguay,2010,8.1
+Uruguay,2008,8.08
+Uruguay,2006,7.96
+US,2015,8.05
+US,2014,8.11
+US,2013,8.11
+US,2012,8.11
+US,2011,8.11
+US,2010,8.18
+US,2008,8.22
+US,2006,8.22
+Uzbekistan,2015,1.95
+Uzbekistan,2014,2.45
+Uzbekistan,2013,1.72
+Uzbekistan,2012,1.72
+Uzbekistan,2011,1.74
+Uzbekistan,2010,1.74
+Uzbekistan,2008,1.74
+Uzbekistan,2006,1.85
+Venezuela,2015,5
+Venezuela,2014,5.07
+Venezuela,2013,5.07
+Venezuela,2012,5.15
+Venezuela,2011,5.08
+Venezuela,2010,5.18
+Venezuela,2008,5.34
+Venezuela,2006,5.42
+Vietnam,2015,3.53
+Vietnam,2014,3.41
+Vietnam,2013,3.29
+Vietnam,2012,2.89
+Vietnam,2011,2.96
+Vietnam,2010,2.94
+Vietnam,2008,2.53
+Vietnam,2006,2.75
+Yemen,2015,2.24
+Yemen,2014,2.79
+Yemen,2013,2.79
+Yemen,2012,3.12
+Yemen,2011,2.57
+Yemen,2010,2.64
+Yemen,2008,2.95
+Yemen,2006,2.98
+Zambia,2015,6.28
+Zambia,2014,6.39
+Zambia,2013,6.26
+Zambia,2012,6.26
+Zambia,2011,6.19
+Zambia,2010,5.68
+Zambia,2008,5.25
+Zambia,2006,5.25
+Zimbabwe,2015,3.05
+Zimbabwe,2014,2.78
+Zimbabwe,2013,2.67
+Zimbabwe,2012,2.67
+Zimbabwe,2011,2.68
+Zimbabwe,2010,2.64
+Zimbabwe,2008,2.53
+Zimbabwe,2006,2.62
