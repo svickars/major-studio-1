@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
+    <style>
+        .counties {
+            fill: none;
+        }
+        
+        body {
+            font-family: "Roboto", Helvetica, sans-serif;
+            margin: 1em auto 4em auto;
+            position: relative;
+            tab-size: 2;
+        }
+        
+        .key path {
+            display: none;
+        }
+        
+        .key line {
+            stroke: #000;
+            shape-rendering: crispEdges;
+        }
+        
+        .states {
+            fill: none;
+            stroke: #000;
+            stroke-linejoin: round;
+            stroke: #999;
+            stroke-dasharray: 2,2;
+            stroke-linejoin: round;
+        }
+        
+        .black {
+            fill: #000000;
+        }
+        
+        .title {
+            font-size: 25px;
+            font-weight: 300;
+        }
+        
+        .tick text {
+            font-size: 10px;
+        }
+        
+        .subunit {
+            /*fill: #ddc; */
+            cursor: pointer;
+        }
+        
+        .subunit-boundary {
+            fill: none;
+            stroke: #fff;
+        }
+        
+        .caption {
+            font-size: 20px;
+        }
+        
+        .caption-2 {
+            font-size: 10px;
+        }
+        
+        .axisLabel {
+            font-size: 7px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+        
+        div.tooltip {
+            position: absolute;
+            text-align: left;
+            display: inline;
+            padding: 6px;
+            font: 13px sans-serif;
+            background-color: rgba(0,0,0,0.8);
+            border: 0px;
+            border-radius: 2px;
+            pointer-events: none;
+            color: #fff;
+        }
+        
+        .svg {
+            width: 960px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="svg"></div>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="colorbrewer.js"></script>
+    <script>
+        ///////////////////////
+        /* buttons */
+
+        var width = 960,
+            height = 1000;
+
+        var svg = d3.select("div.svg").append("svg")
+            .attr("width", width)
+            .attr("height", height);
+
+        // var div = d3.select("body").append("div")   
+        //     .attr("class", "tooltip")               
+        //     .style("opacity", 0);
+
+
+        var tooltip = {
+            element: null,
+            init: function() {
+                this.element = d3.select("body").append("div").attr("class", "tooltip").style("opacity", 0);
+            },
+            show: function(t) {
+                this.element.html(t).transition().duration(200).style("left", d3.event.pageX + 20 + "px").style("top", d3.event.pageY - 20 + "px").style("opacity", .9);
+            },
+            move: function() {
+                this.element.transition().duration(30).ease("linear").style("left", d3.event.pageX + 20 + "px").style("top", d3.event.pageY - 20 + "px").style("opacity", .9);
+            },
+            hide: function() {
+                this.element.transition().duration(500).style("opacity", 0)
+            }
+        };
+
+        tooltip.init();
+
+        var numFormat = d3.format(",d");
+
+
+
+
+        var toGreyExcept = function(t) {
+
+            var color = d3.select(t).style("fill");
+            // console.log(color)
+            d3.selectAll(".subunit").style("opacity", function(d) {
+
+                //var a = e.data.color;
+
+
+                if (!t || this === t) {
+
+                    return;
+                }
+                return "0.8";
+
+                // var n = d3.rgb(a).hsl().darker(2);
+                // n.s *= .9;
+                // return n.toString()
+
+            });
+        };
+
+
+
+        d3.json("africaTopoMap.json", function(error, data) {
+            if (error) return console.error(error);
+
+
+            var colorScale = d3.scale.linear()
+                .domain([1, 2, 3, 4, 5, 6, 7, 8, 9])
+                .range(colorbrewer.Greens["9"]);
+
+            formatValue = d3.format("s");
+
+            // A position encoding for the key only.
+            var x = d3.scale.linear()
+                .domain([0, 9])
+                .range([0, 600]);
+
+
+
+            var xAxis = d3.svg.axis()
+                .scale(x)
+                .orient("bottom")
+                .tickSize(0)
+                .tickValues('')
+                .tickFormat(function(d) {
+                    return formatValue(d)
+                });
+
+            // key
+            var g = svg.append("g")
+                .attr("class", "key")
+                .attr("transform", "translate(170,75)");
+
+            g.selectAll("rect")
+                .data(colorScale.range().map(function(d, i) {
+                    return {
+                        x0: i ? x(colorScale.domain()[i - 1]) : x.range()[0],
+                        x1: i < colorScale.domain().length ? x(colorScale.domain()[i]) : x.range()[1],
+                        z: d
+                    };
+                }))
+                .enter().append("rect")
+                .attr("height", 8)
+                .attr("x", function(d) {
+                    return d.x0;
+                })
+                .attr("width", function(d) {
+                    return d.x1 - d.x0;
+                })
+                .style("fill", function(d) {
+                    return d.z;
+                });
+
+            g.call(xAxis).append("text")
+                .attr("class", "caption")
+                .attr("y", -25)
+                .text("Democracy in Africa");
+            g.call(xAxis).append("text")
+                .attr("class", "caption-2")
+                .attr("y", -10)
+                .text("[Insert Description]");
+            g.call(xAxis).append("text")
+                .attr("class", "axisLabel")
+                .attr("y", 7)
+                .attr("x", -62)
+                .text("Less Democratic");
+            g.call(xAxis).append("text")
+                .attr("class", "axisLabel")
+                .attr("y", 7)
+                .attr("x", 602)
+                .text("More Democratic");
+            
+
+            var formatNumber = d3.format(",.0f");
+
+            var subunits = topojson.feature(data, data.objects.collection);
+
+            var projection = d3.geo.mercator()
+                .center([15, 5])
+                .scale(600)
+                .translate([width / 2, height / 2]);
+
+
+            // var projection = d3.geo.albers()
+            //     .center([0, 55.4])
+            //     .rotate([4.4, 0])
+            //     .parallels([50, 60])
+            //     .scale(6000)
+            //     .translate([width / 2, height / 2]);    
+
+            var path = d3.geo.path()
+                .projection(projection);
+
+            function createStuff () {
+
+            d3.selectAll(".subunit").remove();
+
+            var map = svg.append("g")
+                .attr("class", "map");
+
+            var countries = map.selectAll(".subunit")
+                .data(topojson.feature(data, data.objects.collection).features)
+                //.data(topojson.feature(uk, uk.objects.subunits).features)
+                .enter().append("path")
+                .attr("class", function(d) {
+                    return "subunit " + d.properties.subunit;
+                })
+                .attr("d", path)
+                .style("stroke", "#dddddd")
+                .style("fill", function(d, i) {
+                    return colorScale(d.properties.demI);
+                });
+
+            // countries.append("title")
+            //         .text(function(d, i) { return d.properties.subunit; });   
+
+            countries.on("mouseover", function(d, i) {
+                //console.log(this)
+                tooltip.show("<b>" + d.properties.subunit + "</b>" + "<br>" + "Population: " + numFormat(d.properties.pop_est) + "<br>" + "Democratic? " + d.properties.demS);
+                toGreyExcept(this);
+                // console.log(this);
+                // console.log(d.properties.demI);
+            });
+
+
+            countries.on("mousemove", function(d, i) {
+                    tooltip.move();
+                })
+                .on("mouseout", function(d, i) {
+                    createStuff();
+                    tooltip.hide();
+                });
+
+            }  // createStuff end  
+            createStuff();
+
+            map.append("path")
+                .datum(topojson.mesh(data, data.objects.collection, function(a, b) {
+                    return a !== b;
+                }))
+                .attr("d", path)
+                .attr("class", "subunit-boundary");
+
+
+
+            // svg.append("path")
+            //     .datum(subunits)
+            //     .attr("d", path);
+
+        });
+
+
+
+
+        // bl.ocks resize
+        d3.select(self.frameElement).style("height", height + 80 + "px");
+    </script>

@@ -1,0 +1,136 @@
+body {
+  text-align: center;
+}
+.graph-div {
+  width:90%;
+  display: inline-block;
+  height: 450px;
+}
+.visualization{
+ height: 450px;
+}
+
+.graph-div-filter {
+	width:90%;
+	display: inline-block;
+  height: 50px;
+  margin: 1rem;
+  font-family: sans-serif;
+  font-size: 22px;
+}
+
+.graph-div-filter div {
+  padding: 0px;
+}
+
+.graph-div-filter div > select {
+  margin-left: -8px;
+}
+
+#indicator {
+  background: none;
+  border: none;
+  border-radius: none;
+  width: 226px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+#region {
+  background: none;
+  border: none;
+  border-radius: none;
+  width: 96px;
+  font-size: 22px;
+  text-decoration: underline;
+}
+
+.graph-title {
+  display: none;
+	padding:5px;
+	color:white;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+
+}
+
+.axis path,
+.axis line {
+		fill: none;
+		stroke: black;
+		shape-rendering: crispEdges;
+}
+.axis text {
+		font-family: sans-serif;
+		font-size: 11px;
+}
+.tooltip{
+position: absolute;           
+  text-align: center;           
+  width: auto;                  
+  height: auto;                 
+            
+  font: 12px sans-serif;        
+  background: white;
+  border-radius: 10px;           
+  pointer-events: none;
+  display:none;
+  text-align:left;
+}
+.tooltip-title {
+    border-bottom: 0.1px solid black;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding:5px;
+	color:white;
+	background-color: steelblue;
+}
+.filter {
+	display: inline-block;
+	padding:15px;
+}
+table {
+	width:100%;
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+border-collapse:
+collapse; border-spacing: 0;
+}
+
+td, th {
+border: 1px solid transparent; /* No more visible border */
+height: 10px;
+transition: all 0.3s; /* Simple transition for hover effect */
+}
+
+th {
+background: #DFDFDF; /* Darken header a bit */
+font-weight: bold;
+text-align: center;
+padding:5px;
+}
+
+td {
+background: #FAFAFA;
+text-align: center;
+}
+select{
+  display: inline-block;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 8px;
+  padding: 2px;
+  
+}
+select:focus {
+  outline: none;
+}
+
+.hover-line { 
+  stroke: black;  
+  fill: none;
+  stroke-width: 1px;
+}

@@ -16,7 +16,7 @@ width2 = 1048 - margin.left - margin.right,
 
 var svg = d3.select("#visualization").append("svg")
 	.attr("width", width + margin.left + margin.right)
-	.attr("height", 1200)
+	.attr("height", height + margin.top + margin.bottom)
 	.append("g")
 	.attr("transform",
 		"translate(" + margin.left + "," + margin.top + ")");
@@ -27,18 +27,12 @@ var tooltip2 = d3.select("#visualization").append("div").attr("class", "tooltip 
 var tooltip3 = d3.select("#visualization").append("div").attr("class", "tooltip tooltip-3");
 var lightbox = d3.select("#visualization").append("div").attr("class", "lightbox");
 var lbIn = d3.select("#visualization").append("div").attr("class", "lbIn").attr("id", "lbIn");
-var subtitle = d3.select("#visualization").append("div").attr("id", "subtitle");
 var bisectDate = d3.bisector(function(d) {
 	return new Date(d.year, 0, 1);
 }).left;
 var dataNest, data2Nest;
 var country;
 
-subtitle.html("<span id='stI'>Governance Indicator Scores</span> vs <span id='stD'>Democracy Levels</span> in Sub-Saharan Africa<div class='subtitle-instructions'>Use the menus above to select a region in Africa and and a governance indicator</br>Click on a country's line below to see <strong>all six</strong> indicators for that country.</div>");
-var subtitleWidth = document.getElementById("subtitle").offsetWidth;
-var visualizationWidth = document.getElementById("visualization").offsetWidth;
-subtitle.style("left", (visualizationWidth/2)-(subtitleWidth/2)+"px");
-subtitle.style("top", "65px");
 
 // Add dropdown values
 
@@ -49,18 +43,10 @@ data.forEach(function(record) {
 	indicators.add(record.indicator);
 })
 
-var methodology = d3.select(".methodology");
-var methodologyWidth = document.getElementById("methodology").offsetWidth;
-methodology.style("height", "auto")
-			.style("left", "50%")
-			.style("margin-left", "-524px")
-			.style("top", 800+"px");
 
 updateSelectOptions("region", Array.from(regions));
 updateSelectOptions("indicator", Array.from(indicators));
 
-var giI = d3.select(".gi").append("div");
-giI.attr("class", "gi-i");
 
 // -------------------
 // Parse the date
@@ -69,14 +55,14 @@ var parseDate = d3.timeParse("%y");
 // Set the ranges
 var x = d3.scaleTime().range([0, width]);
 var y = d3.scaleLinear().range([height, 0]);
-var y2 = d3.scaleLinear().range([height+250, height+50]);
+var y2 = d3.scaleLinear().range([height+300, height+100]);
 
 
 // Add axes
 var x_axis = svg.append("g")
 	.attr("transform", "translate(0," + (height) + ")");
 var x_axis2 = svg.append("g")
-	.attr("transform", "translate(0," + (height+250) + ")");
+	.attr("transform", "translate(0," + (height+300) + ")");
 var x_axis3 = svg.append("g")
 	.attr("transform", "translate(0," + (height) + ")");
 var y_axis = svg.append("g");
@@ -101,16 +87,18 @@ svg.append("line")
 svg.append("line")
 	.attr("class", "baseLine")
 	.attr("x1", 0)
-	.attr("y1", height+250)
+	.attr("y1", height+300)
 	.attr("x2", width + 5)
-	.attr("y2", height+250);
+	.attr("y2", height+300);
 
 svg.append("line")
 	.attr("class", "baseLine")
 	.attr("x1", 0)
-	.attr("y1", height+50-5)
+	.attr("y1", height+100-5)
 	.attr("x2", 0)
-	.attr("y2", height+250 + 5);
+	.attr("y2", height+300 + 5);
+	
+
 
 // draw line
 var valueline = d3.line()
@@ -139,7 +127,6 @@ var line = d3.line()
 		return y(d.value);
 	});
 
-
 drawVisual(true);
 
 
@@ -153,34 +140,6 @@ function drawVisual(refreshLine) {
 	d3.selectAll(".label").remove();
 	//remove path if exist
 	d3.selectAll("path").remove();
-	
-	
-	if (getSelectedIndexValue("indicator") === "Control of Corruption") {
-	giI.html("<h2 style='text-decoration: underline;'>Control of Corruption</h2> <h6>This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and gran forms of corruption, as well as 'capture' of the state by eleites and private interests.</h6><div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-}else{
-	if (getSelectedIndexValue("indicator") === "Government Effectiveness") {
-	giI.html("<h2 style='text-decoration: underline;'>Government Effectiveness</h2> <h6>This indicator captures perceptions of the quality of public services, the quality of the civil service, and the degree of its independence from political pressures, the quality of policy formulation and impementation, and the credibility of the government's commutment to such policies.</h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-	}else{
-		if (getSelectedIndexValue("indicator") === "Political Stability") {
-		giI.html("<h2 style='text-decoration: underline;'>Political Stability and Absence of Violence/Terrorism</h2> <h6>This indicator measures perceptions of the likelihood of political instability and/or politcally-motivated violence, including terrorism.</h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-		}else{
-			if (getSelectedIndexValue("indicator") === "Regulatory Quality") {
-			giI.html("<h2 style='text-decoration: underline;'>Regulatory Quality</h2> <h6>This indicator captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permid and promote private sector development. </h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-			}else{
-				if (getSelectedIndexValue("indicator") === "Rule of Law") {
-				giI.html("<h2 style='text-decoration: underline;'>Rule of law</h2> <h6>This indicator captures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence. </h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-				}else{
-					if (getSelectedIndexValue("indicator") === "Voice and Accountability") {
-					giI.html("<h2 style='text-decoration: underline;'>Voice and Accountability</h2> <h6>This indicator captures perceptions of the extend to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media. </h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-					}
-				}
-			}	
-		}
-	}
-}
-	
-	
-	
 	//Get selected region and indicator
 	var region = getSelectedIndexValue("region");
 	var indicator = getSelectedIndexValue("indicator");
@@ -225,6 +184,7 @@ function drawVisual(refreshLine) {
 					i = bisectDate(dataPath.values, x0, 1),
 					d0 = dataPath.values[i - 1],
 					country = d0.country;
+				console.log(country);
 				visible = !visible
 				for (var n = 0; n <= maxIndex; n++) {
 					if (n != index) {
@@ -244,13 +204,10 @@ function drawVisual(refreshLine) {
 						lbIn.style("display", "none");
 						d3.selectAll(".line").style("opacity", "1.0");
 					});
-				lbIn.style("display", "block")
-					.html("");
+				lbIn.style("display", "block");
 
-				
 				var vertical = d3.select(".lbIn").append("div").attr("class", "verticalLine");
-				var lbTooltip = d3.select(".lbIn").append("div").attr("class", "lbTooltip").attr("id", "legend");
-				lbTooltip.style("top", 86+"px");
+				var lbTooltip = d3.select(".lbIn").append("div").attr("class", "lbTooltip");
 
 				var chart2 = d3.select(".lbIn")
 					.append("svg")
@@ -280,20 +237,9 @@ function drawVisual(refreshLine) {
 					.attr("y", 19)
 					.text(indicator + " Scores for " + country + " 2006-2014")
 					.style("opacity", ".6");
-				
-				chart2.append("text")
-					.attr("id", "lbSubtitle")
-					.attr("text-anchor", "middle")
-					.attr("x", width/2)
-					.attr("y", -19)
-					.text("Click outside this box to close")
-					.style("opacity", ".5")
-					.style("font-size", "10px")
-					.style("font-weight", "400")
-					.style("font-style", "italic");
 
 				// Add the X Axis
-				var x_axis3 = chart2.append("g")
+				var x_axis = chart2.append("g")
 					.attr("transform", "translate(0," + height + ")")
 					.style("stroke-linecap", "round")
 					.style("stroke-dasharray", ".1,20");
@@ -317,6 +263,8 @@ function drawVisual(refreshLine) {
 						return d.measure;
 					}).entries(data);
 
+					console.log(data);
+
 					x.domain(d3.extent(data_subset, function(d) {
 						return new Date(d.year, 0, 1);
 					}));
@@ -324,7 +272,8 @@ function drawVisual(refreshLine) {
 
 					var strokeHex = color(index);
 					var strokeRGB = hexToRgbA(strokeHex);
-					
+					// console.log(strokeRGB);
+
 					// Add the valueline path.
 					for (var i = 0; i < data.length; i++) {
 						var chart2Labels = chart2.append("text")
@@ -345,7 +294,6 @@ function drawVisual(refreshLine) {
 							})
 							.on("mousemove", function(d) {
 								//Display tooltip
-								lbTooltip.attr("id", "lbTooltip");
 								lbTooltip.style("display", "inline-block");
 								lbTooltip.style("background-color", color(index));
 
@@ -354,7 +302,8 @@ function drawVisual(refreshLine) {
 									j = bisectDate(dataPath.values, x0, 1),
 									d0 = dataPath.values[j - 1];
 								// d1 = dataPath.values[j];
-								
+								// console.log(d[j].value);
+
 								if (d[i].measure == "Corruption Control") {
 									lbTooltip.style("background-color", hexToRgbA(color(index)) + ",1.0")
 								}
@@ -387,19 +336,17 @@ function drawVisual(refreshLine) {
 
 								lbTooltip.html("<div class='tooltip-title'> <strong> " + d[i].measure + "</strong> (estimated) for " + d0.year + ":<strong> " +
 									Number(d[j - 1].value).toFixed(2) + "</strong></div>");
-								var lbTooltipWidth = document.getElementById('lbTooltip').offsetWidth;
-								lbTooltip.style("left", (width/2)-(.5*lbTooltipWidth)+85+"px");
 							})
 							.on("mouseout", function(d) {
 								d3.select(this).style("stroke-width", "1.5px");
 								lbTooltip.style("display", "none");
-								d3.select(".legend").remove();
 							});
 						x_axis3.attr("class", "x_axis axis").call(d3.axisBottom(x)
 							.tickSizeInner(-height));
 						y_axis3.attr("class", "y_axis axis").call(d3.axisLeft(y)
 							.tickSizeInner(-width));
-							d3.selectAll(".x_axis text")
+						
+						d3.selectAll(".x_axis text")
 							.attr("transform", "translate(0,10)");
 						d3.selectAll(".y_axis text")
 							.attr("transform", "translate(-5,0)");
@@ -607,7 +554,7 @@ function drawVisual(refreshLine) {
 		.tickSizeOuter(0));
 	
 	d3.selectAll(".xaxis text")
-		.attr("transform", "translate(0,20)")
+		.attr("transform", "translate(0,45)")
 		.style("opacity", .6)
 		.style("font-size", "10px");
 	d3.selectAll(".yaxis text")
@@ -617,16 +564,17 @@ function drawVisual(refreshLine) {
 	d3.selectAll(".yaxis2 text")
 		.attr("transform", "translate(-5,0)");
 	
+	// now add titles to the axes
     svg.append("text")
     	.attr("class", "y-label")
-        .attr("text-anchor", "middle")
-        .attr("transform", "translate("+ -40 +","+(height/2)+")rotate(-90)")
+        .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+        .attr("transform", "translate("+ -40 +","+(height/2)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
         .text("Estimated Score")
         .style("opacity", .6);
     svg.append("text")
     	.attr("class", "y-label")
-        .attr("text-anchor", "middle") 
-        .attr("transform", "translate("+ -40 +","+(height+150)+")rotate(-90)")
+        .attr("text-anchor", "middle")  // this makes it easy to centre the text as the transform is applied to the anchor
+        .attr("transform", "translate("+ -40 +","+(height+200)+")rotate(-90)")  // text is drawn off the screen top left, move down and out and rotate
         .text("Democratic Score")
         .style("opacity", .6);
     svg.append("text")
@@ -640,7 +588,7 @@ function drawVisual(refreshLine) {
     	.attr("class", "label")
     	.attr("text-anchor", "middle")
     	.attr("x", width/2)
-    	.attr("y", height+64)
+    	.attr("y", height+114)
     	.style("opacity", .6)
     	.text("Democracy Index, 2006-2014");
 
@@ -697,6 +645,7 @@ function mousemove(country, mousePosition, isdemocratic, color) {
 		//Add tooltip 2
 		d3.selectAll("#circles-" + d0.country)
 			.style("visibility", "visible");
+		console.log(d0.country);
 		
 		tooltip2.style("display", "inline-block");
 		tooltip2.style("left", d3.event.pageX + margin.right + "px");
@@ -741,9 +690,9 @@ function hoverLine(country, mousePosition) {
 	d3.selectAll(".vertical-line2").remove()
 	svg.append("line")
 		.attr("x1", x(x0)+1)
-		.attr("y1", height+50)
+		.attr("y1", height+100)
 		.attr("x2", x(x0)+1)
-		.attr("y2", height+250)
+		.attr("y2", height+300)
 		.attr("class", "vertical-line2")
 		.style("stroke-width", 1)
 		.style("stroke", "grey")

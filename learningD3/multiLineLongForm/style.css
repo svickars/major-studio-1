@@ -1,0 +1,56 @@
+svg {
+    font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.x.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.lines {
+    fill: none;
+    stroke-width: 1.5px;
+}
+
+#fText {
+    font-family: sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#rMenu > select, #iMenu > select {
+    font-size: 24px;
+    font-family: sans-serif;
+    
+    text-decoration: underline;
+    border: none;
+    background: none;
+    border-radius: 0;
+}
+
+.hover-line { 
+  stroke: black;  
+  fill: none;
+  stroke-width: 1px;
+}
+
+div.tooltip {
+            position: absolute;
+            text-align: center;
+            width: 60px;
+            height: 28px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }

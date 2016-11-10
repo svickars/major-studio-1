@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v3.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="filters">
+        <span id="fText">How does</span>
+    <span id="iMenu" class="menuchoice"><select>
+    <option value="Control of Corruption: Estimate" selected="selected">Control of Corruption</option>
+     <option value="Government Effectiveness: Estimate">Government Effectiveness</option>
+    <option value="Political Stability and Absence of Violence/Terrorism: Estimate">Political Stability</option>
+     <option value="Regulatory Quality: Estimate">Regulatory Quality</option>
+     <option value="Rule of Law: Estimate">Rule of Law</option>
+     <option value="Voice and Accountability: Estimate">Voice & Accountability</option>
+    </select>
+    <span id="fText">affect democracy in</span>
+    <span id="rMenu" class="menuchoice"><select>
+    <option value="Central" selected="selected">Central</option>
+     <option value="Eastern">Eastern</option>
+    <option value="Southern">Southern</option>
+     <option value="Western">Western</option>
+    </select>
+        <span id="fText">Africa?</span>
+    </div>
+    
+
+    <script>
+    
+        var margin = {
+                top: 20,
+                right: 80,
+                bottom: 30,
+                left: 50
+            },
+            width = 900 - margin.left - margin.right,
+            height = 500 - margin.top - margin.bottom;
+
+
+        var parseDate = d3.time.format("%Y").parse;
+
+        var x = d3.time.scale()
+            .range([0, width]);
+
+        var y = d3.scale.linear()
+            .range([height, 0]);
+
+        var color = d3.scale.category20();
+
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient("bottom");
+
+        var yAxis = d3.svg.axis()
+            .scale(y)
+            .orient("left");
+
+        var line = d3.svg.line()
+            .interpolate("monotone")
+            .x(function(d) {
+                return x(d.year);
+            })
+            .y(function(d) {
+                console.log(d);
+                return y(d.value);
+            });
+
+        var svg = d3.select('body').append('svg')
+            .attr('width', width + margin.left + margin.right)
+            .attr('height', height + margin.top + margin.bottom)
+            .append('g')
+            .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+        
+        // force data to update when menu is changed    
+        var rMenu = d3.select("#rMenu select")
+            .on("change", change);
+            
+        var iMenu = d3.select("#iMenu select")
+            .on("change", change);
+        
+        d3.select(window)
+            .on("keydown", function() {
+                altKey = d3.event.altKey;
+            })
+            .on("keyup", function() {
+                altKey = false;
+            });
+        var altKey;
+        
+        function change() {
+            // svg.selectAll("*").remove();
+            d3.transition()
+                .duration(altKey ? 7500 : 1500)
+                .each(draw);
+        }
+        
+        // Define the div for the tooltip
+        var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+        function draw() {
+            
+            svg.selectAll("*").remove();
+            
+            d3.csv('governanceIndicators-r.csv', function(error, data) {
+            
+            // get value from menu selection the option values are set in HTML and correspond to the [type] value we used to nest the data  
+            var sIndicator = iMenu.property("value");
+            var sRegion = rMenu.property("value");
+            console.log(sIndicator);
+            
+            data = data.filter(function(row) {
+                return row ['indicator'] == sIndicator;
+            })
+            
+            data = data.filter(function(row) {
+                return row ['region'] == sRegion;
+            })
+
+            color.domain(d3.keys(data[0]).filter(function(key) {
+                return key == 'country';
+            }));
+
+            // first we need to corerce the data into the right formats
+
+            data = data.map(function(d) {
+                return {
+                    indicator: d.indicator,
+                    country: d.country,
+                    year: parseDate(d.year),
+                    value: +d.value,
+                    region: d.region
+                };
+            });
+
+            // then we need to nest the data on country since we want to only draw one line per country
+            data = d3.nest().key(function(d) {
+                return d.country;
+            }).entries(data);
+
+            x.domain([d3.min(data, function(d) {
+                    return d3.min(d.values, function(d) {
+                        return d.year;
+                    });
+                }),
+                d3.max(data, function(d) {
+                    return d3.max(d.values, function(d) {
+                        return d.year;
+                    });
+                })
+            ]);
+            y.domain([-3, 3]);
+
+            
+
+            svg.append("g")
+                .attr("class", "x axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(xAxis)
+            svg.append("g")
+                .attr("class", "y axis")
+                .call(yAxis);
+
+            var countries = svg.selectAll(".country")
+                .data(data, function(d) {
+                    return d.key;
+                })
+                .enter().append("g")
+                .attr("class", "country");
+
+            countries.append("path")
+                .attr("class", "lines")
+                .attr("d", function(d) {
+                    return line(d.values);
+                })
+                .attr('id', function(d) { return d.country; })
+                .style("stroke", function(d) {
+                    return color(d.key);
+                })
+                .on("mouseover", function(d) {		
+                    d3.select(this).style('stroke-width', '5px');
+                    div.transition()		
+                        .duration(200)		
+                        .style("opacity", .9);		
+                    div	.html([d.key])	
+                        .style("left", (d3.event.pageX) + "px")		
+                        .style("top", (d3.event.pageY - 28) + "px");	
+                    console.log([d]);
+                    })					
+                .on("mousemove", function(d) {
+                    div.style("top", (event.pageY - 10) + "px").style("left", (event.pageX + 10) + "px");
+                })
+                .on("mouseout", function(d) {		
+                    d3.select(this).style('stroke-width', '1.5px');
+                    div.transition()		
+                        .duration(500)		
+                        .style("opacity", 0);	
+                    });
+                
+            // // Hover line. 
+            // var hoverLineGroup = svg.append("g")
+            //     .attr("class", "hover-line");
+            // var hoverLine = hoverLineGroup
+            //     .append("line")
+            //     .attr("x1", 10).attr("x2", 10)
+            //     .attr("y1", 0).attr("y2", height);
+            // // Hide hover line by default.
+            // hoverLine.style("opacity", 0);
+        
+            // // Add mouseover events.
+            // svg.on("mouseover", function() {
+            //     // console.log('mouseover')
+            // }).on("mousemove", function() {
+            //     // console.log('mousemove', d3.mouse(this));
+            //     var x = d3.mouse(this)[0];
+            //     hoverLine.attr("x1", x).attr("x2", x).style("opacity", 1);
+            // }).on("mouseout", function() {
+            //     // console.log('mouseout');
+            //     hoverLine.style("opacity", 1e-6);
+            // });
+
+
+        });}
+        
+        
+        
+    </script>
+</body>
+
+</html>

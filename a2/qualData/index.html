@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <!--<script src="libraries/p5.sound.js" type="text/javascript"></script>-->
+    <script src="libraries/rita-full.min.js" type="text/javascript"></script>
+
+
+    <script src="sketch.js" type="text/javascript"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif" rel="stylesheet">
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      
+      canvas {
+        vertical-align: top;
+      }
+      
+      span {
+        font-family: "Noto Serif";
+      }
+      
+      button{
+        font-family: "Noto Sans";
+        color: white;
+        border: 1px solid white;
+        background: none;
+      }
+      
+      button:hover{
+        color: #777777;
+        background: white;
+      }
+      button:focus{
+        color: #777777;
+        background: white;
+        
+      }
+      
+      h1 {
+        font-family: "Noto Serif";
+        margin-top: 6px;
+        font-size: 1em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        color: white;
+        font-weight: 400;
+      }
+      
+      h2 {
+        font-family: "Noto Sans";
+        color: #cdcdcd;
+        margin-top: 2px;
+        font-size: .5em;
+      }
+      
+      h3 {
+        font-family: "Noto Sans";
+        color: #cdcdcd;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-top: 3px;
+        font-size: .75em;
+      }
+      div {
+        text-align: center;
+        background-color: #fafafa;
+        padding-bottom: 5px;
+        padding-right: 5px;
+        padding-top:2px;
+      }
+      #lFree {
+        font-family: "Noto Sans";
+        font-size: .5em;
+        font-weight: 700;
+        color: rgba(66,173,73,.5);
+        padding-left: .5em;
+        padding-right: .5em;
+      }
+      #lNFree {
+        font-family: "Noto Sans";
+        font-size: .5em;
+        font-weight: 700;
+        color: rgba(255,0,0,.5);
+        padding-left: .5em;
+        padding-right: .5em;
+      }
+      #lPFree {
+        font-family: "Noto Sans";
+        font-size: .5em;
+        font-weight: 700;
+        color: rgba(19,116,147,.5);
+        padding-left: .5em;
+        padding-right: 2em;
+      }
+      #adj {
+        font-family: "Noto Serif";
+        font-size: .5em;
+        font-weight: 400;
+        color: #555555;
+        margin-left: 1em;
+        margin-right: .5em;
+        background: rgba(30,144,255,.35);
+      }
+      #prop {
+        font-family: "Noto Serif";
+        font-size: .5em;
+        font-weight: 400;
+        color: #555555;
+        margin-left: 1em;
+        margin-right: .5em;
+        background: rgba(255,165,0,.35);
+      }
+      #verb {
+        font-family: "Noto Serif";
+        font-size: .5em;
+        font-weight: 400;
+        color: #555555;
+        margin-left: 1em;
+        margin-right: .5em;
+        background: rgba(255,255,0,.35);
+      }
+      #fw {
+        font-family: "Noto Serif";
+        font-size: .5em;
+        font-weight: 400;
+        color: #555555;
+        margin-left: 1em;
+        margin-right: .5em;
+        background: rgba(34,139,34,.35);
+      }
+      #uiCountry{
+        font-family: "Noto Serif";
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-size: .75em;
+        color: #999999;
+        -webkit-transform: translate(-50%,0);
+      }
+      #idNameSpan {
+        font-family: "Noto Sans";
+        color: white;
+        font-size: 12px;
+        visibility: hidden;
+        cursor: default;
+      }
+      #idStatusSpan {
+        font-family: "Noto Sans";
+        text-transform: uppercase;
+        -webkit-transform: translate(-50%,-50%);
+        white-space: nowrap;
+        cursor: default;
+      }
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
