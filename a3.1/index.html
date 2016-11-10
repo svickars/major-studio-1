@@ -29,7 +29,7 @@
             stroke: #000;
             stroke-linejoin: round;
             stroke: #999;
-            stroke-dasharray: 2,2;
+            stroke-dasharray: 2, 2;
             stroke-linejoin: round;
         }
         
@@ -76,7 +76,7 @@
             display: inline;
             padding: 6px;
             font: 13px sans-serif;
-            background-color: rgba(0,0,0,0.8);
+            background-color: rgba(0, 0, 0, 0.8);
             border: 0px;
             border-radius: 2px;
             pointer-events: none;
@@ -87,11 +87,39 @@
             width: 960px;
             margin: 0 auto;
         }
+        
+        .filter {
+            font-family: "Roboto", sans-serif;
+            font-size: 12px;
+            position: absolute;
+            top: 35px;
+            width: 850px;
+            margin: 0 auto;
+            text-align: right;
+        }
+        
+        #indicator {
+            background: none;
+            border: none;
+            border-radius: none;
+            width: 226px;
+            font-size: 22px;
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
-    <div class="svg"></div>
+    <div class="svg">
+        <div class="filter">
+            Colour by:
+            <select id="indicator">
+                <option value="Democratic Index">Democratic Score</option>
+                <option value="Level of Freedom">Level of Freedom</option>
+            </select>
+        </div>
+
+    </div>
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://d3js.org/queue.v1.min.js"></script>
     <script src="https://d3js.org/topojson.v1.min.js"></script>
@@ -102,6 +130,7 @@
 
         var width = 960,
             height = 1000;
+            
 
         var svg = d3.select("div.svg").append("svg")
             .attr("width", width)
@@ -132,7 +161,7 @@
 
         var numFormat = d3.format(",d");
 
-
+        var map;
 
 
         var toGreyExcept = function(t) {
@@ -217,7 +246,7 @@
             g.call(xAxis).append("text")
                 .attr("class", "caption-2")
                 .attr("y", -10)
-                .text("[Insert Description]");
+                .text("How is democracy spread out across the African continent and how do levels of democracy translate to a country's status as free or not free?");
             g.call(xAxis).append("text")
                 .attr("class", "axisLabel")
                 .attr("y", 7)
@@ -228,7 +257,7 @@
                 .attr("y", 7)
                 .attr("x", 602)
                 .text("More Democratic");
-            
+
 
             var formatNumber = d3.format(",.0f");
 
@@ -250,47 +279,47 @@
             var path = d3.geo.path()
                 .projection(projection);
 
-            function createStuff () {
+            function createStuff() {
 
-            d3.selectAll(".subunit").remove();
+                d3.selectAll(".subunit").remove();
 
-            var map = svg.append("g")
-                .attr("class", "map");
+                map = svg.append("g")
+                    .attr("class", "map");
 
-            var countries = map.selectAll(".subunit")
-                .data(topojson.feature(data, data.objects.collection).features)
-                //.data(topojson.feature(uk, uk.objects.subunits).features)
-                .enter().append("path")
-                .attr("class", function(d) {
-                    return "subunit " + d.properties.subunit;
-                })
-                .attr("d", path)
-                .style("stroke", "#dddddd")
-                .style("fill", function(d, i) {
-                    return colorScale(d.properties.demI);
+                var countries = map.selectAll(".subunit")
+                    .data(topojson.feature(data, data.objects.collection).features)
+                    //.data(topojson.feature(uk, uk.objects.subunits).features)
+                    .enter().append("path")
+                    .attr("class", function(d) {
+                        return "subunit " + d.properties.subunit;
+                    })
+                    .attr("d", path)
+                    .style("stroke", "#dddddd")
+                    .style("fill", function(d, i) {
+                        return colorScale(d.properties.demI);
+                    });
+
+                // countries.append("title")
+                //         .text(function(d, i) { return d.properties.subunit; });   
+
+                countries.on("mouseover", function(d, i) {
+                    //console.log(this)
+                    tooltip.show("<b>" + d.properties.subunit + "</b>" + "<br>" + "Population: " + numFormat(d.properties.pop_est) + "<br>" + "Democratic? " + d.properties.demS);
+                    toGreyExcept(this);
+                    // console.log(this);
+                    // console.log(d.properties.demI);
                 });
 
-            // countries.append("title")
-            //         .text(function(d, i) { return d.properties.subunit; });   
 
-            countries.on("mouseover", function(d, i) {
-                //console.log(this)
-                tooltip.show("<b>" + d.properties.subunit + "</b>" + "<br>" + "Population: " + numFormat(d.properties.pop_est) + "<br>" + "Democratic? " + d.properties.demS);
-                toGreyExcept(this);
-                // console.log(this);
-                // console.log(d.properties.demI);
-            });
+                countries.on("mousemove", function(d, i) {
+                        tooltip.move();
+                    })
+                    .on("mouseout", function(d, i) {
+                        createStuff();
+                        tooltip.hide();
+                    });
 
-
-            countries.on("mousemove", function(d, i) {
-                    tooltip.move();
-                })
-                .on("mouseout", function(d, i) {
-                    createStuff();
-                    tooltip.hide();
-                });
-
-            }  // createStuff end  
+            } // createStuff end  
             createStuff();
 
             map.append("path")
