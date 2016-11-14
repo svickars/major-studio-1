@@ -42,8 +42,6 @@ var visualizationWidth = document.getElementById("visualization").offsetWidth;
 var instructions = d3.select("#visualization").append("div").attr("id", "instructions");
 instructions.html("Use the menus above to view one of six governance idicators across a region in Africa<br>Hover over a country's line to see their score and click on a line to see <strong>all six indicators</strong> for that reason");
 
-
-
 // Add dropdown values
 
 var regions = new Set(),
@@ -181,6 +179,16 @@ var line3 = d3.line()
 
 drawVisual(true);
 
+function getTextWidth(text, font) {
+    // if given, use cached canvas for better performance
+    // else, create new canvas
+    var canvas = getTextWidth.canvas || (getTextWidth.canvas = document.createElement("canvas"));
+    var context = canvas.getContext("2d");
+    context.font = font;
+    var metrics = context.measureText(text);
+    return metrics.width;
+};
+
 
 
 // -----------------
@@ -202,6 +210,10 @@ function drawVisual(refreshLine) {
 	var data_subset = data.filter(function(d) {
 		return (d.region == region) && d.indicator == indicator;
 	});
+	var iSelectWidth = getTextWidth(indicator, "22px arial");
+	d3.select("#indicator").style("width", iSelectWidth+16+"px");
+	var rSelectWidth = getTextWidth(region, "22px arial");
+	d3.select("#region").style("width", rSelectWidth+16+"px");
 	//Update title
 	d3.select(".graph-title").html(indicator + " for " + region + " Region")
 		// Nest the entries by country
@@ -643,7 +655,6 @@ function drawVisual(refreshLine) {
 					aData = d3.nest().key(function(d) {
 						return d.area;
 					}).entries(aData);
-					console.log(aData[1].key);
 					
 					// Add the valueline path.
 					for (var i = 0; i < aData.length; i++) {

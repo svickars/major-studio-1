@@ -135,10 +135,14 @@ body {
   background: none;
   border: none;
   border-radius: none;
-  width: 226px;
+  /*width: 226px;*/
   font-size: 22px;
   text-decoration: underline;
   cursor:pointer;
+  background: url(https://raw.githubusercontent.com/svickars/major-studio-1/master/a3/select-down.png) no-repeat right;
+  background-size: 16px;
+  background-position-y: 65%;
+  margin-right: 5px;
   -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
  -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
 }
@@ -147,13 +151,29 @@ body {
   background: none;
   border: none;
   border-radius: none;
-  width: 96px;
+  /*width: 96px;*/
   font-size: 22px;
   text-decoration: underline;
   cursor:pointer;
+  background: url(https://raw.githubusercontent.com/svickars/major-studio-1/master/a3/select-down.png) no-repeat right;
+  background-size: 16px;
+  background-position-y: 65%;
+  margin-right: 5px;
   -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
  -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
 }
+
+select + i.fa {
+  float: right;
+  /*margin-top: -30px;*/
+  margin-right: 5px;
+  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
+  pointer-events: none;
+  /* everything after this is just to cover up the original arrow */
+  /* (for browsers that don't support the syntax used above) */
+  padding-right: 5px;
+}
+
 .graph-title {
 	border-bottom: 0.1px solid black;
 	border-top-left-radius: 10px;
