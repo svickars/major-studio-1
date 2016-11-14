@@ -29,20 +29,6 @@ body {
   margin: auto;
 }
 
-.methodology  h2 {
-  margin-top: 0px;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  opacity: .5;
-}
-
-.methodology  h6 {
-  margin-top: 0px;
-  font-size: 9px;
-  font-weight: 400;
-  opacity: .75;
-}
 
 .gi {
   width: 49%;
@@ -68,6 +54,20 @@ body {
    margin-top: -15px;
   opacity: .7;
   font-size: 7px;
+}
+.methodology  h2 {
+  margin-top: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: .5;
+}
+
+.methodology  h6 {
+  margin-top: 0px;
+  font-size: 9px;
+  font-weight: 400;
+  opacity: .75;
 }
 
 .footnote a:hover {
@@ -98,6 +98,22 @@ body {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: 12px;
+  top: 65px;
+  left: 50%;
+  transform: translate(-55%,0);
+}
+
+#instructions {
+  position: absolute;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: italic;
+  opacity: .5;
+  top: 775px;
+  left: 50%;
+  transform: translate(-55%,0);
 }
 
 #lbSubtitle {
@@ -122,6 +138,9 @@ body {
   width: 226px;
   font-size: 22px;
   text-decoration: underline;
+  cursor:pointer;
+  -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+ -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
 }
 
 #region {
@@ -131,6 +150,9 @@ body {
   width: 96px;
   font-size: 22px;
   text-decoration: underline;
+  cursor:pointer;
+  -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+ -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
 }
 .graph-title {
 	border-bottom: 0.1px solid black;
@@ -314,7 +336,6 @@ select{
   font-size: 14px;
   border-radius: 8px;
   padding: 2px;
-  
 }
 select:focus {
   outline: none;
@@ -328,13 +349,244 @@ select:focus {
 
 }
 
-.xaxis text {
-  
-}
-
-.y-label, .label{
+.label{
+  position: absolute;
+  display: inline-block;
   font-family: "Roboto", sans-serif;
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  opacity: .85;
+}
+
+.y-label{
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#yLabel1, #yLabel2{
+  position: absolute;
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: .85;
+}
+  
+#yLabel1 {  
+  top: 300px;
+}
+
+#yLabel2 {  
+  top: 635px;
+}
+
+.info-icon {
+  color: red;
+  opacity: 1.0 !important;
+}
+
+.info-icon a:hover {
+  color: black;
+  cursor:pointer;
+}
+
+.infopop {
+  position: absolute;
+  display: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: rgba(0,0,0,.85);
+  padding: 10px;
+  padding-bottom: 0;
+  border-radius:5px;
+  width: 20%;
+  height: auto;
+}
+
+.close {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  font-size: 12px;
+  cursor:pointer;
+}
+
+.infopop:after {
+	right: 100%;
+	top: 30px;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-right-color: rgba(0,0,0,.85);
+	border-width: 10px;
+	margin-top: -10px;
+}
+
+
+.infopop  h2 {
+  margin-top: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /*opacity: .5;*/
+}
+
+.infopop  h6 {
+  margin-top: 0px;
+  font-size: 9px;
+  font-weight: 400;
+  text-align: left;
+  /*opacity: .75;*/
+}
+
+.infopop a {
+  color: white;
+  opacity: .6;
+  text-decoration: none;
+}
+
+.infopop a:hover {
+  text-decoration: underline;
+}
+
+.infopop-top {
+  position: absolute;
+  display: none;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background: rgba(0,0,0,1);
+  padding: 10px;
+  padding-bottom: 0;
+  border-radius:5px;
+  width: 20%;
+  height: auto;
+}
+
+
+.close {
+  position: absolute;
+  z-index: 999;
+  right: 5px;
+  top: 2px;
+  font-size: 12px;
+  cursor:pointer;
+}
+
+.infopop-top:after {
+	right: 50%;
+	top: 0;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(0, 0, 0, 0);
+	border-bottom-color: rgba(0,0,0,1);
+	border-width: 10px;
+	margin-top: -20px;
+}
+
+
+.infopop-top  h2 {
+  margin-top: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /*opacity: .5;*/
+}
+
+.infopop-top p {
+  text-align: left;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.infopop-top  h6 {
+  margin-top: 0px;
+  font-size: 9px;
+  font-weight: 400;
+  text-align: left;
+  /*opacity: .75;*/
+}
+
+.infopop-top a {
+  color: white;
+  opacity: .6;
+  text-decoration: none;
+}
+
+.infopop-top a:hover {
+  text-decoration: underline;
+}
+
+.footnote {
+  margin-top: -5px;
+  opacity: .7;
+  font-size: 7px;
+  text-align: left;
+  padding-bottom: 7px;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.footnote a {
+  color: white;
+  text-decoration: none;
+  opacity: 1.0;
+  font-size: 7px;
+}
+
+.footnote a:hover {
+  text-decoration: underline;
+}
+
+#hLabel1 {
+  transform: translate(-58%,0);
+  left: 50%;
+  top: 120px;
+}
+
+#hLabel2 {
+  transform: translate(-60%,0);
+  left: 50%;
+  top: 545px;
+}
+
+.aLine {
+  z-index: -999;
+}
+
+#compon, #compoff {
+  font-size: 8px;
+  opacity: .85;
+  padding: 2px;
+  border: 1px solid red;
+  vertical-align: middle;
+  border-radius: 3px;
+  cursor:pointer;
+}
+
+
+#compoff {
+  color: red;
+  display: inline-block;
+  margin-top: -2px;
+}
+
+#compon {
+  color: white;
+  background: red;
+  display: none;
+  margin-top: -2px;
 }

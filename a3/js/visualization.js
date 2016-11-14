@@ -1,6 +1,6 @@
 var margin = {
 		top: 20,
-		right: 10,
+		right: 100,
 		bottom: 100,
 		left: 60
 	},
@@ -15,6 +15,7 @@ width2 = 1048 - margin.left - margin.right,
 	height2 = 500 - margin.top - margin.bottom;
 
 var svg = d3.select("#visualization").append("svg")
+	.attr("id", "svg")
 	.attr("width", width + margin.left + margin.right)
 	.attr("height", 1200)
 	.append("g")
@@ -25,20 +26,23 @@ var color = d3.scaleOrdinal(d3.schemeCategory20);
 var tooltip = d3.select("#visualization").append("div").attr("class", "tooltip");
 var tooltip2 = d3.select("#visualization").append("div").attr("class", "tooltip tooltip-2");
 var tooltip3 = d3.select("#visualization").append("div").attr("class", "tooltip tooltip-3");
+var aTooltip = d3.select("#visualization").append("div").attr("class", "tooltip aTooltip");
 var lightbox = d3.select("#visualization").append("div").attr("class", "lightbox");
 var lbIn = d3.select("#visualization").append("div").attr("class", "lbIn").attr("id", "lbIn");
-var subtitle = d3.select("#visualization").append("div").attr("id", "subtitle");
 var bisectDate = d3.bisector(function(d) {
 	return new Date(d.year, 0, 1);
 }).left;
 var dataNest, data2Nest;
 var country;
 
-subtitle.html("<span id='stI'>Governance Indicator Scores</span> vs <span id='stD'>Democracy Levels</span> in Sub-Saharan Africa<div class='subtitle-instructions'>Use the menus above to select a region in Africa and and a governance indicator</br>Click on a country's line below to see <strong>all six</strong> indicators for that country.</div>");
-var subtitleWidth = document.getElementById("subtitle").offsetWidth;
+var subtitle = d3.select("#visualization").append("div").attr("id", "subtitle");
+subtitle.html("<span id='stI'>Governance Indicator Scores</span> vs <span id='stD'>Democracy Levels</span> in Sub-Saharan Africa");
 var visualizationWidth = document.getElementById("visualization").offsetWidth;
-subtitle.style("left", (visualizationWidth/2)-(subtitleWidth/2)+"px");
-subtitle.style("top", "65px");
+
+var instructions = d3.select("#visualization").append("div").attr("id", "instructions");
+instructions.html("Use the menus above to view one of six governance idicators across a region in Africa<br>Hover over a country's line to see their score and click on a line to see <strong>all six indicators</strong> for that reason");
+
+
 
 // Add dropdown values
 
@@ -49,18 +53,9 @@ data.forEach(function(record) {
 	indicators.add(record.indicator);
 })
 
-var methodology = d3.select(".methodology");
-var methodologyWidth = document.getElementById("methodology").offsetWidth;
-methodology.style("height", "auto")
-			.style("left", "50%")
-			.style("margin-left", "-524px")
-			.style("top", 800+"px");
-
 updateSelectOptions("region", Array.from(regions));
 updateSelectOptions("indicator", Array.from(indicators));
 
-var giI = d3.select(".gi").append("div");
-giI.attr("class", "gi-i");
 
 // -------------------
 // Parse the date
@@ -74,7 +69,8 @@ var y2 = d3.scaleLinear().range([height+250, height+50]);
 
 // Add axes
 var x_axis = svg.append("g")
-	.attr("transform", "translate(0," + (height) + ")");
+	.attr("transform", "translate(0," + (height) + ")")
+	.attr("id", "xaxis");
 var x_axis2 = svg.append("g")
 	.attr("transform", "translate(0," + (height+250) + ")");
 var x_axis3 = svg.append("g")
@@ -83,6 +79,40 @@ var y_axis = svg.append("g");
 var y_axis2 = svg.append("g")
 var y_axis3 = svg.append("g")
 
+var xaxiswidth = document.getElementById("xaxis").offsetWidth;
+
+var yLabel1 = d3.select("#visualization").append("div").attr("id", "yLabel1");
+yLabel1.html("Estimated Score <span class='info-icon' id='icon1'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
+yLabel1.style("left", (visualizationWidth/2)-(1048/2)-40+"px");
+
+var infopop1 = d3.select("#visualization").append("div").attr("class", "infopop");
+infopop1.html("<h2>Estimated Governance Indicator Scores</h2><h6>Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used above are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc-sources'>data sources</a>. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model. </h6>");
+infopop1.style("left", (visualizationWidth/2)-(1048/2)+40+"px");
+infopop1.style("top", "216px");
+
+d3.select("#icon1").on("mouseover", function(d) {
+	infopop1.style("display", "inline-block");
+});
+
+d3.select("#icon1").on("mouseout", function(d) {
+	infopop1.style("display", "none");
+});
+var yLabel2 = d3.select("#visualization").append("div").attr("id", "yLabel2");
+yLabel2.html("Democratic Score <span class='info-icon' id='icon2'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
+yLabel2.style("left", (visualizationWidth/2)-(1048/2)-45+"px");
+
+var infopop2 = d3.select("#visualization").append("div").attr("class", "infopop");
+infopop2.html("<h2>Democratic Index Scores</h2><h6>The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the <a href='http://www.eiu.com/public/topical_report.aspx?campaignid=DemocracyIndex2015'> Economist Intelligence Unit's website</a> for more details.</a></h6>");
+infopop2.style("left", (visualizationWidth/2)-(1048/2)+40+"px");
+infopop2.style("top", "545px");
+
+d3.select("#icon2").on("mouseover", function(d) {
+	infopop2.style("display", "inline-block");
+});
+
+d3.select("#icon2").on("mouseout", function(d) {
+	infopop2.style("display", "none");
+});
 
 svg.append("line")
 	.attr("class", "baseLine")
@@ -139,6 +169,15 @@ var line = d3.line()
 		return y(d.value);
 	});
 
+var line3 = d3.line()
+	.curve(d3.curveMonotoneX)
+	.x(function(d) {
+		return x(new Date(d.year, 0, 1));
+	})
+	.y(function(d) {
+		return y2(d.value);
+	});
+
 
 drawVisual(true);
 
@@ -153,33 +192,8 @@ function drawVisual(refreshLine) {
 	d3.selectAll(".label").remove();
 	//remove path if exist
 	d3.selectAll("path").remove();
-	
-	
-	if (getSelectedIndexValue("indicator") === "Control of Corruption") {
-	giI.html("<h2 style='text-decoration: underline;'>Control of Corruption</h2> <h6>This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and gran forms of corruption, as well as 'capture' of the state by eleites and private interests.</h6><div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-}else{
-	if (getSelectedIndexValue("indicator") === "Government Effectiveness") {
-	giI.html("<h2 style='text-decoration: underline;'>Government Effectiveness</h2> <h6>This indicator captures perceptions of the quality of public services, the quality of the civil service, and the degree of its independence from political pressures, the quality of policy formulation and impementation, and the credibility of the government's commutment to such policies.</h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-	}else{
-		if (getSelectedIndexValue("indicator") === "Political Stability") {
-		giI.html("<h2 style='text-decoration: underline;'>Political Stability and Absence of Violence/Terrorism</h2> <h6>This indicator measures perceptions of the likelihood of political instability and/or politcally-motivated violence, including terrorism.</h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-		}else{
-			if (getSelectedIndexValue("indicator") === "Regulatory Quality") {
-			giI.html("<h2 style='text-decoration: underline;'>Regulatory Quality</h2> <h6>This indicator captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permid and promote private sector development. </h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-			}else{
-				if (getSelectedIndexValue("indicator") === "Rule of Law") {
-				giI.html("<h2 style='text-decoration: underline;'>Rule of law</h2> <h6>This indicator captures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence. </h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-				}else{
-					if (getSelectedIndexValue("indicator") === "Voice and Accountability") {
-					giI.html("<h2 style='text-decoration: underline;'>Voice and Accountability</h2> <h6>This indicator captures perceptions of the extend to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media. </h6> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-					}
-				}
-			}	
-		}
-	}
-}
-	
-	
+	d3.selectAll("#chart1labels").remove();
+	d3.selectAll("#chart4labels").remove();
 	
 	//Get selected region and indicator
 	var region = getSelectedIndexValue("region");
@@ -208,9 +222,24 @@ function drawVisual(refreshLine) {
 	// Loop through each symbol / key
 	dataNest.forEach(function(dataPath, index) {
 		dataPath.key = formatCountry(dataPath.key);
-
+		
 		countryColor[dataPath.key] = color(index);
 		maxIndex = index;
+		var chart1Labels = svg.append("text")
+							.attr("id", "chart1labels")
+							.attr("class", "labelc labelc-" + dataPath.key + " labelc-" + index)
+							.attr("x", 895)
+							.attr("y", y(parseFloat(dataPath.values[8].value)))
+							.attr("dy", ".35em")
+							.style("fill", function(d, i) {
+									return color(index)
+							})
+							.style("font-size", 8)
+							.style("font-family", "'Roboto', sans-serif")
+							.style("opacity", ".3")
+							.style("letter-spacing", "0")
+							.style("text-transform", "uppercase")
+							.text(dataPath.key);
 		// add the valueline path
 		var path = svg.append("path")
 			.datum(dataPath.values)
@@ -278,7 +307,7 @@ function drawVisual(refreshLine) {
 					.attr("text-anchor", "middle")
 					.attr("x", width / 2)
 					.attr("y", 19)
-					.text(indicator + " Scores for " + country + " 2006-2014")
+					.text("Governance Indicator Scores for " + country + " 2006-2014")
 					.style("opacity", ".6");
 				
 				chart2.append("text")
@@ -328,7 +357,7 @@ function drawVisual(refreshLine) {
 					// Add the valueline path.
 					for (var i = 0; i < data.length; i++) {
 						var chart2Labels = chart2.append("text")
-							.attr("x", 985)
+							.attr("x", 895)
 							.attr("y", y(parseFloat(data[i].values[8].value)))
 							.attr("dy", ".35em")
 							.style("fill", strokeRGB + "," + (1 - i / 10) + ")")
@@ -484,9 +513,9 @@ function drawVisual(refreshLine) {
 			path
 				.attr("stroke-dasharray", totalLength + " " + totalLength)
 				.attr("stroke-dashoffset", totalLength)
-				.transition()
-				.duration(2000)
-				.ease(d3.easeLinear)
+				// .transition()
+				// .duration(2000)
+				// .ease(d3.easeLinear)
 				.attr("stroke-dashoffset", 0);
 		}
 	});
@@ -513,8 +542,21 @@ function drawVisual(refreshLine) {
 	// Loop through each symbol / key
 	data2Nest.forEach(function(dataPath, index) {
 		dataPath.key = formatCountry(dataPath.key);
-
 		maxIndex2 = index;
+		var chart2Labels = svg.append("text")
+							.attr("id", "chart1labels")
+							.attr("class", "labelc democratic-labelc-" + dataPath.key + " democratic-labelc-" + index)
+							.attr("x", 895)
+							.attr("y", y2(parseFloat(dataPath.values[6].value)))
+							.attr("dy", ".35em")
+							.style("fill", function(d, i) {
+									return color(index)
+							})
+							.style("font-size", 8)
+							.style("font-family", "'Roboto', sans-serif")
+							.style("opacity", ".3")
+							.style("text-transform", "uppercase")
+							.text(dataPath.key);
 		// Add the valueline path.
 		var path2 = svg.append("path")
 			.datum(dataPath.values)
@@ -551,7 +593,6 @@ function drawVisual(refreshLine) {
 				mousedown();
 			})
 
-
 		for (var i = 0; i < data2Nest.length; i++) {
 			for (var h = 0; h < data2Nest[i].values.length; h++) {
 				var circles = svg.append("circle")
@@ -584,13 +625,51 @@ function drawVisual(refreshLine) {
 			path2
 				.attr("stroke-dasharray", totalLength + " " + totalLength)
 				.attr("stroke-dashoffset", totalLength)
-				.transition()
-				.duration(2000)
-				.ease(d3.easeLinear)
+				// .transition()
+				// .duration(2000)
+				// .ease(d3.easeLinear)
 				.attr("stroke-dashoffset", 0);
 		}
 	});
 
+	d3.csv("democracy-a1.csv", function(error, aData) {
+					// aData = aData.filter(function(row) {
+					// 	return row['country'] == country;
+					// })
+
+					// data.forEach(function(d) {
+					// 	d.measure = d.measure;
+					// });
+					aData = d3.nest().key(function(d) {
+						return d.area;
+					}).entries(aData);
+					console.log(aData[1].key);
+					
+					// Add the valueline path.
+					for (var i = 0; i < aData.length; i++) {
+						var chart4Labels = svg.append("text")
+							.attr("id", "chart4labels")
+							.attr("class", "labela democratic-labela-" + aData.key)
+							.attr("x", 895)
+							.attr("y", y2(parseFloat(aData[i].values[6].value)))
+							.attr("dy", ".35em")
+							.style("fill", "black")
+							.style("font-size", 8)
+							.style("font-family", "'Roboto', sans-serif")
+							.style("opacity", ".3")
+							.style("text-transform", "uppercase")
+							.style("visibility", "hidden")
+							.text(aData[i].key);
+						var path3 = svg.append("path")
+							.datum(aData[i].values)
+							.attr("id", "path3")
+							.attr("class", "aline aline-" + i)
+							.style("stroke", "black")
+							.style("opacity", ".3")
+							.style("visibility", "hidden")
+							.attr("d", line3)
+					}
+				})
 
 
 	x_axis.attr("class", "xaxis axis").call(d3.axisBottom(x)
@@ -617,32 +696,87 @@ function drawVisual(refreshLine) {
 	d3.selectAll(".yaxis2 text")
 		.attr("transform", "translate(-5,0)");
 	
-    svg.append("text")
-    	.attr("class", "y-label")
-        .attr("text-anchor", "middle")
-        .attr("transform", "translate("+ -40 +","+(height/2)+")rotate(-90)")
-        .text("Estimated Score")
-        .style("opacity", .6);
-    svg.append("text")
-    	.attr("class", "y-label")
-        .attr("text-anchor", "middle") 
-        .attr("transform", "translate("+ -40 +","+(height+150)+")rotate(-90)")
-        .text("Democratic Score")
-        .style("opacity", .6);
-    svg.append("text")
-    	.attr("class", "label")
-    	.attr("text-anchor", "middle")
-    	.attr("x", width/2)
-    	.attr("y", 19)
-    	.style("opacity", .6)
-    	.text(indicator+", 2006-2014");
-    svg.append("text")
-    	.attr("class", "label")
-    	.attr("text-anchor", "middle")
-    	.attr("x", width/2)
-    	.attr("y", height+64)
-    	.style("opacity", .6)
-    	.text("Democracy Index, 2006-2014");
+	
+	var hLabel1 = d3.select("#visualization").append("div").attr("class", "label").attr("id", "hLabel1");
+		hLabel1.html(indicator+", 2006-2014 <span class='info-icon' id='icon3'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
+
+		// var infopop3 = d3.select("#visualization").append("div").attr("class", "infopop-top").attr("id", "infopop-top");
+		// infopop3.html("<div class='close'><i class='fa fa-times' aria-hidden='true'></i></div><h2>Estimated Governance Indicator Scores</h2><h6>Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used above are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc-sources'>data sources</a>. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model. </h6>");
+
+
+
+
+	var infopop3 = d3.select("#icon3").append("div")
+		.attr("class", "infopop-top")
+		.style("width", "300px")
+		.style("top", "19px")
+		.style("right", "-164px");
+
+		if (getSelectedIndexValue("indicator") === "Control of Corruption") {
+			infopop3.html("<h2>Control of Corruption</h2> <p>This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and gran forms of corruption, as well as 'capture' of the state by eleites and private interests.</p><div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+		}else{
+			if (getSelectedIndexValue("indicator") === "Government Effectiveness") {
+				infopop3.html("<h2>Government Effectiveness</h2> <p>This indicator captures perceptions of the quality of public services, the quality of the civil service, and the degree of its independence from political pressures, the quality of policy formulation and impementation, and the credibility of the government's commutment to such policies.</p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+			}else {
+				if (getSelectedIndexValue("indicator") === "Political Stability") {
+					infopop3.html("<h2>Political Stability and Absence of Violence/Terrorism</h2> <p>This indicator measures perceptions of the likelihood of political instability and/or politcally-motivated violence, including terrorism.</p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+				}else {
+					if (getSelectedIndexValue("indicator") === "Regulatory Quality") {
+						infopop3.html("<h2>Regulatory Quality</h2> <p>This indicator captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permid and promote private sector development. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+					}else {
+						if (getSelectedIndexValue("indicator") === "Rule of Law") {
+							infopop3.html("<h2>Rule of law</h2> <p>This indicator captures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+						}else {
+							if (getSelectedIndexValue("indicator") === "Voice and Accountability") {
+								infopop3.html("<h2>Voice and Accountability</h2> <p>This indicator captures perceptions of the extend to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+
+	d3.select("#icon3").on("mouseover", function(d) {
+		infopop3.style("display", "inline-block");
+	});
+	d3.select("#icon3").on("mouseout", function(d) {
+		infopop3.style("display", "none");
+	});
+	
+	
+	
+	
+	
+		
+	var hLabel2 = d3.select("#visualization").append("div").attr("class", "label").attr("id", "hLabel2");
+		hLabel2.html("Democracy Index, 2006-2014 <span id='compoff'>Show Comparisons</span><span id='compon'>Hide Comparisons</span> <span class='info-icon' id='icon4'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
+
+	var infopop4 = d3.select("#icon4").append("div")
+		.attr("class", "infopop-top")
+		.style("width", "300px")
+		.style("top", "19px")
+		.style("right", "-164px")
+		.html("<p>Clicking the Show Comparisons button displays the average democracy score for the entire world from 2006 to 2014 (5.62-5.55), as well as averages for each of seven regions: Asia & Australasia (5.44-5.74), Eastern Europe (5.76-5.55), Latin America (6.37-6.37), Middle East & North Africa (3.53-3.58), North America (8.64-8.56), Western Europe (8.60-8.42), and Sub-Saharan Africa (4.24-4.38)");
+	d3.select("#icon4").on("mouseover", function(d) {
+		infopop4.style("display", "inline-block");
+	})
+	d3.select("#icon4").on("mouseout", function(d) {
+		infopop4.style("display", "none");
+	})
+	d3.select("#compoff").on("click", function (d) {
+		d3.select("#compoff").style("display", "none");
+		d3.select("#compon").style("display", "inline-block");
+		d3.selectAll("#path3").style("visibility", "visible");
+		d3.selectAll("#chart4labels").style("visibility", "visible");
+	});
+	d3.select("#compon").on("click", function (d) {
+		d3.select("#compon").style("display", "none");
+		d3.select("#compoff").style("display", "inline-block");
+		d3.selectAll("#path3").style("visibility", "hidden");
+		d3.selectAll("#chart4labels").style("visibility", "hidden");
+	});
 
 }
 
@@ -655,7 +789,7 @@ function mousemove(country, mousePosition, isdemocratic, color) {
 	hoverLine(country, mousePosition);
 	//Add tooltip 1
 	tooltip.style("display", "inline-block");
-	tooltip.style("left", d3.event.pageX + margin.right + "px");
+	tooltip.style("left", d3.event.pageX + 10 + "px");
 	tooltip.style("background-color", color);
 	tooltip.style("opacity", .85);
 	tooltip3.style("display", "inline-block");
@@ -699,7 +833,7 @@ function mousemove(country, mousePosition, isdemocratic, color) {
 			.style("visibility", "visible");
 		
 		tooltip2.style("display", "inline-block");
-		tooltip2.style("left", d3.event.pageX + margin.right + "px");
+		tooltip2.style("left", d3.event.pageX + 10 + "px");
 		tooltip2.style("background-color", color);
 		tooltip2.style("opacity", .85);
 		if (isdemocratic) {
@@ -721,8 +855,11 @@ function hoverLine(country, mousePosition) {
 	d3.select(".line").style("stroke-width", ".25px");
 	// d3.select(".line" + "-" + country).style("stroke-opacity", 0.8);
 	d3.select(".line" + "-" + country).style("stroke-width", "5px");
+	d3.select(".line" + "-" + country).style("z-index", "999");
+	d3.select(".labelc" + "-" + country).style("opacity", "1");
 	d3.select(".democratic-line" + "-" + country).style("stroke-width", "5px");
 	d3.select(".democratic-line" + "-" + country).style("opacity", 1);
+	d3.select(".democratic-labelc" + "-" + country).style("opacity", 1);
 	d3.selectAll(".circles2")
 			.style("visibility", "hidden");
 
@@ -755,6 +892,7 @@ function mousedown() {
 	tooltip2.style("display", "none");
 	tooltip3.style("display", "none");
 	d3.selectAll(".line").style("stroke-width", "1.5px");
+	d3.selectAll(".labelc").style("opacity", ".3");
 	d3.selectAll(".democratic-line").style("stroke-width", "1.5px");
 	d3.selectAll(".democratic-line").style("opacity", .65);
 	d3.selectAll(".vertical-line").remove();

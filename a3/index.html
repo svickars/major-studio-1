@@ -5,7 +5,7 @@
       <title>Governance Indicators in Africa</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
-      <script src="https://d3js.org/d3.v3.js"></script>
+      <script src="https://use.fontawesome.com/132433ada8.js"></script>
       <script src="https://d3js.org/d3.v4.min.js"></script>
    </head>
 
@@ -15,30 +15,16 @@
 	<div class="graph-div-filter ">
 		<div class="filter">
 		How does
-			<select id="indicator" onchange="drawVisual(false)"> </select>
+			<select id="indicator" onchange="drawVisual(false)"> </select><i class="fa fa-chevron-down"></i>
 		</div>
 		<div class="filter">
-		affect democracy in
-			<select id="region" onchange="drawVisual(true)"> </select>
+		impact democracy in
+			<select id="region" onchange="drawVisual(true)"> </select><i class="fa fa-chevron-down"></i>
 		Africa?
 		</div>
 	</div>
     <div class="graph-div">
-        <div id="visualization" class="visualization"></div> 
-        <div class="methodology" id="methodology">
-            <div class="gi">
-                <div class="gi-t">
-                    <h2>Governance Indicator Scores</h2>
-                    <h6>Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used above are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composity indicators based on over 30 unerlying <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc-sources'>data sources</a>. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model. </h6>
-                    
-                </div>
-                
-            </div>
-            <div class="di">
-                <h2>Democracy Index</h2>
-                <h6>The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the <a href='http://www.eiu.com/public/topical_report.aspx?campaignid=DemocracyIndex2015'> Economist Intelligence Unit's website</a> for more details.</a>
-            </div>
-        </div>
+        <div id="visualization" class="visualization"></div>
     </div>
 
 	  <script src = "js/data.js"></script>
