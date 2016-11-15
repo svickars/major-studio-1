@@ -459,15 +459,16 @@ function drawVisual(refreshLine) {
 					d3.select(".sOverview").on("mouseover", function(d) {
 						d3.select(".sOverview").style("height", "auto");
 						d3.select(".sOverview").style("min-height", "124px");
-					})
+					});
 					d3.select(".sOverview").on("mouseout", function(d) {
 						d3.select(".sOverview").style("height", "124px");
-					})
+					});
 					
 					var lbLabels = chart2.append("text")
 						.attr("x", "895")
 						.attr("y", y4(parseFloat(data[6].values[6].value))+2)
 						.text("Democracy Score: "+data[6].values[6].value)
+						.attr("class", "rightLabels")
 						.style("fill", color(index))
 						.style("font-size", 8)
 						.style("text-transform", "uppercase");
@@ -478,6 +479,7 @@ function drawVisual(refreshLine) {
 						.attr("x", "895")
 						.attr("y", y4(parseFloat(data[6].values[6].world))+2)
 						.text("World Average: " + data[6].values[6].world)
+						.attr("class", "rightLabels")
 						.style("fill", "black")
 						.style("font-size", 8)
 						.style("text-transform", "uppercase");
@@ -485,6 +487,7 @@ function drawVisual(refreshLine) {
 						.attr("x", "895")
 						.attr("y", y4(parseFloat(data[6].values[6].ssa))+2)
 						.text("SSA Average: " + data[6].values[6].ssa)
+						.attr("class", "rightLabels")
 						.style("fill", "grey")
 						.style("font-size", 8)
 						.style("text-transform", "uppercase");
@@ -522,6 +525,7 @@ function drawVisual(refreshLine) {
 							.attr("x", 895)
 							.attr("y", y(parseFloat(data[i].values[8].value)))
 							.attr("dy", ".35em")
+							.attr("class", "rightLabels")
 							.style("fill", strokeRGB + "," + (1 - i / 10) + ")")
 							.style("font-size", 8)
 							.style("text-transform", "uppercase")
