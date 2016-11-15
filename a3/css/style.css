@@ -12,7 +12,7 @@ body {
 	width:90%;
 	display: inline-block;
   height: 50px;
-  margin: 1rem;
+  margin-top: 1rem;
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
 }
@@ -132,46 +132,28 @@ body {
 }
 
 #indicator {
-  background: none;
-  border: none;
-  border-radius: none;
-  /*width: 226px;*/
+  border: 2px solid black;
+  border-radius: 5px;
   font-size: 22px;
-  text-decoration: underline;
   cursor:pointer;
   background: url(https://raw.githubusercontent.com/svickars/major-studio-1/master/a3/select-down.png) no-repeat right;
   background-size: 16px;
-  background-position-y: 65%;
+  /*background-position-y: 65%;*/
   margin-right: 5px;
   -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
  -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
 }
 
 #region {
-  background: none;
-  border: none;
-  border-radius: none;
-  /*width: 96px;*/
+  border: 2px solid black;
+  border-radius: 5px;
   font-size: 22px;
-  text-decoration: underline;
   cursor:pointer;
   background: url(https://raw.githubusercontent.com/svickars/major-studio-1/master/a3/select-down.png) no-repeat right;
   background-size: 16px;
-  background-position-y: 65%;
-  margin-right: 5px;
+  margin-right: 10px;
   -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
  -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
-}
-
-select + i.fa {
-  float: right;
-  /*margin-top: -30px;*/
-  margin-right: 5px;
-  /* this is so when you click on the chevron, your click actually goes on the dropdown menu */
-  pointer-events: none;
-  /* everything after this is just to cover up the original arrow */
-  /* (for browsers that don't support the syntax used above) */
-  padding-right: 5px;
 }
 
 .graph-title {
@@ -222,7 +204,7 @@ select + i.fa {
   position: fixed;
 	z-index: 997;
 	width: 100%;
-	height: 100%;
+	height: 200%;
 	text-align: center;
 	top: 0;
 	left: 0;
@@ -235,14 +217,14 @@ select + i.fa {
   display: none;
   position: fixed;
   z-index: 998;
-  width: 1200px;
-  height: 500px;
+  width: 1100px;
+  height: 750px;
   border-radius: 3px;
   background: white;
   left: 50%;
   margin-left: -575px;
-  top: 50%;
-  margin-top: -250px;
+  top: 10%;
+  /*margin-top: -250px;*/
   text-align: center;
 }
 
@@ -257,8 +239,7 @@ select + i.fa {
   position: absolute;           
   text-align: left;
   width: auto;                  
-  height: auto;                 
-            
+  height: auto;   
   font-size: 12px;
   font-family: "Roboto", sans-serif;        
   background: steelblue;
@@ -398,11 +379,11 @@ select:focus {
 }
   
 #yLabel1 {  
-  top: 300px;
+  top: 275px;
 }
 
 #yLabel2 {  
-  top: 635px;
+  top: 615px;
 }
 
 .info-icon {
@@ -574,13 +555,13 @@ select:focus {
 #hLabel1 {
   transform: translate(-58%,0);
   left: 50%;
-  top: 120px;
+  top: 105px;
 }
 
 #hLabel2 {
   transform: translate(-60%,0);
   left: 50%;
-  top: 545px;
+  top: 530px;
 }
 
 .aLine {
@@ -609,4 +590,121 @@ select:focus {
   background: red;
   display: none;
   margin-top: -2px;
+}
+
+.storytime {
+  position: absolute;
+  display: inline-block;
+  top: 500px;
+  left: 50%;
+  transform: translate(-58%,0);
+  width: 888px;
+  /*border: 1px solid black;*/
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+}
+
+.s1, .s2 {
+  
+}
+
+.s1 {
+  width: 47.5%;
+  float: left;
+  padding-right: 0px;
+}
+
+.s2 {
+  width: 47.5%;
+  float: right;
+  padding-left: 0px;
+}
+
+.sCountry {
+  font-size: 22px;
+  /*border-top: 2px solid grey;*/
+  padding-top: 5px;
+}
+
+#sCountry {
+  border-top: 2px solid grey;
+}
+
+#sYear {
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+#icon5 {
+  font-size: 14px;
+  margin-left: 5px;
+  vertical-align: 15%;
+}
+
+#infopop5 {
+  transform: translate(-48.8%,0);
+}
+
+#infopop5  h2 {
+  margin-top: 0px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /*opacity: .5;*/
+}
+
+#infopop5 p {
+  text-align: left;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+#infopop5 h6 {
+  margin-top: 0px;
+  font-size: 9px;
+  font-weight: 400;
+  text-align: left;
+  /*opacity: .75;*/
+}
+
+#infopop5 a {
+  color: white;
+  opacity: .6;
+  text-decoration: none;
+}
+
+#infopop5 a:hover {
+  text-decoration: underline;
+}
+
+.sOverview {
+  margin-top: 20px;
+  font-size: 10px;
+  height: 124px;
+  overflow: hidden;
+}
+
+.sStats {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.sRead {
+  border-top: 1px solid grey;
+  padding-top: 3px;
+  font-size: 10px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sRead a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.sRead a:hover {
+  text-decoration: underline;
 }
