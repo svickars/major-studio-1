@@ -1,34 +1,66 @@
 <!DOCTYPE html>
 <html>
 
-   <head>
-      <title>Governance Indicators in Africa</title>
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
-      <script src="https://use.fontawesome.com/132433ada8.js"></script>
-      <script src="https://d3js.org/d3.v4.min.js"></script>
-   </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Governance Indicators in Africa</title>
+    
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--D3 and Fontawesome-->
+    <script src="https://use.fontawesome.com/132433ada8.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+</head>
 
-   <body>
-
-    </body>
-	<div class="graph-div-filter ">
-		<div class="filter">
-		How does&nbsp
-			<span id="iSelect"><select id="indicator" onchange="drawVisual(false)"> </select></span>
-		</div>
-		<div class="filter">
-		impact democracy in&nbsp
-			<span id="rSelect"><select id="region" onchange="drawVisual(true)"> </select></span>
-		Africa?
-		</div>
-	</div>
-    <div class="graph-div">
-        <div id="visualization" class="visualization"></div>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="graph-div-filter ">
+                    <div class="filter">
+                        <a href="#" data-toggle="popover" data-trigger="focus" title="Popover Header" data-content="Some content inside the popover"><i class='fa fa-info-circle' aria-hidden='true'></i></a>
+                        How does democracy impact
+                        <span id="iSelect"><select id="indicator" onchange="drawVisual(false)"> </select></span>
+                    </div>
+                    <div class="filter">
+                        in
+                        <span id="rSelect"><select id="region" onchange="drawVisual(true)"> </select></span> Africa?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="hidden-xs col-sm-1"></div>
+            <div class="col-xs-12 col-sm-10">
+                <div class="narrow" id="ylabe1">Estimated Score <span class='info-icon' id="popvert"><a href="#" data-toggle="popover" data-trigger="focus" title="Popover Header" data-content="Some content inside the popover"><i class='fa fa-info-circle' aria-hidden='true'></i></a></span></div>
+                    
+                    <!--<a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>-->
+                <div class="narrow" id="ylabe2">Democratic Score <span class='info-icon' id='icon2'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span></div>
+                <div class="graph-div colscroll">
+                    <div class="colscroll">
+                        <div id="visualization" class="visualization"></div>
+                    </div>
+                    <div id="vizaxes" class="vizaxes"></div>
+                    <div class="knockout"></div>
+                </div>
+            </div>
+            <div class="hidden-xs col-sm-1"></div>
+        </div>
     </div>
 
-	  <script src = "js/data.js"></script>
-      <script src = "js/visualization.js"></script>
-	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/visualization.js"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
 
 </html>
