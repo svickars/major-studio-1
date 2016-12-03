@@ -97,23 +97,10 @@ var ylabe1 = d3.select("#visualization").append("div").attr("id", "ylabe1").attr
 ylabe1.html("Estimated Score <span class='info-icon' id='icon11'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
 ylabe1.style("left", (visualizationWidth / 2) - (1048 / 2) - 40 + "px");
 
-var infopop1 = d3.select("#icon1").append("div").attr("class", "infopop").attr("id", "infopopY");
-infopop1.html("<h2>Estimated Governance Indicator Scores</h2><p style='font-weight: 400; text-align: left; font-size: 9px; line-spacing: 11px; text-transform: none; letter-spacing: 0'>Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying data sources. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model. </p>");
-infopop1.style("left", "-94px");
-infopop1.style("top", "121px");
-
 var infopop11 = d3.select("#icon11").append("div").attr("class", "infopop").attr("id", "infopopY");
 infopop11.html("<h2>Estimated Governance Indicator Scores</h2><p style='font-weight: 400; text-align: left; font-size: 9px; line-spacing: 11px; text-transform: none; letter-spacing: 0'>Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying data sources. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model. </p>");
 infopop11.style("left", "-94px");
 infopop11.style("top", "121px");
-
-d3.select("#icon1").on("mouseover", function(d) {
-	infopop1.style("display", "inline-block");
-});
-
-d3.select("#icon1").on("mouseout", function(d) {
-	infopop1.style("display", "none");
-});
 
 d3.select("#icon11").on("mouseover", function(d) {
 	infopop11.style("display", "inline-block");
@@ -126,23 +113,10 @@ var ylabe2 = d3.select("#visualization").append("div").attr("id", "ylabe2").attr
 ylabe2.html("Democratic Score <span class='info-icon' id='icon12'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
 ylabe2.style("left", (visualizationWidth / 2) - (1048 / 2) - 45 + "px");
 
-var infopop2 = d3.select("#icon2").append("div").attr("class", "infopop").attr("id", "infopopY");
-infopop2.html("<h2>Democratic Index Scores</h2><p style='font-weight: 400; text-align: left; font-size: 9px; line-spacing: 11px; text-transform: none; letter-spacing: 0'>The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the Economist Intelligence Unit's website for more details.</p>");
-infopop2.style("left", "-72px");
-infopop2.style("top", "133px");
-
 var infopop12 = d3.select("#icon12").append("div").attr("class", "infopop").attr("id", "infopopY");
 infopop12.html("<h2>Democratic Index Scores</h2><p style='font-weight: 400; text-align: left; font-size: 9px; line-spacing: 11px; text-transform: none; letter-spacing: 0'>The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the Economist Intelligence Unit's website for more details.</p>");
 infopop12.style("left", "-72px");
 infopop12.style("top", "133px");
-
-d3.select("#icon2").on("mouseover", function(d) {
-	infopop2.style("display", "inline-block");
-});
-
-d3.select("#icon2").on("mouseout", function(d) {
-	infopop2.style("display", "none");
-});
 
 d3.select("#icon12").on("mouseover", function(d) {
 	infopop12.style("display", "inline-block");
@@ -918,8 +892,46 @@ function drawVisual(refreshLine) {
 		.attr("transform", "translate(-5,0)")
 		.attr("display", "none");;
 
+	var popti;
+	var popcon;
+	
+	if (getSelectedIndexValue("indicator") === "Control of Corruption") {
+		popti = "Control of Corruption";
+		popcon = "This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and gran forms of corruption, as well as 'capture' of the state by eleites and private interests.<span class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></span>";
+	}
+	else {
+		// if (getSelectedIndexValue("indicator") === "Government Effectiveness") {
+			popti = "Other";
+			popcon = "Other";
+		}
+	// 	else {
+	// 		if (getSelectedIndexValue("indicator") === "Political Stability") {
+	// 			infopop3.html("<h2>Political Stability and Absence of Violence/Terrorism</h2> <p>This indicator measures perceptions of the likelihood of political instability and/or politcally-motivated violence, including terrorism.</p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+	// 		}
+	// 		else {
+	// 			if (getSelectedIndexValue("indicator") === "Regulatory Quality") {
+	// 				infopop3.html("<h2>Regulatory Quality</h2> <p>This indicator captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permid and promote private sector development. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+	// 			}
+	// 			else {
+	// 				if (getSelectedIndexValue("indicator") === "Rule of Law") {
+	// 					infopop3.html("<h2>Rule of law</h2> <p>This indicator captures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+	// 				}
+	// 				else {
+	// 					if (getSelectedIndexValue("indicator") === "Voice and Accountability") {
+	// 						infopop3.html("<h2>Voice and Accountability</h2> <p>This indicator captures perceptions of the extend to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
+	// 					}
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+	
+	
+	
+
 	var hlabe1 = d3.select("#visualization").append("div").attr("class", "labe").attr("id", "hlabe1");
-	hlabe1.html(indicator + ", 2006-2014 <span class='info-icon' id='icon3'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
+	// hlabe1.html(indicator + ", 2006-2014 <span class='info-icon' id='icon3'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>");
+	hlabe1.html(indicator + ", 2006-2014 <span class='info-icon'><a href='#' data-toggle='popover' data-trigger='hover' data-html='true' title='"+popti+"' data-placement='bottom' data-content='"+popti+"'><span class='glyphicon glyphicon-question-sign' aria-hidden='true'></span></a></span>");
 
 	// var infopop3 = d3.select("#visualization").append("div").attr("class", "infopop-top").attr("id", "infopop-top");
 	// infopop3.html("<div class='close'><i class='fa fa-times' aria-hidden='true'></i></div><h2>Estimated Governance Indicator Scores</h2><h6>Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used above are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc-sources'>data sources</a>. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model. </h6>");
@@ -932,35 +944,6 @@ function drawVisual(refreshLine) {
 		.style("width", "300px")
 		.style("top", "19px")
 		.style("right", "-164px");
-
-	if (getSelectedIndexValue("indicator") === "Control of Corruption") {
-		infopop3.html("<h2>Control of Corruption</h2> <p>This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and gran forms of corruption, as well as 'capture' of the state by eleites and private interests.</p><div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-	}
-	else {
-		if (getSelectedIndexValue("indicator") === "Government Effectiveness") {
-			infopop3.html("<h2>Government Effectiveness</h2> <p>This indicator captures perceptions of the quality of public services, the quality of the civil service, and the degree of its independence from political pressures, the quality of policy formulation and impementation, and the credibility of the government's commutment to such policies.</p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-		}
-		else {
-			if (getSelectedIndexValue("indicator") === "Political Stability") {
-				infopop3.html("<h2>Political Stability and Absence of Violence/Terrorism</h2> <p>This indicator measures perceptions of the likelihood of political instability and/or politcally-motivated violence, including terrorism.</p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-			}
-			else {
-				if (getSelectedIndexValue("indicator") === "Regulatory Quality") {
-					infopop3.html("<h2>Regulatory Quality</h2> <p>This indicator captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permid and promote private sector development. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-				}
-				else {
-					if (getSelectedIndexValue("indicator") === "Rule of Law") {
-						infopop3.html("<h2>Rule of law</h2> <p>This indicator captures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-					}
-					else {
-						if (getSelectedIndexValue("indicator") === "Voice and Accountability") {
-							infopop3.html("<h2>Voice and Accountability</h2> <p>This indicator captures perceptions of the extend to which a country's citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media. </p> <div class='footnote'>Definition courtesy of World Bank: Governance Indicators Project. More details at <a href='http://info.worldbank.org/governance/wgi/index.aspx#doc'>govindicators.org</a></div>");
-						}
-					}
-				}
-			}
-		}
-	}
 
 
 

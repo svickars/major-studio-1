@@ -40,9 +40,9 @@ th {
   padding: 5px;
 }
 
-td {
-  background: #FAFAFA;
-  text-align: center;
+td{
+background: #FAFAFA;
+text-align: center;
 }
 
 select {
@@ -222,14 +222,32 @@ select:focus {
   opacity: 1.0 !important;
 }
 
-#popvert {
-  transform: rotate(90deg);
-}
-
 .info-icon a:hover {
   color: black;
   cursor: pointer;
 }
+
+#iconvert {
+  transform: rotate(-90deg);
+  margin-left: -3px;
+}
+
+#popvert {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.popover {
+  width: 600px;
+  max-width: 75%;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.popover-content {
+  font-size: 10px;
+}
+
 
 .infopop {
   position: absolute;

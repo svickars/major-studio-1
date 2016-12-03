@@ -1,0 +1,117 @@
+/*--------------------*/
+/*-----THE BASICS-----*/
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+body {
+    text-align: center;
+}
+
+a {
+    color: red !important;
+}
+
+a:hover {
+    color: black !important;
+}
+
+select {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+select:focus {
+    outline: none;
+}
+
+/*Turn off scrollbar*/
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+/*--------------------*/
+/*-----THE LAYOUT-----*/
+.colscroll {
+    /*position: relative;*/
+    overflow-x: scroll;
+}
+
+.colnoscroll {
+    /*position: relative;*/
+    overflow-x: hidden;
+}
+
+#overlay {
+    position: absolute;
+    /*transform: translate(0, -820px);*/
+}
+
+
+/*---------------------*/
+/*-----THE FILTERS-----*/
+.graph-div-filter {
+    display: inline-block;
+    height: 50px;
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+}
+
+.graph-div-filter div {
+    padding: 0px;
+}
+
+.graph-div-filter div>select {
+    margin-left: -8px;
+}
+
+.filter {
+    display: inline-block;
+    padding: 15px;
+}
+
+#indicator,
+#region {
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    font-size: 22px;
+    cursor: pointer;
+    background: url(../images/select-down.png) no-repeat right;
+    background-size: 16px;
+    padding: 0px;
+    -webkit-appearance: none;
+    /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+    -moz-appearance: none;
+    /*REMOVES DEFAULT FIREFOX STYLE*/
+}
+
+#indicator {
+    width: 224px;
+    margin-right: 5px;
+}
+
+#region {
+    margin-right: 5px;
+}
+
+/*-------------------*/
+/*-----THE VIZZY-----*/
+
+
+/*labels*/
+#countryLabels {
+    font-size: 8px;
+    font-family: Arial, sans-serif;
+    opacity: .3;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}

@@ -23,7 +23,6 @@
             <div class="col-xs-12">
                 <div class="graph-div-filter ">
                     <div class="filter">
-                        <a href="#" data-toggle="popover" data-trigger="focus" title="Popover Header" data-content="Some content inside the popover"><i class='fa fa-info-circle' aria-hidden='true'></i></a>
                         How does democracy impact
                         <span id="iSelect"><select id="indicator" onchange="drawVisual(false)"> </select></span>
                     </div>
@@ -37,10 +36,8 @@
         <div class="row">
             <div class="hidden-xs col-sm-1"></div>
             <div class="col-xs-12 col-sm-10">
-                <div class="narrow" id="ylabe1">Estimated Score <span class='info-icon' id="popvert"><a href="#" data-toggle="popover" data-trigger="focus" title="Popover Header" data-content="Some content inside the popover"><i class='fa fa-info-circle' aria-hidden='true'></i></a></span></div>
-                    
-                    <!--<a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span>-->
-                <div class="narrow" id="ylabe2">Democratic Score <span class='info-icon' id='icon2'><a><i class='fa fa-info-circle' aria-hidden='true'></i></a></span></div>
+                <div class="narrow" id="ylabe1">Estimated Score <div id="popvert"><span class='info-icon'><a href="#" data-toggle="popover" data-trigger="hover" data-html="true" title="Estimated Governance Indicator Scores" data-content="Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying data sources. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model."><span class="glyphicon glyphicon-question-sign" id="iconvert" aria-hidden="true"></span></a></span></div></div>
+                <div class="narrow" id="ylabe2">Democratic Score <div id="popvert"><span class='info-icon'><a href="#" data-toggle="popover" data-trigger="hover" data-html="true" title="Democratic Index Scores" data-content="The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the Economist Intelligence Unit's website for more details."><span class="glyphicon glyphicon-question-sign" id="iconvert" aria-hidden="true"></span></a></span></div></div>
                 <div class="graph-div colscroll">
                     <div class="colscroll">
                         <div id="visualization" class="visualization"></div>
