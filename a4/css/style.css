@@ -131,7 +131,14 @@ path {
     color: white;
     border-radius: 3px;
     transform: translate(-50%, 0);
+}
+
+#tooltipClick {
     text-align: center;
+}
+
+#tooltipClickSub {
+    font-size: 10px;
 }
 
 .tooltipY {
@@ -168,6 +175,15 @@ path {
     text-transform: uppercase;
     cursor: default;
 }
+.yLabel {
+    position: absolute;
+    left: -30px;
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform: rotate(-90deg);
+}
 
 /*--axes--*/
 .axis path, .axis line {
@@ -180,14 +196,19 @@ path {
     transform: translate(0,-225px);
 }
 
-/*.yAxis path, .yAxis text {*/
-/*    transform: translate(60px, 0);*/
-/*}*/
 
 .axis text {
     font-family: Arial, sans-serif;
     font-size: 9px;
     opacity: .5;
+}
+
+.yAxis text {
+    transform: translate(-5px,0);    
+}
+
+.yAxis2 text {
+    transform: translate(-5px,0);    
 }
 
 .xAxis text {
@@ -204,4 +225,29 @@ path {
     opacity: 0.2;
     stroke-linecap: round;
     stroke-dasharray: .1, 4;
+}
+
+/*--popovers--*/
+.popvert {
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.popover {
+    width: 300px;
+}
+
+.popover-title {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.popover-content {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+.glyphVert {
+    transform: rotate(-90deg);
+    margin-left: -1px;
 }

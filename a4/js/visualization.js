@@ -58,9 +58,11 @@ var vWidth = document.getElementById("visualization").offsetWidth;
 var svgAxes = d3.select("#visualization")
                 .append("svg")
                 .attr("id", "svgAxes")
-                .attr("width", vWidth)
+                // // .style("position", "absolute")
+                // .style("left", "0px")
+                .attr("width", vWidth - margin.right)
                 .attr("height", height + margin.bottom + margin.top)
-                .style("transform", "translate(0px, 5px)")
+                .style("transform", "translate(" + -(margin.left-10) + "px, 5px)")
                 .append("g");
                 
 // Initiate the main SVG
@@ -135,6 +137,23 @@ var tooltipI = d3.select("#visualization").append("div").attr("class", "tooltip 
 var tooltipY = d3.select("#visualization").append("div").attr("class", "tooltip tooltipY");
 var tooltipD = d3.select("#visualization").append("div").attr("class", "tooltip tooltipMain");
 var tooltipC = d3.select("#visualization").append("div").attr("class", "tooltip tooltipClick");
+
+
+
+
+
+//**********
+// THE LABES
+//**********
+var yLabelD = d3.select("#visualization").append("div").attr("id", "yLabelD").attr("class", "yLabel");
+var yLabelI = d3.select("#visualization").append("div").attr("id", "yLabelI").attr("class", "yLabel");
+
+yLabelD.style("top", 100 + "px")
+       .html('Democratic Score <div class="popvert"><a href="#" data-toggle="popover" data-trigger="focus" data-html="true" title="Democracy Index Scores" data-content="The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the Economist Intelligence Unit&rsquo;s website for more details"><span class="glyphicon glyphicon-question-sign glyphVert" aria-hidden="true"></span></a></div>');
+yLabelI.style("top", 475 + "px")
+       .html('Estimated Score <div class="popvert"><a href="#" data-toggle="popover" data-trigger="focus" data-html="true" title="Estimated Governance Indicator Scores" data-content="Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying data sources. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model."><span class="glyphicon glyphicon-question-sign glyphVert" aria-hidden="true"></span></a></div>');
+
+
 
 
 
@@ -545,7 +564,7 @@ function clickmove(indicator, mousePositionX, mousePositionY, isdemocratic, colo
     var h = bisectDate(data2Path.values, x0, 1),
         d2 = data2Path.values[h - 1];
     
-    tooltipC.html("<strong>" + d0.indicator + "</strong> in " + d0.year + ": <strong>" + Number(d0.value).toFixed(2) + "<BR>Democratic Score</strong> in " + d0.year + ": <strong>" + Number(d2.value).toFixed(2) + "</strong>");
+    tooltipC.html("<div id='tooltipClick'><strong>" + d0.country + "<br><div id='tooltipClickSub'>" + d0.indicator + "</strong> in " + d0.year + ": <strong>" + Number(d0.value).toFixed(2) + "<BR>Democratic Score</strong> in " + d0.year + ": <strong>" + Number(d2.value).toFixed(2) + "</strong></div></div>");
 }
 
 function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color) {
@@ -715,3 +734,7 @@ function hexToRgbA(hex) {
     }
     throw new Error('Bad Hex');
 }
+
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover(); 
+});
