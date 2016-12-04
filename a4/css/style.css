@@ -39,6 +39,12 @@ select:focus {
 
 /*--------------------*/
 /*-----THE LAYOUT-----*/
+#svgAxes {
+    /*visibility: hidden;*/
+}
+
+
+
 .colscroll {
     /*position: relative;*/
     overflow-x: scroll;
@@ -49,10 +55,10 @@ select:focus {
     overflow-x: hidden;
 }
 
-#overlay {
-    position: absolute;
+/*#overlay {*/
+/*    position: absolute;*/
     /*transform: translate(0, -820px);*/
-}
+/*}*/
 
 
 /*---------------------*/
@@ -103,15 +109,99 @@ select:focus {
     margin-right: 5px;
 }
 
+
 /*-------------------*/
 /*-----THE VIZZY-----*/
+path {
+    stroke-width: 1.5px;
+    fill: none;
+}
 
+/*--tooltips--*/
+.tooltipMain {
+    font-family: Arial, sans-serif;
+    padding: 2px 7px;
+    color: white;
+    border-radius: 0px 3px 3px 0px;
+}
 
-/*labels*/
-#countryLabels {
+.tooltipClick {
+    font-family: Arial, sans-serif;
+    padding: 2px 7px;
+    color: white;
+    border-radius: 3px;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+
+.tooltipY {
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    color: gray;
+    border-radius: 0px 3px 3px 0px;
+    top: 25px;
+    background-color: white;
+}
+
+/*--labels--*/
+#labelC {
     font-size: 8px;
     font-family: Arial, sans-serif;
     opacity: .3;
     letter-spacing: 0;
     text-transform: uppercase;
+    cursor: default;
+}
+#labelD {
+    font-size: 8px;
+    font-family: Arial, sans-serif;
+    opacity: .3;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    cursor: default;
+}
+#labelI {
+    font-size: 8px;
+    font-family: Arial, sans-serif;
+    opacity: .3;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+/*--axes--*/
+.axis path, .axis line {
+    fill: black;
+    shape-rendering: crispEdges;
+}
+
+.xAxis path {
+    /*display: none;*/
+    transform: translate(0,-225px);
+}
+
+/*.yAxis path, .yAxis text {*/
+/*    transform: translate(60px, 0);*/
+/*}*/
+
+.axis text {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    opacity: .5;
+}
+
+.xAxis text {
+    display: none;
+}
+
+.xAxis2 text {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    transform: translate(0,20px);
+}
+
+.tick line {
+    opacity: 0.2;
+    stroke-linecap: round;
+    stroke-dasharray: .1, 4;
 }

@@ -18145,7 +18145,7 @@ var data = [
   }
 ];
 
-var democratic_data = [
+var d_data = [
   {
     "indicator": "Democracy Index",
     "country": "Angola",
@@ -18648,7 +18648,6 @@ var democratic_data = [
     "country": "Democratic Republic of the Congo",
     "year": 2008,
     "value": 2.28,
-    "region": "Central"
   },
   {
     "indicator": "Democracy Index",
