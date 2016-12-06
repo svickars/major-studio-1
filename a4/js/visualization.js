@@ -148,7 +148,7 @@ var tooltipC = d3.select("#visualization").append("div").attr("class", "tooltip 
 
 // Create Option Buttons
 var bOpt = d3.select("#subtitle").append("div").attr("class", "subtitle");
-bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='When Show Lag is turned on, hovering over a country&apos;s democracy score highlights its indicator score 1 year later, the length of time it takes, on average, to see change' class='b bLag'>Show Lag</div>");
+bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='' class='b bLag'>Show GINI</div>");
 
 var bComp = d3.select(".bComp");
 bComp.on("click", function(d) {
