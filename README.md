@@ -5,7 +5,7 @@
 
 ##### Visualization
 [View Here](https://svickars.github.io/major-studio-1/a4/)
-[![](https://raw.githubusercontent.com/svickars/major-studio-1/master/screencap.png)](https://svickars.github.io/major-studio-1/a3/)
+[![](https://raw.githubusercontent.com/svickars/major-studio-1/master/screencap.png)](https://svickars.github.io/major-studio-1/a4/)
 
 ##### Data Sources
 * [Worldwide Governance Indicators](http://databank.worldbank.org/data/Governance/id/398b56e9)
