@@ -148,7 +148,7 @@ var tooltipC = d3.select("#visualization").append("div").attr("class", "tooltip 
 
 // Create Option Buttons
 var bOpt = d3.select("#subtitle").append("div").attr("class", "subtitle");
-bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='' class='b bLag'>Show GINI</div>");
+bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='' class='b bGini'>Show GINI</div>");
 
 var bComp = d3.select(".bComp");
 bComp.on("click", function(d) {
@@ -165,20 +165,23 @@ bComp.on("click", function(d) {
     }
 })
 
-var bLag = d3.select(".bLag");
-bLag.on("click", function(d) {
-    if (showLag == false) {
-        bLag.style("background-color", "black").style("color", "white");
-        tooltipMove = (xWidth/8) + 15;
-        showLag = true;
-    }else{
-        bLag.style("background-color", "white").style("color", "black");
-        tooltipMove = 16;
-        showLag = false;
-    }
+// var bLag = d3.select(".bLag");
+// bLag.on("click", function(d) {
+//     if (showLag == false) {
+//         bLag.style("background-color", "black").style("color", "white");
+//         tooltipMove = (xWidth/8) + 15;
+//         showLag = true;
+//     }else{
+//         bLag.style("background-color", "white").style("color", "black");
+//         tooltipMove = 16;
+//         showLag = false;
+//     }
+// })
+
+var bGini = d3.select(".bGini");
+bGini.on("click", function(d) {
+    showgini();
 })
-
-
 
 
 //**********
@@ -929,7 +932,9 @@ function mousedown() {
     }
 }
 
-
+function showgini() {
+    
+}
 
 
 //**************
