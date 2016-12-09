@@ -68,6 +68,15 @@ select:focus {
     margin-right: 10px;
 }
 
+.bReset {
+    cursor: pointer;
+}
+
+#bReset {
+    position: absolute;
+    top: 263px;
+}
+
 
 
 /*--------------------*/
@@ -107,6 +116,14 @@ select:focus {
 
 .left {
     text-align: left;
+}
+
+.iLeft {
+    margin-left: 60px;
+}
+
+.iRight {
+    margin-right: 100px;
 }
 
 .iTitle {
@@ -207,6 +224,19 @@ path {
     visibility: hidden;
 }
 
+.pathAI {
+    stroke: black;
+    stroke-width: 1px;
+    visibility: hidden;
+}
+
+.g-line {
+    opacity: 0.5;
+    stroke-width: 1px;
+    /*stroke-linecap: round;*/
+    /*stroke-dasharray: 4, 4;*/
+}
+
 /*--tooltips--*/
 .tooltipMain {
     font-family: Arial, sans-serif;
@@ -235,8 +265,8 @@ path {
     font-family: Arial, sans-serif;
     padding: 5px;
     color: gray;
-    border-radius: 0px 3px 3px 0px;
-    top: 25px;
+    border-radius: 3px 3px 3px 3px;
+    top: 217px;
     background-color: white;
 }
 
@@ -250,6 +280,15 @@ path {
     cursor: default;
 }
 #labelA {
+    font-size: 8px;
+    font-family: Arial, sans-serif;
+    /*opacity: .3;*/
+    letter-spacing: 0;
+    text-transform: uppercase;
+    cursor: default;
+    visibility: hidden;
+}
+#labelAI {
     font-size: 8px;
     font-family: Arial, sans-serif;
     /*opacity: .3;*/

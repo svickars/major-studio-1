@@ -22850,3 +22850,4545 @@ var d_data = [
     "region": "Eastern"
   }
 ];
+
+var g_data = [
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2008,
+    "value": 42.72,
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": 42.72
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": 42.72
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": 42.72
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2011,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": 42.72
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": 42.72
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": 42.72
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Angola",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.72,
+    "recentValue": 42.72
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2011,
+    "value": 43.44,
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": 43.44
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": 43.44
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": 43.44
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Benin",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.44,
+    "recentValue": 43.44
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2006,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2007,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2008,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2009,
+    "value": 60.46,
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": 60.46
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2010,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": 60.46
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2011,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": 60.46
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2012,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": 60.46
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2013,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": 60.46
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Botswana",
+    "year": 2014,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.46,
+    "recentValue": 60.46
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 39.76,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 39.76,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 39.76,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2009,
+    "value": 39.76,
+    "region": "Western",
+    "lineValue": 39.76,
+    "recentValue": 39.76
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 39,
+    "recentValue": 39.76
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 38,
+    "recentValue": 39.76
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 37,
+    "recentValue": 39.76
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36,
+    "recentValue": 39.76
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burkina Faso",
+    "year": 2014,
+    "value": 35.3,
+    "region": "Western",
+    "lineValue": 35.3,
+    "recentValue": 35.3
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2006,
+    "value": 33.36,
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Burundi",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.36,
+    "recentValue": 33.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2007,
+    "value": 47.19,
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cabo Verde",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 47.19,
+    "recentValue": 47.19
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.82,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2007,
+    "value": 42.82,
+    "region": "Central",
+    "lineValue": 42.82,
+    "recentValue": 42.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2008,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.3,
+    "recentValue": 42.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 44,
+    "recentValue": 42.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 44.6,
+    "recentValue": 42.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2011,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 45.3,
+    "recentValue": 42.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 46,
+    "recentValue": 42.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 46.54,
+    "recentValue": 42.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Cameroon",
+    "year": 2014,
+    "value": 46.54,
+    "region": "Central",
+    "lineValue": 46.54,
+    "recentValue": 46.54
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2008,
+    "value": 56.24,
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": 56.24
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": 56.24
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": 56.24
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2011,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": 56.24
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": 56.24
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": 56.24
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Central African Republic",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 56.24,
+    "recentValue": 56.24
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2008,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2011,
+    "value": 43.32,
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": 43.32
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": 43.32
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": 43.32
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Chad",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 43.32,
+    "recentValue": 43.32
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Comoros",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2008,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2011,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2012,
+    "value": 42.1,
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": 42.1
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": 42.1
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Democratic Republic of the Congo",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 42.1,
+    "recentValue": 42.1
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2008,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2011,
+    "value": 48.94,
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": 48.94
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": 48.94
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": 48.94
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Republic of the Congo",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 48.94,
+    "recentValue": 48.94
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2008,
+    "value": 43.18,
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": 43.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": 43.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": 43.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": 43.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": 43.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": 43.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ivory Coast",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43.18,
+    "recentValue": 43.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2008,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2011,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Equatorial Guinea",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Eritrea",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2010,
+    "value": 33.17,
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": 33.17
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": 33.17
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": 33.17
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": 33.17
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ethiopia",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 33.17,
+    "recentValue": 33.17
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2008,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2010,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2011,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gabon",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Gambia",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Ghana",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 39.36,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2007,
+    "value": 39.36,
+    "region": "Western",
+    "lineValue": 39.36,
+    "recentValue": 39.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 38,
+    "recentValue": 39.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.5,
+    "recentValue": 39.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 35.5,
+    "recentValue": 39.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 34,
+    "recentValue": 39.36
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2012,
+    "value": 33.73,
+    "region": "Western",
+    "lineValue": 33.73,
+    "recentValue": 33.73
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.73,
+    "recentValue": 33.73
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.73,
+    "recentValue": 33.73
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2010,
+    "value": 50.66,
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": 50.66
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": 50.66
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": 50.66
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": 50.66
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Guinea-Bissau",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 50.66,
+    "recentValue": 50.66
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Kenya",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2006,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2007,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2008,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2009,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2010,
+    "value": 54.18,
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": 54.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2011,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": 54.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2012,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": 54.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2013,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": 54.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Lesotho",
+    "year": 2014,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 54.18,
+    "recentValue": 54.18
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2007,
+    "value": 36.48,
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Liberia",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36.48,
+    "recentValue": 36.48
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 40.63,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 40.63,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 40.63,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 40.63,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2010,
+    "value": 40.63,
+    "region": "Eastern",
+    "lineValue": 40.63,
+    "recentValue": 40.63
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 41.5,
+    "recentValue": 40.63
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2012,
+    "value": 42.65,
+    "region": "Eastern",
+    "lineValue": 42.65,
+    "recentValue": 42.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 42.65,
+    "recentValue": 42.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Madagascar",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 42.65,
+    "recentValue": 42.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2010,
+    "value": 46.12,
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": 46.12
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": 46.12
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": 46.12
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": 46.12
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Malawi",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.12,
+    "recentValue": 46.12
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2006,
+    "value": 38.93,
+    "region": "Western",
+    "lineValue": 38.93,
+    "recentValue": 38.93
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 37,
+    "recentValue": 38.93
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 35,
+    "recentValue": 38.93
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2009,
+    "value": 33.04,
+    "region": "Western",
+    "lineValue": 33.04,
+    "recentValue": 33.04
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.04,
+    "recentValue": 33.04
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.04,
+    "recentValue": 33.04
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.04,
+    "recentValue": 33.04
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.04,
+    "recentValue": 33.04
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mali",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.04,
+    "recentValue": 33.04
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 35.69,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 35.69,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2008,
+    "value": 35.69,
+    "region": "Western",
+    "lineValue": 35.69,
+    "recentValue": 35.69
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 35,
+    "recentValue": 35.69
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 34.5,
+    "recentValue": 35.69
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 34,
+    "recentValue": 35.69
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.5,
+    "recentValue": 35.69
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33,
+    "recentValue": 35.69
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritania",
+    "year": 2014,
+    "value": 32.42,
+    "region": "Western",
+    "lineValue": 32.42,
+    "recentValue": 32.42
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2006,
+    "value": 35.65,
+    "region": "Eastern",
+    "lineValue": 35.65,
+    "recentValue": 35.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.675,
+    "recentValue": 35.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.7,
+    "recentValue": 35.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.725,
+    "recentValue": 35.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.75,
+    "recentValue": 35.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.8,
+    "recentValue": 35.65
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2012,
+    "value": 35.84,
+    "region": "Eastern",
+    "lineValue": 35.84,
+    "recentValue": 35.84
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.84,
+    "recentValue": 35.84
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mauritius",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.84,
+    "recentValue": 35.84
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2008,
+    "value": 45.58,
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": 45.58
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": 45.58
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": 45.58
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": 45.58
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": 45.58
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": 45.58
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Mozambique",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.58,
+    "recentValue": 45.58
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2006,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2007,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2008,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2009,
+    "value": 60.97,
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": 60.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2010,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": 60.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2011,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": 60.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2012,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": 60.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2013,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": 60.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Namibia",
+    "year": 2014,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 60.97,
+    "recentValue": 60.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 37.3,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2007,
+    "value": 37.3,
+    "region": "Western",
+    "lineValue": 37.3,
+    "recentValue": 37.3
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 36,
+    "recentValue": 37.3
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 34,
+    "recentValue": 37.3
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 32.5,
+    "recentValue": 37.3
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2011,
+    "value": 31.45,
+    "region": "Western",
+    "lineValue": 31.45,
+    "recentValue": 31.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 32.6,
+    "recentValue": 31.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.3,
+    "recentValue": 31.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Niger",
+    "year": 2014,
+    "value": 33.99,
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": 33.99
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2009,
+    "value": 42.97,
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": 42.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": 42.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2011,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": 42.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": 42.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": 42.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Nigeria",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.97,
+    "recentValue": 42.97
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 51.34,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 51.34,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 51.34,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 51.34,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2010,
+    "value": 51.34,
+    "region": "Eastern",
+    "lineValue": 51.34,
+    "recentValue": 51.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 51,
+    "recentValue": 51.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 50.8,
+    "recentValue": 51.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2013,
+    "value": 50.44,
+    "region": "Eastern",
+    "lineValue": 50.44,
+    "recentValue": 50.44
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Rwanda",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 50.44,
+    "recentValue": 50.44
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2006,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2007,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2008,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2009,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2010,
+    "value": 30.82,
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": 30.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2011,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": 30.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2012,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": 30.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2013,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": 30.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sao Tome and Principe",
+    "year": 2014,
+    "value": "null",
+    "region": "Central",
+    "lineValue": 30.82,
+    "recentValue": 30.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2011,
+    "value": 40.29,
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": 40.29
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": 40.29
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": 40.29
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Senegal",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 40.29,
+    "recentValue": 40.29
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2006,
+    "value": 42.77,
+    "region": "Eastern",
+    "lineValue": 42.77,
+    "recentValue": 42.77
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43,
+    "recentValue": 42.77
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.5,
+    "recentValue": 42.77
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 44,
+    "recentValue": 42.77
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 44.5,
+    "recentValue": 42.77
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45,
+    "recentValue": 42.77
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 45.7,
+    "recentValue": 42.77
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2013,
+    "value": 46.82,
+    "region": "Eastern",
+    "lineValue": 46.82,
+    "recentValue": 46.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Seychelles",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.82,
+    "recentValue": 46.82
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2006,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2011,
+    "value": 33.99,
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": 33.99
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": 33.99
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": 33.99
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sierra Leone",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 33.99,
+    "recentValue": 33.99
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Somalia",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 0,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2006,
+    "value": 64.79,
+    "region": "Southern",
+    "lineValue": 64.79,
+    "recentValue": 64.79
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2007,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 64,
+    "recentValue": 64.79
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2008,
+    "value": 63.01,
+    "region": "Southern",
+    "lineValue": 63.01,
+    "recentValue": 63.01
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2009,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 63.1,
+    "recentValue": 63.01
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2010,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 63.22,
+    "recentValue": 63.01
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2011,
+    "value": 63.38,
+    "region": "Southern",
+    "lineValue": 63.38,
+    "recentValue": 63.38
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2012,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 63.38,
+    "recentValue": 63.38
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2013,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 63.38,
+    "recentValue": 63.38
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Africa",
+    "year": 2014,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 63.38,
+    "recentValue": 63.38
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2009,
+    "value": 46.34,
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": 46.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": 46.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": 46.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": 46.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": 46.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "South Sudan",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 46.34,
+    "recentValue": 46.34
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2009,
+    "value": 35.39,
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": 35.39
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": 35.39
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": 35.39
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": 35.39
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": 35.39
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Sudan",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 35.39,
+    "recentValue": 35.39
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2006,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2007,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2008,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2009,
+    "value": 51.45,
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": 51.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2010,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": 51.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2011,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": 51.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2012,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": 51.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2013,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": 51.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Swaziland",
+    "year": 2014,
+    "value": "null",
+    "region": "Southern",
+    "lineValue": 51.45,
+    "recentValue": 51.45
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 40.28,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2007,
+    "value": 40.28,
+    "region": "Eastern",
+    "lineValue": 40.28,
+    "recentValue": 40.28
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 39.28,
+    "recentValue": 40.28
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 38.8,
+    "recentValue": 40.28
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 38.1,
+    "recentValue": 40.28
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2011,
+    "value": 37.78,
+    "region": "Eastern",
+    "lineValue": 37.78,
+    "recentValue": 37.78
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 37.78,
+    "recentValue": 37.78
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 37.78,
+    "recentValue": 37.78
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Tanzania",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 37.78,
+    "recentValue": 37.78
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2006,
+    "value": 42.21,
+    "region": "Western",
+    "lineValue": 42.21,
+    "recentValue": 42.21
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2007,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 42.5,
+    "recentValue": 42.21
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2008,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 43,
+    "recentValue": 42.21
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2009,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 44,
+    "recentValue": 42.21
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2010,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 45,
+    "recentValue": 42.21
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2011,
+    "value": 46.02,
+    "region": "Western",
+    "lineValue": 46.02,
+    "recentValue": 46.02
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2012,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 46.02,
+    "recentValue": 46.02
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2013,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 46.02,
+    "recentValue": 46.02
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Togo",
+    "year": 2014,
+    "value": "null",
+    "region": "Western",
+    "lineValue": 46.02,
+    "recentValue": 46.02
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 44.2,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 44.2,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 44.2,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2009,
+    "value": 44.2,
+    "region": "Eastern",
+    "lineValue": 44.2,
+    "recentValue": 44.2
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43,
+    "recentValue": 44.2
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 42,
+    "recentValue": 44.2
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2012,
+    "value": 41.01,
+    "region": "Eastern",
+    "lineValue": 41.01,
+    "recentValue": 41.01
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 41.01,
+    "recentValue": 41.01
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Uganda",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 41.01,
+    "recentValue": 41.01
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2006,
+    "value": 54.62,
+    "region": "Eastern",
+    "lineValue": 54.62,
+    "recentValue": 54.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 54.9,
+    "recentValue": 54.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 55.3,
+    "recentValue": 54.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 55.5,
+    "recentValue": 54.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2010,
+    "value": 55.62,
+    "region": "Eastern",
+    "lineValue": 55.62,
+    "recentValue": 55.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2011,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 55.62,
+    "recentValue": 55.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 55.62,
+    "recentValue": 55.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 55.62,
+    "recentValue": 55.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zambia",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 55.62,
+    "recentValue": 55.62
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2006,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2007,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2008,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2009,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2010,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": "unknown"
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2011,
+    "value": 43.15,
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": 43.15
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2012,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": 43.15
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2013,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": 43.15
+  },
+  {
+    "indicator": "GINI index (World Bank estimate)",
+    "countryName": "Zimbabwe",
+    "year": 2014,
+    "value": "null",
+    "region": "Eastern",
+    "lineValue": 43.15,
+    "recentValue": 43.15
+  }
+];
+
+var a_data = [
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2006,
+    "value": -0.645677764
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2007,
+    "value": -0.651099433
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2008,
+    "value": -0.65359385
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2009,
+    "value": -0.650738827
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2010,
+    "value": -0.653054666
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2011,
+    "value": -0.659013145
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2012,
+    "value": -0.671648596
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2013,
+    "value": -0.677267278
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "Sub-Saharan Africa",
+    "year": 2014,
+    "value": -0.683775884
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2006,
+    "value": -0.645996515
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2007,
+    "value": -0.65091924
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2008,
+    "value": -0.654369605
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2009,
+    "value": -0.651096206
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2010,
+    "value": -0.653690957
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2011,
+    "value": -0.659093683
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2012,
+    "value": -0.671780473
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2013,
+    "value": -0.677066006
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "Sub-Saharan Africa",
+    "year": 2014,
+    "value": -0.68286248
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2006,
+    "value": -0.649939799
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2007,
+    "value": -0.657363347
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2008,
+    "value": -0.661497165
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2009,
+    "value": -0.659311118
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2010,
+    "value": -0.660685267
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2011,
+    "value": -0.664491321
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2012,
+    "value": -0.67703308
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2013,
+    "value": -0.680113916
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "Sub-Saharan Africa",
+    "year": 2014,
+    "value": -0.686092821
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2006,
+    "value": -0.648086691
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2007,
+    "value": -0.654206935
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2008,
+    "value": -0.658171386
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2009,
+    "value": -0.655154425
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2010,
+    "value": -0.657022925
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2011,
+    "value": -0.66182642
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2012,
+    "value": -0.674886111
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2013,
+    "value": -0.67922572
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "Sub-Saharan Africa",
+    "year": 2014,
+    "value": -0.685564727
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2006,
+    "value": -0.650259391
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2007,
+    "value": -0.656936047
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2008,
+    "value": -0.660701381
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2009,
+    "value": -0.658125462
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2010,
+    "value": -0.659884813
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2011,
+    "value": -0.664298641
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2012,
+    "value": -0.677271324
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2013,
+    "value": -0.681138602
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "Sub-Saharan Africa",
+    "year": 2014,
+    "value": -0.687156184
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2006,
+    "value": -0.651121649
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2007,
+    "value": -0.657572321
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2008,
+    "value": -0.661235536
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2009,
+    "value": -0.659202592
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2010,
+    "value": -0.660684174
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2011,
+    "value": -0.665088647
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2012,
+    "value": -0.678019649
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2013,
+    "value": -0.681636865
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "Sub-Saharan Africa",
+    "year": 2014,
+    "value": -0.687742315
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2006,
+    "value": 0.182971164
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2007,
+    "value": 0.178998236
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2008,
+    "value": 0.179964921
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2009,
+    "value": 0.177778156
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2010,
+    "value": 0.17947081
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2011,
+    "value": 0.184501222
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2012,
+    "value": 0.186476653
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2013,
+    "value": 0.187105548
+  },
+  {
+    "indicator": "Control of Corruption",
+    "area": "World",
+    "year": 2014,
+    "value": 0.207102731
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2006,
+    "value": 0.004462931
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2007,
+    "value": 0.004515743
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2008,
+    "value": 0.00497974
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2009,
+    "value": 0.005335634
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2010,
+    "value": 0.005340787
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2011,
+    "value": 0.005698775
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2012,
+    "value": 0.005530998
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2013,
+    "value": 0.005441719
+  },
+  {
+    "indicator": "Government Effectiveness",
+    "area": "World",
+    "year": 2014,
+    "value": 0.005944207
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2006,
+    "value": 0.004987779
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2007,
+    "value": 0.004914458
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2008,
+    "value": 0.004775605
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2009,
+    "value": 0.004587312
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2010,
+    "value": 0.004628175
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2011,
+    "value": 0.004669411
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2012,
+    "value": 0.004397541
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2013,
+    "value": 0.004696569
+  },
+  {
+    "indicator": "Political Stability",
+    "area": "World",
+    "year": 2014,
+    "value": 0.004670244
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2006,
+    "value": 0.004927572
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2007,
+    "value": 0.004963876
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2008,
+    "value": 0.005269777
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2009,
+    "value": 0.005613305
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2010,
+    "value": 0.005762873
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2011,
+    "value": 0.005968067
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2012,
+    "value": 0.005786571
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2013,
+    "value": 0.005841376
+  },
+  {
+    "indicator": "Regulatory Quality",
+    "area": "World",
+    "year": 2014,
+    "value": 0.006176085
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2006,
+    "value": 0.00499781
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2007,
+    "value": 0.005008267
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2008,
+    "value": 0.005335217
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2009,
+    "value": 0.005560775
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2010,
+    "value": 0.005725116
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2011,
+    "value": 0.005814786
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2012,
+    "value": 0.005549324
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2013,
+    "value": 0.005748037
+  },
+  {
+    "indicator": "Rule of Law",
+    "area": "World",
+    "year": 2014,
+    "value": 0.006025153
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2006,
+    "value": 0.005076361
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2007,
+    "value": 0.005231839
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2008,
+    "value": 0.005471237
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2009,
+    "value": 0.005529463
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2010,
+    "value": 0.005656354
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2011,
+    "value": 0.00568476
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2012,
+    "value": 0.005452412
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2013,
+    "value": 0.005672815
+  },
+  {
+    "indicator": "Voice and Accountability",
+    "area": "World",
+    "year": 2014,
+    "value": 0.005862301
+  }
+];

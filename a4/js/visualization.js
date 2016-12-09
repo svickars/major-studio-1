@@ -88,23 +88,30 @@ var bisectDate = d3.bisector(function(d) {
 	return new Date(d.year, 0, 1);
 }).left;
 var maxIndex = 0;
-var visible = true;
-var clicked = false;
-var showComp = false;
-var showLag = false;
+var visible = true,
+    clicked = false,
+    showComp = false,
+    showLag = false,
+    showGini = false;
 var tooltipMove = 16;
-var dataNest;
-var data2Nest;
-var data3Nest;
-var country;
+var dataNest,
+    data2Nest,
+    data3Nest,
+    data4Nest,
+    aiData,
+    daData,
+    country;
+var y2Domain = [0, 10],
+    tB = 250,
+    bT = 200;
 
 // Parse the Date
 var parseDate = d3.timeParse("%y");
 
 // Set the Ranges/Scales/All That Fun Stuff
 var x = d3.scaleTime().range([margin.left, vWidth - margin.right]);
-var y = d3.scaleLinear().range([height, 250]);
-var y2 = d3.scaleLinear().range([200, 0]);
+var y = d3.scaleLinear().range([height, tB]);
+var y2 = d3.scaleLinear().range([bT, 0]);
 
 // Set up the Axes
 var x_axis = svg.append("g")
@@ -139,16 +146,32 @@ var valueline2 = d3.line()
 	.y(function(d) {
 		return y2(d.value);
 	});
+	
+var valueline3 = d3.line()
+	.curve(d3.curveMonotoneX)
+	.x(function(d) {
+		return x(new Date(d.year, 0, 1));
+	})
+	.y(function(d) {
+		return y2(d.lineValue);
+	});
 
 // Create Tooltips
 var tooltipI = d3.select("#visualization").append("div").attr("class", "tooltip tooltipMain");
 var tooltipY = d3.select("#visualization").append("div").attr("class", "tooltip tooltipY");
 var tooltipD = d3.select("#visualization").append("div").attr("class", "tooltip tooltipMain");
 var tooltipC = d3.select("#visualization").append("div").attr("class", "tooltip tooltipClick");
+var tooltipG = d3.select("#visualization").append("div").attr("class", "tooltip tooltipMain");
 
 // Create Option Buttons
 var bOpt = d3.select("#subtitle").append("div").attr("class", "subtitle");
 bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='' class='b bGini'>Show GINI</div>");
+
+var bReset = d3.select("#visualization").append("div").attr("id", "bReset");
+bReset.html("<div class='b bReset'>Exit</div>").style("left", margin.left + 30 + "px").style("display", "none");
+bReset.on("click", function(d) {
+    clickclick();
+});
 
 var bComp = d3.select(".bComp");
 bComp.on("click", function(d) {
@@ -156,11 +179,15 @@ bComp.on("click", function(d) {
         bComp.style("background-color", "black").style("color", "white");
         d3.selectAll("#pathA").style("visibility", "visible");
         d3.selectAll("#labelA").style("visibility", "visible");
+        d3.selectAll("#pathAI").style("visibility", "visible");
+        d3.selectAll("#labelAI").style("visibility", "visible");
         showComp = true;
     }else{
         bComp.style("background-color", "white").style("color", "black");
         d3.selectAll("#pathA").style("visibility", "hidden");
         d3.selectAll("#labelA").style("visibility", "hidden");
+        d3.selectAll("#pathAI").style("visibility", "hidden");
+        d3.selectAll("#labelAI").style("visibility", "hidden");
         showComp = false;
     }
 })
@@ -180,9 +207,31 @@ bComp.on("click", function(d) {
 
 var bGini = d3.select(".bGini");
 bGini.on("click", function(d) {
-    showgini();
+    if (clicked == false) {
+    if (showGini == false) {
+        bGini.style("background-color", "black").style("color", "white");
+        showgini();
+        drawVisual(false);
+    }else{
+        bGini.style("background-color", "white").style("color", "black");
+        hidegini();
+        drawVisual(false);
+    }}
 })
 
+function showgini() {
+    showGini = true;
+    y2Domain = [0, 100];
+    tB = 350;
+    bT = 300;
+};
+
+function hidegini() {
+    showGini = false;
+    y2Domain = [0, 10];
+    tB = 250;
+    bT = 200;
+}
 
 //**********
 // THE LABES
@@ -217,6 +266,10 @@ function drawVisual(refreshLine) {
     d3.selectAll("#labelC").remove();
     d3.selectAll("#hLabelD").remove();
     d3.selectAll("#pop").remove();
+    d3.selectAll("#pathAI").remove();
+    d3.selectAll("#pathA").remove();
+    d3.selectAll("#labelAI").remove();
+    d3.selectAll("#labelA").remove();
 
     //Get selected region and indicator
     var region = getSelectedIndexValue("region");
@@ -260,6 +313,11 @@ function drawVisual(refreshLine) {
     var rSelectWidth = getTextWidth(region, "22px arial");
     d3.select("#region").style("width", rSelectWidth + 20 + "px");
 
+
+    // ---------------------
+    // ---INDICATOR GRAPH---
+    // ---------------------
+    
     // Generate data set based on selected indicators
     var data_subset = data.filter(function(d) {
         return (d.region == region) && d.indicator == indicator;
@@ -358,9 +416,9 @@ function drawVisual(refreshLine) {
                       
     });
     
-    // ------------------
-    // ---SECOND GRAPH---
-    // ------------------
+    // ---------------------
+    // ---DEMOCRACY GRAPH---
+    // ---------------------
     
     // Generate second data set (democracy scores)
     var democratic_data_subset = d_data.filter( function(d) {
@@ -373,12 +431,12 @@ function drawVisual(refreshLine) {
                       return d.country;
                   })
                   .entries(democratic_data_subset);
-    
+                  
     // Scale the range of the data
     x.domain(d3.extent(democratic_data_subset, function (d) {
         return new Date(d.year, 0, 1);
     }));
-    y2.domain([0, 10]);
+    y2.domain(y2Domain);
     
     // Now we play the drawing game!
     // Loop through each symbol/key
@@ -477,37 +535,183 @@ function drawVisual(refreshLine) {
         
     });
     
+    // ----------------
+    // ---GINI GRAPH---
+    // ----------------
+    
+    // Generate data set based on selected indicators
+    var gini_data_subset = g_data.filter(function(d) {
+        return (d.region == region) && d.indicator == "GINI index (World Bank estimate)";
+    });
+
+    // Nest the data by country
+    data4Nest = d3.nest()
+        .key(function(d) {
+            return d.countryName;
+        })
+        .entries(gini_data_subset);
+    
+    // Scale the range of the data
+    x.domain(d3.extent(gini_data_subset, function (d) {
+        return new Date(d.year, 0, 1);
+    }));
+    y2.domain(y2Domain);
+    
+    // Now we play the drawing game!
+    // Loop through each symbol/key
+    data4Nest.forEach(function(dataPath, index) {
+        var unCountry = dataPath.key;
+        dataPath.key = formatCountry(dataPath.key);
+        maxIndex = index;
+        // draw country labels at end of path
+	    var countryLabelsG = svg.append("text")
+	                            .attr("id", "labelC")
+	                            .attr("class", "labelG labelC labelG-" + dataPath.key + " labelG-" + index)
+	                            .attr("x", vWidth - margin.right + 7)
+	                            .attr("y", y2(dataPath.values[8].lineValue))
+	                            .attr("dy", ".35em")
+	                            .style("fill", function(d, i) {
+	                               return color(index)
+	                            })
+	                            .text(dataPath.key)
+                                // .on("mousemove", function(d) {
+                                //         mousemove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], true, color(index))
+                                //     })
+                                // .on("mouseout", function(d) {
+                                //     mousedown();
+                                // })
+                                // .on("click", function(d) {
+                                //     if (clicked == false) {
+                                //         click(unCountry, dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color(index))
+                                //     }
+                                //     else {
+                                //         clickclick();
+                                //     }
+                                // });
+                            if (dataPath.values[5].value == 0)
+                                countryLabelsD.text("unavailable");
+        
+        // draw circles at data points, none if no data
+        for (var i = 0; i < data4Nest.length; i++) {
+            for (var h = 0; h < data4Nest[i].values.length; h++) {
+                if (data4Nest[i].values[h].value > 0) {
+                    var circle = svg.append("circle")
+                                     .attr("id", "circle")
+                                     .attr("class", "g-circle g-circle-" + dataPath.key + " g-circle-" + index)
+                                     .attr("cx", function(d) {
+                                         return x(new Date(data4Nest[i].values[h].year, 0, 1));
+                                     })
+                                     .attr("cy", function(d) {
+                                         return y2(data4Nest[i].values[h].value);
+                                     })
+                                     .attr("r", 3)
+                                     .style("stroke", color(i))
+                                     .style("stroke-width", "1px")
+                                     .style("fill", "white")
+                                    //  .on("mousemove", function(d) {
+                                    //      mousemove(dataPath.key, d3.mouse(this)[0], true, color(index));
+                                    //  })
+                                    //  .on("mouseout", function(d) {
+                                    //      mousedown();
+                                    //  });
+                    //  if (data4Nest[i].values[h].value == 0)
+                    //      circle.style("visibility", "hidden");
+                }
+            }
+        }
+        
+        // draw valueline paths
+        var pathG = svg.append("path")
+                      .datum(dataPath.values)
+                      .attr("class", "g-line g-line-" + dataPath.key + " g-line-" + index)
+                      .style("stroke", function(d, i) {
+                          return countryColor[dataPath.key]
+                      })
+                      .attr("d", valueline3)
+                    //   .on("mouseover", function (d) {
+                    //     //   path.style("stroke-width", "5px");
+                    //   })
+                      .on("mousemove", function(d) {
+                          if (clicked == true) {
+                          clickmove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color(index), dataPath)
+                          }else{
+                          mousemove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], true, color(index))
+                          }
+                      })
+                      .on("mouseout", function (d) {
+                        //   path.style("stroke-width", "1.5px")
+                            mousedown();
+                            d3.selectAll(".i-line").style("stroke-width", "2px");
+                            d3.selectAll(".vertical-line3").remove();
+                            d3.selectAll(".vertical-line4").remove();
+                            d3.selectAll(".labelI").style("opacity", ".3");
+                      })
+                    //   .on("click", function(d) {
+                    //              if (clicked == false) {
+                    //              click(unCountry, dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color(index))
+                    //              }else{
+                    //                  clickclick();
+                    //              }
+                    //   });
+        if (showGini == false) {
+            pathG.style("visibility", "hidden");
+            countryLabelsG.style("visibility", "hidden");
+        }
+    });
+    
     // ----------------------------
     // ---AVERAGES + COMPARISONS---
     // ----------------------------
 
     d3.csv("democracy-a1.csv", function(error, aData) {
         
-        aData = aData.filter( function(d) {
-            return d.area == "World Average" || d.area == "Sub-Saharan Africa"
+        daData = aData.filter( function(d) {
+            return d.area == "World" || d.area == "Sub-Saharan Africa"
         })
         
-        aData = d3.nest().key(function(d) {
+        daData = d3.nest().key(function(d) {
             return d.area;
-        }).entries(aData);
+        }).entries(daData);
         
         for (var i = 0; i<2; i++) {
             var aLabels = svg.append("text")
                              .attr("id", "labelA")
                              .attr("class", "labelA")
                              .attr("x", vWidth - margin.right + 7)
-                             .attr("y", y2(aData[i].values[6].value))
+                             .attr("y", y2(daData[i].values[6].value))
                              .attr("dy", ".35em")
-                             .text(aData[i].key + " (" + aData[i].values[6].value + ")");
+                             .text(daData[i].key + " (" + daData[i].values[6].value + ")");
             var path = svg.append("path")
                           .attr("id", "pathA")
                           .attr("class", "pathA")
-                          .datum(aData[i].values)
+                          .datum(daData[i].values)
                           .attr("d", valueline2);
         }
         
-        
     });
+    
+    aiData = a_data.filter( function(d) {
+        return d.indicator == indicator;
+    });
+    
+    aiData = d3.nest().key(function(d) {
+        return d.area;
+    }).entries(aiData);
+    
+    for (var i = 0; i<aiData.length; i++) {
+        var aiLabels = svg.append("text")
+                          .attr("id", "labelAI")
+                          .attr("class", "labelAI")
+                          .attr("x", vWidth - margin.right + 7)
+                          .attr("y", y(aiData[i].values[8].value))
+                          .attr("dy", ".35em")
+                          .text(aiData[i].key + " (" + Number(aiData[i].values[8].value).toFixed(2) + ")");
+        var path = svg.append("path")
+                      .attr("id", "pathAI")
+                      .attr("class", "pathAI")
+                      .datum(aiData[i].values)
+                      .attr("d", valueline);
+    }
     
     // draw the x axes
     x_axis.attr("class", "xAxis axis").attr("id", "xAxis").call(d3.axisBottom(x)
@@ -534,14 +738,17 @@ function drawVisual(refreshLine) {
 //**********
 function click(unCountry, country, mousePositionX, mousePositionY, isdemocratic, color) {
     clicked = true;
+    bReset.style("display", "inline-block");
     d3.selectAll(".line").style("opacity", ".05");
     d3.selectAll(".d-line").style("opacity", ".05");
     d3.selectAll(".labelC").style("opacity", ".05");
-    d3.selectAll(".labelD-" + country).style("opacity", "1");
+    d3.select(".labelD-" + country).style("opacity", "1");
+    d3.selectAll(".labelG-" + country).style("opacity", "1");
     d3.selectAll(".circle").style("opacity", ".01");
     d3.selectAll(".d-circle").style("opacity", ".01");
     tooltipI.style("display", "none");
     tooltipY.style("display", "none");
+    tooltipG.style("display", "none");
     tooltipD.style("display", "none");
     d3.selectAll(".vertical-line").remove();
     d3.selectAll(".vertical-line2").remove();
@@ -582,7 +789,7 @@ function click(unCountry, country, mousePositionX, mousePositionY, isdemocratic,
         iLeft.html("<div class='iTitle'>"+oData[0].country+"</div><div class='iOverview'>"+oData[0].overview+"</div><div class='iMore'><a id='iMore' style='color: "+color+" !important;' href='"+oData[0].url+"'>Read more at Freedom House</a></div>");
         
         var iRight = d3.select("#iRight").append("div").attr("class", "iRight");
-        iRight.html("<div class='iDeets'><span class='jayz'><span class='top'>Democratic?</span><span class='bottom'>"+oData[0].democraticStatus+"</span></span><span class='jayz'><span class='top'>Free?</span><span class='bottom'>"+oData[0].freedomStatus+"</span></span><span class='jayz'><span class='top'>Freedom <br>Rating</span><span class='bottom'>"+iFR+"</span></span><span class='jayz'><span class='top'>Political<br> Rights</span><span class='bottom'>"+iPL+"</span></span><span class='jayz'><span class='top'>Civil<br> Liberties</span><span class='bottom'>"+iCL+"</span></span></div>");
+        iRight.html("<div class='iDeets'><span class='jayz'><span class='top'>Democratic?</span><span class='bottom'>"+oData[0].democraticStatus+"</span></span><span class='jayz'><span class='top'>Free?</span><span class='bottom'>"+oData[0].freedomStatus+"</span></span><span class='jayz'><span class='top'>Freedom Rating</span><span class='bottom'>"+iFR+"</span></span></div>");
         
         d3.select(".iTitle").style("color", color);
         d3.selectAll(".top").style("color", color);
@@ -708,6 +915,7 @@ function click(unCountry, country, mousePositionX, mousePositionY, isdemocratic,
 }
 
 function clickclick() {
+    bReset.style("display", "none");
     d3.selectAll(".i-line").remove();
     d3.selectAll(".labelI").remove();
     d3.selectAll(".i-circle").remove();
@@ -735,13 +943,57 @@ function clickmove(indicator, mousePositionX, mousePositionY, isdemocratic, colo
             .style("opacity", .85)
             .style("top", 300 + "px");
     
+    
     var x0 = x.invert(mousePositionX),
             i = bisectDate(dataPath.values, x0, 1),
-            d0 = dataPath.values[i - 1];
+            d0 = dataPath.values[i - 1],
+            dC = d0.value;
+            
+    var dA0 = aiData[0].values[i - 1],
+        dAC = dA0.value;
+        
+
     var iCountry = formatCountry(d0.country);
     var data2Path = getDemocraticValue(iCountry);
+    
     var h = bisectDate(data2Path.values, x0, 1),
-        d2 = data2Path.values[h - 1];
+        d2 = data2Path.values[h - 1],
+        d2C = d2.value;
+    
+    var dA20 = daData[0].values[h - 1],
+        dA2C = dA20.value;
+    
+    var dN,
+        d2N,
+        dP,
+        d2P,
+        dAN,
+        dAP;
+        
+    if (i == 9) {
+        dN = dC;
+        d2N = d2C;
+        dAN = dAC
+    }else{
+        dN = dataPath.values[i].value;
+        d2N = data2Path.values[h].value;
+        dAN = aiData[0].values[i].value;
+    };
+    
+    if (i <= 2) {
+        dP = dC;
+        d2P = d2C,
+        dAP = dAC;
+    }else{
+        dP = dataPath.values[i - 2].value;
+        d2P = data2Path.values[h - 2].value;
+        dAP = aiData[0].values[i - 2].value;
+    };
+    
+    var dTrendI,
+        dTrendD,
+        dAvg,
+        dAvg2;
         
     var dVal = 0;        
         
@@ -751,7 +1003,77 @@ function clickmove(indicator, mousePositionX, mousePositionY, isdemocratic, colo
         dVal = Number(d2.value).toFixed(2);
     }
     
-    tooltipC.html("<div id='tooltipClick'><strong>" + d0.country + "<br><div id='tooltipClickSub'>" + d0.indicator + "</strong> in " + d0.year + ": <strong>" + Number(d0.value).toFixed(2) + "<BR>Democratic Score</strong> in " + d0.year + ": <strong>" + dVal + "</strong></div></div>");
+    if (dN == "undefined") {
+        dTrendI = "no trend";
+    }else{
+        if (dC >= dP && dC < dN) {
+            dTrendI = "trending up";
+        }else{
+            if (dC <= dP && dC > dN) {
+                dTrendI = "trending down";
+            }else{
+                if (dC >= dP && dC > dN) {
+                    dTrendI = "peaking";
+                }else{
+                    if (dC <= dP && dC < dN) {
+                        dTrendI = "negatively peaking";
+                    }else{
+                        if (dC == dP && dC == dN) {
+                            dTrendI = "unchanged";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    if (d2N == "undefined") {
+        dTrendD = "no trend";
+    }else{
+        if (d2C >= d2P && d2C < d2N) {
+            dTrendD = "trending up";
+        }else{
+            if (d2C <= d2P && d2C > d2N) {
+                dTrendD = "trending down";
+            }else{
+                if (d2C >= d2P && d2C > d2N) {
+                    dTrendD = "peaking";
+                }else{
+                    if (d2C <= d2P && d2C < d2N) {
+                        dTrendD = "negatively peaking";
+                    }else{
+                        if (d2C == d2P && d2C == d2N) {
+                            dTrendD = "unchanged";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    if (dC < dAC) {
+        dAvg = "below";
+    }else{
+        if (dC > dAC) {
+            dAvg = "above";
+        }else{
+            dAvg = "equal to";
+        }
+    }
+    
+    if (d2C < dA2C) {
+        dAvg2 = "below";
+    }else{
+        if (d2C > dA2C) {
+            dAvg2 = "above";
+        }else{
+            dAvg2 = "equal to";
+        }
+    }
+
+    console.log(dAvg2);
+
+    tooltipC.html("<div id='tooltipClick'><strong>" + d0.country + "<br><div id='tooltipClickSub'>" + d0.indicator + "</strong> in " + d0.year + " (" + Number(d0.value).toFixed(2) + ") is <strong>" + dAvg + "</strong> the African average and is " + dTrendI + "<BR><strong>Democratic Score</strong> in " + d0.year + " (" + dVal + ") is <strong>" + dAvg2 + "</strong> the African average and is " + dTrendD + "</div></div>");
 }
 
 function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color) {
@@ -760,12 +1082,14 @@ function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color)
 
         var dataPath = getIndicatorValue(country);
         var data2Path = getDemocraticValue(country);
+        var data4Path = getGiniValue(country);
 
         var x0 = x.invert(mousePositionX),
             i = bisectDate(dataPath.values, x0, 1),
             d0 = dataPath.values[i - 1],
             h = bisectDate(data2Path.values, x0, 1),
-            d2 = data2Path.values[h - 1];
+            d2 = data2Path.values[h - 1],
+            d4 = data4Path.values[i - 1];
 
         tooltipI.style("display", "inline-block")
             .style("left", mousePositionX + tooltipMove + "px")
@@ -773,14 +1097,21 @@ function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color)
             .style("opacity", .85)
             .style("top", y(d0.value) + "px")
             .on("click", function(d) {
-                                 click(unCountry, dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color(index))
+                                 click(country, dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color)
                       });;
 
         tooltipY.style("display", "inline-block")
             .style("left", mousePositionX + 16 + "px")
             .style("border", "1px solid " + color)
             .style("color", color)
-            .style("opacity", 1);
+            .style("opacity", 1)
+            .style("transform", "translate(-50%,0)");
+        
+        tooltipG.style("display", "inline-block")
+            .style("left", mousePositionX + 16 + "px")
+            .style("background-color", color)
+            .style("opacity", .85)
+            .style("top", y2(d4.lineValue) + "px");
 
         tooltipD.style("display", "inline-block")
             .style("left", mousePositionX + 16 + "px")
@@ -794,6 +1125,8 @@ function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color)
         tooltipD.html("Democracy Index score for <strong>" + d0.country + "</strong>: " +
             Number(d2.value).toFixed(2));
         tooltipY.html(d0.year);
+        tooltipG.html("GINI for <strong>" + d4.countryName +"</strong>: " + d4.recentValue);
+        
     }
 }
 
@@ -814,40 +1147,40 @@ function clickHoverLine(indicator, mousePosition, color) {
        .style("stroke", color)
        .style("fill", "none");
        
-    d3.selectAll(".vertical-line3L").remove();
-    svg.append("line")
-       .attr("x1", x(x0) + xWidth/8)
-       .attr("y1", 250)
-       .attr("x2", x(x0) + xWidth/8)
-       .attr("y2", height)
-       .attr("class", "vertical-line3L")
-       .style("stroke-width", 1)
-       .style("stroke", color)
-       .style("opacity", "0.2")
-       .style("fill", "none")
-       .style("visibility", "hidden");
+    // d3.selectAll(".vertical-line3L").remove();
+    // svg.append("line")
+    //   .attr("x1", x(x0) + xWidth/8)
+    //   .attr("y1", 250)
+    //   .attr("x2", x(x0) + xWidth/8)
+    //   .attr("y2", height)
+    //   .attr("class", "vertical-line3L")
+    //   .style("stroke-width", 1)
+    //   .style("stroke", color)
+    //   .style("opacity", "0.2")
+    //   .style("fill", "none")
+    //   .style("visibility", "hidden");
     
-    d3.selectAll(".lag2").remove();
-    svg.append("rect")
-       .attr("x", x(x0))
-       .attr("y", 250)
-       .attr("width", xWidth/8)
-       .attr("height", height-250)
-       .attr("class", "lag2")
-       .style("stroke", "none")
-       .style("fill", color)
-       .style("opacity", "0.1")
-       .style("visibility", "hidden");
+    // d3.selectAll(".lag2").remove();
+    // svg.append("rect")
+    //   .attr("x", x(x0))
+    //   .attr("y", 250)
+    //   .attr("width", xWidth/8)
+    //   .attr("height", height-250)
+    //   .attr("class", "lag2")
+    //   .style("stroke", "none")
+    //   .style("fill", color)
+    //   .style("opacity", "0.1")
+    //   .style("visibility", "hidden");
     
-    if (showLag == true) {
-        d3.select(".lag2").style("visibility", "visible");
-        d3.select(".vertical-line3L").style("visibility", "visible");
-    }
+    // if (showLag == true) {
+    //     d3.select(".lag2").style("visibility", "visible");
+    //     d3.select(".vertical-line3L").style("visibility", "visible");
+    // }
     
     d3.selectAll(".vertical-line4").remove();
     svg.append("line")
        .attr("x1", x(x0) + 1)
-       .attr("y1", 30)
+       .attr("y1", 0)
        .attr("x2", x(x0) + 1)
        .attr("y2", 200)
        .attr("class", "vertical-line4")
@@ -862,12 +1195,14 @@ function hoverLine(country, mousePosition, color) {
     d3.select(".line-" + country).style("stroke-width", "5px");
     d3.select(".d-line-" + country).style("stroke-width", "5px");
     d3.selectAll(".labelC-" + country).style("opacity", "1");
+    d3.selectAll(".labelG-" + country).style("opacity", "1");
+    d3.select(".g-line-" + country).style("stroke-width", "5px").style("opacity", 1).style("stroke-dasharray", "1,0");
     // d3.selectAll(".circle-" + country).attr("r", 5);
     
     d3.selectAll(".vertical-line").remove();
     svg.append("line")
        .attr("x1", x(x0) + 1)
-       .attr("y1", 250)
+       .attr("y1", 0)
        .attr("x2", x(x0) + 1)
        .attr("y2", height)
        .attr("class", "vertical-line")
@@ -875,45 +1210,34 @@ function hoverLine(country, mousePosition, color) {
        .style("stroke", color)
        .style("fill", "none");
     
-    d3.selectAll(".vertical-lineL").remove();
-    svg.append("line")
-       .attr("x1", x(x0) + xWidth/8)
-       .attr("y1", 250)
-       .attr("x2", x(x0) + xWidth/8)
-       .attr("y2", height)
-       .attr("class", "vertical-lineL")
-       .style("stroke-width", 1)
-       .style("stroke", color)
-       .style("opacity", "0.2")
-       .style("fill", "none")
-       .style("visibility", "hidden");
+    // d3.selectAll(".vertical-lineL").remove();
+    // svg.append("line")
+    //   .attr("x1", x(x0) + xWidth/8)
+    //   .attr("y1", 250)
+    //   .attr("x2", x(x0) + xWidth/8)
+    //   .attr("y2", height)
+    //   .attr("class", "vertical-lineL")
+    //   .style("stroke-width", 1)
+    //   .style("stroke", color)
+    //   .style("opacity", "0.2")
+    //   .style("fill", "none")
+    //   .style("visibility", "hidden");
     
-    d3.selectAll(".lag").remove();
-    svg.append("rect")
-       .attr("x", x(x0))
-       .attr("y", 250)
-       .attr("width", xWidth/8)
-       .attr("height", height-250)
-       .attr("class", "lag")
-       .style("stroke", "none")
-       .style("fill", hexToRgbA(color) + ", 0.1)")
-       .style("visibility", "hidden");
+    // d3.selectAll(".lag").remove();
+    // svg.append("rect")
+    //   .attr("x", x(x0))
+    //   .attr("y", 250)
+    //   .attr("width", xWidth/8)
+    //   .attr("height", height-250)
+    //   .attr("class", "lag")
+    //   .style("stroke", "none")
+    //   .style("fill", hexToRgbA(color) + ", 0.1)")
+    //   .style("visibility", "hidden");
        
-    if (showLag == true) {
-        d3.select(".lag").style("visibility", "visible");
-        d3.select(".vertical-lineL").style("visibility", "visible");
-    }
-    
-    d3.selectAll(".vertical-line2").remove();
-    svg.append("line")
-       .attr("x1", x(x0) + 1)
-       .attr("y1", 30)
-       .attr("x2", x(x0) + 1)
-       .attr("y2", 200)
-       .attr("class", "vertical-line2")
-       .style("stroke-width", 1)
-       .style("stroke", color)
-       .style("fill", "none");
+    // if (showLag == true) {
+    //     d3.select(".lag").style("visibility", "visible");
+    //     d3.select(".vertical-lineL").style("visibility", "visible");
+    // }
 }
 
 function mousedown() {
@@ -921,8 +1245,10 @@ function mousedown() {
         tooltipI.style("display", "none");
         tooltipY.style("display", "none");
         tooltipD.style("display", "none");
+        tooltipG.style("display", "none");
         d3.selectAll("path").style("stroke-width", "1.5px");
         d3.selectAll(".labelC").style("opacity", ".3");
+        d3.selectAll(".g-line").style("stroke-width", "1px").style("opacity", "0.5");
         d3.selectAll(".vertical-line").remove();
         d3.selectAll(".vertical-lineL").remove();
         d3.selectAll(".lag").remove();
@@ -930,11 +1256,7 @@ function mousedown() {
         d3.selectAll(".lag").remove();
         d3.selectAll(".circle").attr("r", 3);
     }
-}
-
-function showgini() {
-    
-}
+};
 
 
 //**************
@@ -960,6 +1282,16 @@ function getIndicatorValue(country) {
 function getDemocraticValue(country) {
     var countryValues;
     data2Nest.forEach(function(dataPath, index) {
+        if (dataPath.key == country) {
+            countryValues = dataPath;
+        }
+    });
+    return countryValues;
+}
+
+function getGiniValue(country) {
+    var countryValues;
+    data4Nest.forEach(function(dataPath, index) {
         if (dataPath.key == country) {
             countryValues = dataPath;
         }
