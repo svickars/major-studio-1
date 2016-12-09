@@ -1,15 +1,18 @@
 ## How is democracy impacted by governance in Sub-Saharan Africa?
 
 ##### Description
+Sub-Saharan Africa is transitioning toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House), which plays an important role in the governance of a country. This visualization explores the relationship between a country’s democratic score and its estimated score in six World Governance Indicators — control of corruption, government effectiveness, political stability, regulatory quality, rule of law, and voice and accountability, and compares both to the inequality coefficient (GINI).
 
-
+<br/>
 ##### Research Question
 >I am studying trends in governance indicator scores over the last 10 years because I want to find out how these trends lead to changes in a country's democratic status. I want to expand this to understand what defines a country as *free*, *partly free*, or *not free*. I am using corruption control, political stability, government effectiveness, and voice and accountability variables. My [visualization](https://svickars.github.io/major-studio-1/a3/) is based on the World Bank's Governance Indicator Data, World Income Inequality Database, and The Economist's Democracy Index.
 
+<br/>
 ##### Visualization
 [View Here](https://svickars.github.io/major-studio-1/a4/)
 [![](https://raw.githubusercontent.com/svickars/major-studio-1/master/preview.png)](https://svickars.github.io/major-studio-1/a4/)
 
+<br/>
 ##### Data Sources
 * [Worldwide Governance Indicators](http://databank.worldbank.org/data/Governance/id/398b56e9)
 * [Democracy Index 2015](http://www.eiu.com/Handlers/WhitepaperHandler.ashx?fi=EIU-Democracy-Index-2015.pdf&mode=wp&campaignid=DemocracyIndex2015)  
@@ -20,14 +23,14 @@
 <!--# Major Studio 1-->
 
 
-### Data Review
+<!--### Data Review-->
 <!--[Changes in Governance Indicators](#gov)  -->
 <!--[Politcal Freedoms and Resources Dependency](#freedoms)  -->
 <!--[Questions](#questions)  -->
 <!--[Sources](#sources)-->
 
-##### Trends in Governance Indicators vs Number of Electoral Democracies
-Since 1990, the African continent has transitioned toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House). That being said, trends across three of four governance indicators shown (corruption, effectiveness, and regulatory quality) are worsening, while positive trends are shown in one: voice and accountability. This increasing ability to participate in electing governments and greater freedom of expression suggests a clear link to increase in democratic leadership. Why, then, is there a negative trend in corruption control, government effectiveness, political stability, and regulatory quality?  
+<!--##### Trends in Governance Indicators vs Number of Electoral Democracies-->
+<!--Since 1990, the African continent has transitioned toward more democratic leadership (four full electoral democracies in 1990 to twenty in 2016, according to Freedom House). That being said, trends across three of four governance indicators shown (corruption, effectiveness, and regulatory quality) are worsening, while positive trends are shown in one: voice and accountability. This increasing ability to participate in electing governments and greater freedom of expression suggests a clear link to increase in democratic leadership. Why, then, is there a negative trend in corruption control, government effectiveness, political stability, and regulatory quality?  -->
 
 <!--##### *Data Source*  -->
 <!--* [Worldwide Governance Indicators](http://databank.worldbank.org/data/Governance/id/398b56e9)  -->
