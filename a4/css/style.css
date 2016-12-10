@@ -161,6 +161,7 @@ select:focus {
 
 .iRight {
     margin-right: 100px;
+    text-align: right;
 }
 
 @media (max-width: 767px) {
@@ -184,12 +185,15 @@ select:focus {
 }
 
 .iDeets {
+    width: auto;
+    /*text-align: left;*/
     font-size: 10px;
 }
 
 .jayz {
     display: inline-block;
     margin-right: 5px;
+    text-align: left;
 }
 
 .top{
@@ -370,6 +374,9 @@ path {
     letter-spacing: 2px;
     transform: rotate(-90deg);
 }
+.iInfo {
+    position: absolute;
+}
 .hLabel {
     position: absolute;
     /*left: -30px;*/
@@ -379,6 +386,25 @@ path {
     letter-spacing: 2px;
     transform: translate(-50%, 0);
     margin-left: -4px;
+}
+#hLabelI-icon {
+    position: absolute;
+    top: 270px;
+    font-size: 9px;
+}
+.hLabelI-icon {
+    position: absolute;
+    top:0px;
+}
+
+#hLabelD-icon {
+    position: absolute;
+    top: 9px;
+    font-size: 9px;
+}
+.hLabelD-icon {
+    position: absolute;
+    top:0px;
 }
 
 /*--axes--*/

@@ -169,8 +169,6 @@ d3.select("#subtitle").style("padding-left", margin.left + "px").style("padding-
 var bOpt = d3.select("#subtitle").append("div").attr("class", "subtitle");
 bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='' class='b bGini'>Show GINI</div>");
 
-// d3.select(".graph-div-filter").style("padding-left", margin.left + 30 + "px").style("padding-right", margin.right + "px");
-
 var bReset = d3.select("#visualization").append("div").attr("id", "bReset");
 bReset.html("<div class='b bReset'>Exit</div>").style("left", margin.left + 30 + "px").style("display", "none");
 bReset.on("click", function(d) {
@@ -250,6 +248,10 @@ instBox.style("left", margin.left + xWidth/2 + 15 + "px").html("<em>Use the <str
 $('.instBox').fadeIn('fast').delay(5000).fadeOut(2000);
 
 
+
+
+
+
 //**********
 // THE LABES
 //**********
@@ -263,6 +265,30 @@ yLabelI.style("top", 475 + "px")
 // hLabelD placed inside vizzy function to refresh
 // hLabelI placed inside vizzy function to refresh
 
+// hLabel icon-popovers
+var iCC = d3.select("#visualization").append("div").attr("class", "hLabelI-icon");
+var iGE = d3.select("#visualization").append("div").attr("class", "hLabelI-icon");
+var iPS = d3.select("#visualization").append("div").attr("class", "hLabelI-icon");
+var iRQ = d3.select("#visualization").append("div").attr("class", "hLabelI-icon");
+var iRL = d3.select("#visualization").append("div").attr("class", "hLabelI-icon");
+var iVA = d3.select("#visualization").append("div").attr("class", "hLabelI-icon");
+iCC.html('<div id="hLabelI-icon"><a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="Control of Corruption" data-content="This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and grand forms of corruption, as well as capture of the state by elites and private interests.<div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></div>');
+iGE.html('<div id="hLabelI-icon"><a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="Government Effectiveness" data-content="This indicator captures perceptions of the quality of public services, the quality of the civil service, and the degree of its independence from political pressures, the quality of policy formulation and impementation, and the credibility of the government&apos;s commutment to such policies.<div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></div>');
+iPS.html('<div id="hLabelI-icon"><a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="Political Stability" data-content="This indicator measures perceptions of the likelihood of political instability and/or politcally-motivated violence, including terrorism. <div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></div>');
+iRQ.html('<div id="hLabelI-icon"><a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="Regulatory Quality" data-content="This indicator captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permid and promote private sector development. <div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></div>');
+iRL.html('<div id="hLabelI-icon"><a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="Rule of Law" data-content="This indicator captures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence. <div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></div>');
+iVA.html('<div id="hLabelI-icon"><a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="Voice and Accountability" data-content="This indicator captures perceptions of the extend to which a country&apos;s citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media. <div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></div>');
+iCC.style("display", "none");
+iGE.style("display", "none");
+iPS.style("display", "none");
+iRQ.style("display", "none");
+iRL.style("display", "none");
+iVA.style("display", "none");
+var iG = d3.select("#visualization").append("div").attr("class", "hLabelD-icon");
+iG.html('<div id="hLabelD-icon"><a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="The Gini Coefficient" data-content="The Gini coefficient is a measure of the distribution of income among individuals within a country as a deviation from perfectly equal distribution. A value of 0 represents absolute equality while a value of 100 represents absolute inequality. <div class=footnote>For more details, see the <a href=http://hdr.undp.org/en/content/income-gini-coefficient> UNDP&apos;s Gini page </a> or the <a href=http://data.worldbank.org/indicator/SI.POV.GINI>World Bank</a>.</div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></div>');
+iG.style("display", "none");
+
+
 
 
 
@@ -273,14 +299,14 @@ yLabelI.style("top", 475 + "px")
 drawVisual(true);
 
 function drawVisual(refreshLine) {
-
+    
     // Remove all previous
     d3.selectAll("path").remove();
     d3.selectAll("#circle").remove();
     d3.selectAll("#labelC").remove();
     d3.selectAll("#hLabelD").remove();
     d3.selectAll("#hLabelI").remove();
-    d3.selectAll("#pop").remove();
+    // d3.selectAll("#pop").remove();
     d3.selectAll("#pathAI").remove();
     d3.selectAll("#pathA").remove();
     d3.selectAll("#labelAI").remove();
@@ -291,46 +317,95 @@ function drawVisual(refreshLine) {
     var indicator = getSelectedIndexValue("indicator");
 
     //draw hLabelD   
-    var hLabelD = d3.select("#visualization").append("div").attr("id", "hLabelI").attr("class", "hLabel");
+    var hLabelD = d3.select("#visualization").append("div").attr("id", "hLabelD").attr("class", "hLabel");
     hLabelD.style("top", 9 + "px")
            .style("left", vWidth/2 + "px");
     if (showGini == false) {
            hLabelD.html('Democracy Index, 2006-2014');
     }else{
-        hLabelD.html('Democracy Index, 2006-2014, and GINI Coefficient <a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="test" data-content="test"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>')
+        hLabelD.html('Democracy Index, 2006-2014, and GINI Coefficient');
     }
     
     // draw hLabelI (refreshed)
-    var hLabelI = d3.select("#visualization").append("div").attr("id", "hLabelD").attr("class", "hLabel");
+    var hLabelI = d3.select("#visualization").append("div").attr("id", "hLabelI").attr("class", "hLabel");
     hLabelI.style("top", 270 + "px")
-           .style("left", vWidth/2 + "px");
+           .style("left", vWidth/2 + "px")
+           .html(indicator +', 2006-2014');
+   
+    var hLabelWidth = document.getElementById("hLabelI").offsetWidth;
+    var hLabelDWidth = document.getElementById("hLabelD").offsetWidth;
     
-    var indicatorDesc = "This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and grand forms of corruption, as well as capture of the state by elites and private interests.";
-    if (getSelectedIndexValue("indicator") === "Control of Corruption") {
-		indicatorDesc = "This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and grand forms of corruption, as well as capture of the state by elites and private interests.";
-		}else{
-			if (getSelectedIndexValue("indicator") === "Government Effectiveness") {
-			    indicatorDesc = "This indicator captures perceptions of the quality of public services, the quality of the civil service, and the degree of its independence from political pressures, the quality of policy formulation and impementation, and the credibility of the government&apos;s commutment to such policies.";
-			}else {
-				if (getSelectedIndexValue("indicator") === "Political Stability") {
-					indicatorDesc = "This indicator measures perceptions of the likelihood of political instability and/or politcally-motivated violence, including terrorism.";
-				}else {
-					if (getSelectedIndexValue("indicator") === "Regulatory Quality") {
-						indicatorDesc = "This indicator captures perceptions of the ability of the government to formulate and implement sound policies and regulations that permid and promote private sector development.";
-					}else {
-						if (getSelectedIndexValue("indicator") === "Rule of Law") {
-						    indicatorDesc = "This indicator captures perceptions of the extent to which agents have confidence in and abide by the rules of society, and in particular the quality of contract enforcement, property rights, the police, and the courts, as well as the likelihood of crime and violence.";
-						}else {
-							if (getSelectedIndexValue("indicator") === "Voice and Accountability") {
-								indicatorDesc = "This indicator captures perceptions of the extend to which a country&apos;s citizens are able to participate in selecting their government, as well as freedom of expression, freedom of association, and a free media.";
-							}
-						}
-					}
-				}
-			}
-		}
-    hLabelI.html(indicator +', 2006-2014 <a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="' + indicator + '" data-content="' + indicatorDesc + '<div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>');
-
+    if (showGini == true) {
+        iG.style("display", "block").style("left", vWidth/2 + hLabelDWidth/2 + "px");
+    }else{
+        iG.style("display", "none");
+    }
+    
+    
+    if (indicator == "Control of Corruption") {
+        iCC.style("display", "block").style("left", vWidth/2 + hLabelWidth/2 + "px");
+        iGE.style("display", "none");
+        iPS.style("display", "none");
+        iRQ.style("display", "none");
+        iRL.style("display", "none");
+        iVA.style("display", "none");
+    }else{
+        if (indicator == "Government Effectiveness") {
+            iCC.style("display", "none");
+            iGE.style("display", "block").style("left", vWidth/2 + hLabelWidth/2 + "px");
+            iPS.style("display", "none");
+            iRQ.style("display", "none");
+            iRL.style("display", "none");
+            iVA.style("display", "none");
+        }else{
+            if (indicator == "Political Stability") {
+                iCC.style("display", "none");
+                iGE.style("display", "none");
+                iPS.style("display", "block").style("left", vWidth/2 + hLabelWidth/2 + "px");
+                iRQ.style("display", "none");
+                iRL.style("display", "none");
+                iVA.style("display", "none");
+            }else{
+                if (indicator == "Regulatory Quality") {
+                    iCC.style("display", "none");
+                    iGE.style("display", "none");
+                    iPS.style("display", "none");
+                    iRQ.style("display", "block").style("left", vWidth/2 + hLabelWidth/2 + "px");
+                    iRL.style("display", "none");
+                    iVA.style("display", "none");
+                }else{
+                    if (indicator == "Rule of Law") {
+                        iCC.style("display", "none");
+                        iGE.style("display", "none");
+                        iPS.style("display", "none");
+                        iRQ.style("display", "none");
+                        iRL.style("display", "block").style("left", vWidth/2 + hLabelWidth/2 + "px");
+                        iVA.style("display", "none");
+                    }else{
+                        if (indicator == "Voice and Accountability") {
+                            iCC.style("display", "none");
+                            iGE.style("display", "none");
+                            iPS.style("display", "none");
+                            iRQ.style("display", "none");
+                            iRL.style("display", "none");
+                            iVA.style("display", "block").style("left", vWidth/2 + hLabelWidth/2 + "px");
+                        }
+                    }
+                }
+            }
+        }
+    }
+		
+// 	var iCC = "This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and grand forms of corruption, as well as capture of the state by elites and private interests.";
+    // hLabelI.html('Click Me' + '<a href="#" id="iCC" rel="popover" data-title="Control of Corruption" data-content="test"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>')
+    // hLabelI.html(indicator + ', 2006-2014');
+    // var iCC = d3.select("#visualization").append("span").attr("class", "iInfo");
+    // iCC.style("top", "0px").style("left", "0px");
+    // iCC.html('<a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="Control of Corruption" data-content="test"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>');
+    // hLabelI.html(indicator +', 2006-2014 <a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="' + indicator + '" data-content="' + indicatorDesc + '<div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>');
+    
+   
+    
 
     // Get width of selected redion and indicator to change headline width	
     var iSelectWidth = getTextWidth(indicator, "22px arial");
@@ -1355,8 +1430,35 @@ function hexToRgbA(hex) {
 }
 
 $(document).ready(function(){
-    $('[data-toggle="popover"]').popover(); 
-});
-$(document).ready(function(){
-    $('[data-toggle="popover2"]').popover(); 
+    $('[data-toggle="popover"]').popover();
+
+    $('#iCC').popover({
+      container: "body",
+      placement: "bottom",
+      html: true,
+      content: function () {
+        return '<div class="popover-title">Test</div>';
+      }
+    });
+    
+    // $('#iGE').popover({
+    //   container: "body",
+    //   placement: "bottom",
+    //   trigger: "focus",
+    //   html: true,
+    //   content: function () {
+    //     return '<div class="popover-title">Test</div>';
+    //   }
+    // });
+    
+    // $('#iPS').popover({
+    //   container: "body",
+    //   placement: "bottom",
+    //   trigger: "focus",
+    //   html: true,
+    //   content: function () {
+    //     return '<div class="popover-title">Test</div>';
+    //   }
+    // });
+    
 });
