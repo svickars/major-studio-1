@@ -41,8 +41,6 @@ function getTextWidth(text, font) {
 
 
 
-
-
 //***********
 // THE SET UP
 //***********
@@ -54,8 +52,8 @@ var margin = {
     left: 60
 };
 
-var width = "100%";
 var height = 700;
+var width = "100%";
 var vWidth = document.getElementById("visualization").offsetWidth;
 var xWidth = vWidth - margin.left - margin.right;
 
@@ -103,26 +101,28 @@ var dataNest,
     country;
 var y2Domain = [0, 10],
     tB = 250,
-    bT = 200;
+    bT = 200,
+    bB = 700;
+    
 
 // Parse the Date
 var parseDate = d3.timeParse("%y");
 
 // Set the Ranges/Scales/All That Fun Stuff
 var x = d3.scaleTime().range([margin.left, vWidth - margin.right]);
-var y = d3.scaleLinear().range([height, tB]);
+var y = d3.scaleLinear().range([bB, tB]);
 var y2 = d3.scaleLinear().range([bT, 0]);
 
 // Set up the Axes
 var x_axis = svg.append("g")
-	            .attr("transform", "translate(0," + (height) + ")")
+	            .attr("transform", "translate(0," + (bB) + ")")
 	            .attr("id", "xAxis");
 var y_axis = svgAxes.append("g")
                 .style("transform", "translate(" + margin.left +"px ,0)")
                 .style("width", vWidth - margin.left - margin.right)
                 .attr("id", "yAxis");
 var x_axis2 = svg.append("g")
-	            .attr("transform", "translate(0," + 200 + ")")
+	            .attr("transform", "translate(0," + bT + ")")
 	            .attr("id", "xAxis2");
 var y_axis2 = svgAxes.append("g")
                 .style("transform", "translate(" + margin.left +"px ,0)")
@@ -164,8 +164,12 @@ var tooltipC = d3.select("#visualization").append("div").attr("class", "tooltip 
 var tooltipG = d3.select("#visualization").append("div").attr("class", "tooltip tooltipMain");
 
 // Create Option Buttons
+
+d3.select("#subtitle").style("padding-left", margin.left + "px").style("padding-right", margin.right + "px");
 var bOpt = d3.select("#subtitle").append("div").attr("class", "subtitle");
 bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='' class='b bGini'>Show GINI</div>");
+
+// d3.select(".graph-div-filter").style("padding-left", margin.left + 30 + "px").style("padding-right", margin.right + "px");
 
 var bReset = d3.select("#visualization").append("div").attr("id", "bReset");
 bReset.html("<div class='b bReset'>Exit</div>").style("left", margin.left + 30 + "px").style("display", "none");
@@ -233,21 +237,31 @@ function hidegini() {
     bT = 200;
 }
 
+
+
+
+
+//*****************
+// THE INSTRUCTIONS
+//*****************
+var instBox = d3.select("#visualization").append("div").attr("class", "instBox");
+instBox.style("left", margin.left + xWidth/2 + 15 + "px").html("<em>Use the <strong>menus</strong> above to select an <strong>indicator</strong> and a <strong>region</strong><br><strong>Hover</strong> or <strong>click</strong> on a country's line to see more</em>");
+
+$('.instBox').fadeIn('fast').delay(5000).fadeOut(2000);
+
+
 //**********
 // THE LABES
 //**********
 var yLabelD = d3.select("#visualization").append("div").attr("id", "yLabelD").attr("class", "yLabel");
 var yLabelI = d3.select("#visualization").append("div").attr("id", "yLabelI").attr("class", "yLabel");
-var hLabelI = d3.select("#visualization").append("div").attr("id", "hLabelI").attr("class", "hLabel");
 
 yLabelD.style("top", 100 + "px")
        .html('Democratic Score <div class="popvert"><a href="#" data-toggle="popover" data-trigger="focus" data-html="true" title="Democracy Index Scores" data-content="The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the Economist Intelligence Unit&rsquo;s website for more details"><span class="glyphicon glyphicon-question-sign glyphVert" aria-hidden="true"></span></a></div>');
 yLabelI.style("top", 475 + "px")
        .html('Estimated Score <div class="popvert"><a href="#" data-toggle="popover" data-trigger="focus" data-html="true" title="Estimated Governance Indicator Scores" data-content="Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying data sources. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model."><span class="glyphicon glyphicon-question-sign glyphVert" aria-hidden="true"></span></a></div>');
-hLabelI.style("top", 9 + "px")
-       .style("left", vWidth/2 + "px")
-       .html('Democracy Index, 2006-2014');
 // hLabelD placed inside vizzy function to refresh
+// hLabelI placed inside vizzy function to refresh
 
 
 
@@ -265,6 +279,7 @@ function drawVisual(refreshLine) {
     d3.selectAll("#circle").remove();
     d3.selectAll("#labelC").remove();
     d3.selectAll("#hLabelD").remove();
+    d3.selectAll("#hLabelI").remove();
     d3.selectAll("#pop").remove();
     d3.selectAll("#pathAI").remove();
     d3.selectAll("#pathA").remove();
@@ -275,9 +290,19 @@ function drawVisual(refreshLine) {
     var region = getSelectedIndexValue("region");
     var indicator = getSelectedIndexValue("indicator");
 
-     // draw hLabelD (refreshed)
-    var hLabelD = d3.select("#visualization").append("div").attr("id", "hLabelD").attr("class", "hLabel");
-    hLabelD.style("top", 270 + "px")
+    //draw hLabelD   
+    var hLabelD = d3.select("#visualization").append("div").attr("id", "hLabelI").attr("class", "hLabel");
+    hLabelD.style("top", 9 + "px")
+           .style("left", vWidth/2 + "px");
+    if (showGini == false) {
+           hLabelD.html('Democracy Index, 2006-2014');
+    }else{
+        hLabelD.html('Democracy Index, 2006-2014, and GINI Coefficient <a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="test" data-content="test"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>')
+    }
+    
+    // draw hLabelI (refreshed)
+    var hLabelI = d3.select("#visualization").append("div").attr("id", "hLabelD").attr("class", "hLabel");
+    hLabelI.style("top", 270 + "px")
            .style("left", vWidth/2 + "px");
     
     var indicatorDesc = "This indicator captures perceptions of the extent to which public power is exercised for private gain, including both petty and grand forms of corruption, as well as capture of the state by elites and private interests.";
@@ -304,7 +329,7 @@ function drawVisual(refreshLine) {
 				}
 			}
 		}
-    hLabelD.html(indicator +', 2006-2014 <a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="' + indicator + '" data-content="' + indicatorDesc + '<div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>');
+    hLabelI.html(indicator +', 2006-2014 <a href="#" data-toggle="popover" data-placement="bottom" data-trigger="focus" data-html="true" title="' + indicator + '" data-content="' + indicatorDesc + '<div class=footnote> Definition courtesy of World Bank: Governance Indicators Project. More details at <a href=http://info.worldbank.org/governance/wgi/index.aspx#doc>govindicators.org</a></div>"><span id="pop" class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>');
 
 
     // Get width of selected redion and indicator to change headline width	
@@ -531,7 +556,17 @@ function drawVisual(refreshLine) {
                                      clickclick();
                                  }
                       });
-                        
+//     // ---Animation---
+// 		if (refreshLine) {
+// 			var totalLength = path.node().getTotalLength();
+// 			path
+// 				.attr("stroke-dasharray", totalLength + " " + totalLength)
+// 				.attr("stroke-dashoffset", totalLength)
+// 				.transition()
+// 				.duration(500)
+// 				.ease(d3.easeLinear)
+// 				.attr("stroke-dashoffset", 0);
+// 		}                  
         
     });
     
@@ -713,6 +748,7 @@ function drawVisual(refreshLine) {
                       .attr("d", valueline);
     }
     
+    
     // draw the x axes
     x_axis.attr("class", "xAxis axis").attr("id", "xAxis").call(d3.axisBottom(x)
           .tickSizeInner(-450)
@@ -721,7 +757,7 @@ function drawVisual(refreshLine) {
           .tickSizeInner(-vWidth - margin.left - margin.right)
           .tickSizeOuter(0));
     x_axis2.attr("class", "xAxis2 axis").call(d3.axisBottom(x)
-          .tickSizeInner(-200)
+          .tickSizeInner(-(bT))
           .tickSizeOuter(0));
     y_axis2.attr("class", "yAxis axis").call(d3.axisLeft(y2)
           .tickSizeInner(-vWidth)
@@ -742,7 +778,7 @@ function click(unCountry, country, mousePositionX, mousePositionY, isdemocratic,
     d3.selectAll(".line").style("opacity", ".05");
     d3.selectAll(".d-line").style("opacity", ".05");
     d3.selectAll(".labelC").style("opacity", ".05");
-    d3.select(".labelD-" + country).style("opacity", "1");
+    d3.select(".labelD-" + country).style("opacity", "1").style("font-size", "12px");
     d3.selectAll(".labelG-" + country).style("opacity", "1");
     d3.selectAll(".circle").style("opacity", ".01");
     d3.selectAll(".d-circle").style("opacity", ".01");
@@ -921,7 +957,7 @@ function clickclick() {
     d3.selectAll(".i-circle").remove();
     d3.selectAll(".line").style("opacity", "1");
     d3.selectAll(".d-line").style("opacity", "1");
-    d3.selectAll(".labelC").style("opacity", "1");
+    d3.selectAll(".labelC").style("opacity", "1").style("font-size", "8px");
     d3.selectAll(".circle").style("opacity", "1");
     d3.selectAll(".d-circle").style("opacity", "1");
     tooltipC.style("display", "none");
@@ -1139,9 +1175,9 @@ function clickHoverLine(indicator, mousePosition, color) {
     d3.selectAll(".vertical-line3").remove();
     svg.append("line")
        .attr("x1", x(x0) + 1)
-       .attr("y1", 250)
+       .attr("y1", tB)
        .attr("x2", x(x0) + 1)
-       .attr("y2", height)
+       .attr("y2", bB)
        .attr("class", "vertical-line3")
        .style("stroke-width", 1)
        .style("stroke", color)
@@ -1152,7 +1188,7 @@ function clickHoverLine(indicator, mousePosition, color) {
     //   .attr("x1", x(x0) + xWidth/8)
     //   .attr("y1", 250)
     //   .attr("x2", x(x0) + xWidth/8)
-    //   .attr("y2", height)
+    //   .attr("y2", bB)
     //   .attr("class", "vertical-line3L")
     //   .style("stroke-width", 1)
     //   .style("stroke", color)
@@ -1165,7 +1201,7 @@ function clickHoverLine(indicator, mousePosition, color) {
     //   .attr("x", x(x0))
     //   .attr("y", 250)
     //   .attr("width", xWidth/8)
-    //   .attr("height", height-250)
+    //   .attr("height", bB-250)
     //   .attr("class", "lag2")
     //   .style("stroke", "none")
     //   .style("fill", color)
@@ -1182,7 +1218,7 @@ function clickHoverLine(indicator, mousePosition, color) {
        .attr("x1", x(x0) + 1)
        .attr("y1", 0)
        .attr("x2", x(x0) + 1)
-       .attr("y2", 200)
+       .attr("y2", bT)
        .attr("class", "vertical-line4")
        .style("stroke-width", 1)
        .style("stroke", color)
@@ -1194,8 +1230,8 @@ function hoverLine(country, mousePosition, color) {
     
     d3.select(".line-" + country).style("stroke-width", "5px");
     d3.select(".d-line-" + country).style("stroke-width", "5px");
-    d3.selectAll(".labelC-" + country).style("opacity", "1");
-    d3.selectAll(".labelG-" + country).style("opacity", "1");
+    d3.selectAll(".labelC-" + country).style("opacity", "1").style("font-weight", "700");
+    d3.selectAll(".labelG-" + country).style("opacity", "1").style("font-weight", "700");
     d3.select(".g-line-" + country).style("stroke-width", "5px").style("opacity", 1).style("stroke-dasharray", "1,0");
     // d3.selectAll(".circle-" + country).attr("r", 5);
     
@@ -1204,7 +1240,7 @@ function hoverLine(country, mousePosition, color) {
        .attr("x1", x(x0) + 1)
        .attr("y1", 0)
        .attr("x2", x(x0) + 1)
-       .attr("y2", height)
+       .attr("y2", bB)
        .attr("class", "vertical-line")
        .style("stroke-width", 1)
        .style("stroke", color)
@@ -1215,7 +1251,7 @@ function hoverLine(country, mousePosition, color) {
     //   .attr("x1", x(x0) + xWidth/8)
     //   .attr("y1", 250)
     //   .attr("x2", x(x0) + xWidth/8)
-    //   .attr("y2", height)
+    //   .attr("y2", bB)
     //   .attr("class", "vertical-lineL")
     //   .style("stroke-width", 1)
     //   .style("stroke", color)
@@ -1228,7 +1264,7 @@ function hoverLine(country, mousePosition, color) {
     //   .attr("x", x(x0))
     //   .attr("y", 250)
     //   .attr("width", xWidth/8)
-    //   .attr("height", height-250)
+    //   .attr("height", bB-250)
     //   .attr("class", "lag")
     //   .style("stroke", "none")
     //   .style("fill", hexToRgbA(color) + ", 0.1)")
@@ -1247,7 +1283,7 @@ function mousedown() {
         tooltipD.style("display", "none");
         tooltipG.style("display", "none");
         d3.selectAll("path").style("stroke-width", "1.5px");
-        d3.selectAll(".labelC").style("opacity", ".3");
+        d3.selectAll(".labelC").style("opacity", ".3").style("font-weight", "400");
         d3.selectAll(".g-line").style("stroke-width", "1px").style("opacity", "0.5");
         d3.selectAll(".vertical-line").remove();
         d3.selectAll(".vertical-lineL").remove();

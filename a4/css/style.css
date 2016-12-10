@@ -38,6 +38,27 @@ select:focus {
 
 
 
+/*--------------------------*/
+/*-----THE INSTRUCTIONS-----*/
+.instBox {
+    position: absolute;
+    width: auto;
+    min-width: 200px;
+    top: 700px;
+    padding: 10px;
+    background: black;
+    border-radius: 2px;
+    opacity: .6;
+    transform: translate(-50%,0);
+    
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+
+
 /*---------------------*/
 /*-----THE BUTTONS-----*/
 .subtitle {
@@ -45,7 +66,7 @@ select:focus {
     font-size: 11px;
     margin-top: 15px;
     margin-bottom: 2px;
-    transform: translate(-1.6%);
+    /*transform: translate(-1.6%);*/
 }
 
 .b {
@@ -106,7 +127,23 @@ select:focus {
     transform: translate(0, -900px);
 }
 
+.graph-div-filter{
+    width: 100%;
+}
+    
+@media (min-width: 767px) {
+    .graph-div-filter {
+        padding-left: 75px;
+        padding-right: 80px;
+    }
+}
 
+#description {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: justify;
+}
 
 /*---------------------*/
 /*-----THE COUNTRY-----*/
@@ -124,6 +161,17 @@ select:focus {
 
 .iRight {
     margin-right: 100px;
+}
+
+@media (max-width: 767px) {
+  .iLeft {
+       margin-right: 100px;
+  }
+  
+  .iRight {
+      margin-top: 15px;
+      margin-left: 60px;
+  }
 }
 
 .iTitle {
@@ -367,6 +415,8 @@ path {
     font-family: Arial, sans-serif;
     font-size: 10px;
     transform: translate(0,20px);
+    color: black;
+    opacity: 1;
 }
 
 .tick line {
