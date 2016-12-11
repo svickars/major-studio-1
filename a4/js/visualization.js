@@ -167,7 +167,7 @@ var tooltipG = d3.select("#visualization").append("div").attr("class", "tooltip 
 
 d3.select("#subtitle").style("padding-left", margin.left + "px").style("padding-right", margin.right + "px");
 var bOpt = d3.select("#subtitle").append("div").attr("class", "subtitle");
-bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='' class='b bGini'>Show GINI</div>");
+bOpt.html("<div title='This displays average democracy scores for the entire world and all of Sub-Saharan Africa for comparison (shown in black)' class='b bComp'>Show Averages</div><div title='Clicking this will display the GINI index scores for each country in your current view on the top graph' class='b bGini'>Show GINI</div>");
 
 var bReset = d3.select("#visualization").append("div").attr("id", "bReset");
 bReset.html("<div class='b bReset'>Exit</div>").style("left", margin.left + 30 + "px").style("display", "none");
