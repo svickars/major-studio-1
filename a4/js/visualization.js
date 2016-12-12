@@ -72,7 +72,7 @@ var svgAxes = d3.select("#visualization")
 var svg = d3.select("#visualization")
             .append("svg")
             .attr("id", "svg")
-            .attr("width", vWidth)
+            .attr("width", vWidth + 100)
             .attr("height", height + margin.top + margin.bottom)
             .style("transform", "translate(0px," + (-height-120) +"px)")
             .append("g");
@@ -243,12 +243,19 @@ function hidegini() {
 // THE INSTRUCTIONS
 //*****************
 var instBox = d3.select("#visualization").append("div").attr("class", "instBox");
-instBox.style("left", margin.left + xWidth/2 + 15 + "px").html("<em>Use the <strong>menus</strong> above to select an <strong>indicator</strong> and a <strong>region</strong><br><strong>Hover</strong> or <strong>click</strong> on a country's line to see more</em>");
+instBox.style("left", margin.left + xWidth/2 + 15 + "px").html("<em>Use the <strong><span id='instMenus'>menus</strong> above to select an <strong>indicator</strong> and a <strong>region</strong><br><strong>Hover</strong> or <strong>click</strong> on a country's line or name to see more</em>");
 
-$('.instBox').fadeIn('fast').delay(5000).fadeOut(2000);
-
-
-
+instBox.transition().duration(1000).delay(5000).style("opacity", ".25");
+instBox.on("mouseover", function(d) {
+            instBox.transition().duration(500).style("opacity", ".9");
+            d3.select("#indicator").transition().duration(300).style("border-color", "red").style("color", "red");
+            d3.select("#region").transition().duration(300).style("border-color", "red").style("color", "red");
+            d3.select("#indicator").transition().duration(300).delay(300).style("border-color", "black").style("color", "black");
+            d3.select("#region").transition().duration(300).delay(300).style("border-color", "black").style("color", "black");
+       })
+       .on("mouseout", function(d) {
+            instBox.transition().duration(1000).style("opacity", ".25");
+       })
 
 
 
@@ -261,7 +268,7 @@ var yLabelI = d3.select("#visualization").append("div").attr("id", "yLabelI").at
 yLabelD.style("top", 100 + "px")
        .html('Democratic Score <div class="popvert"><a href="#" data-toggle="popover" data-trigger="focus" data-html="true" title="Democracy Index Scores" data-content="The Democracy Index is compiled by the Economist Intelligence Unit, which measures the state of democracy in 167 countries. The index is based on 60 indicators from five categories and measures pluralism, civil liberties, and politcal cultures. Data is available for 2006, 2008, 2010, and each year since then. Countries are classified into one of four regime types: full democracy, flawed democracy, hybrid regime, or authoritarian regime. See the Economist Intelligence Unit&rsquo;s website for more details"><span class="glyphicon glyphicon-question-sign glyphVert" aria-hidden="true"></span></a></div>');
 yLabelI.style("top", 475 + "px")
-       .html('Estimated Score <div class="popvert"><a href="#" data-toggle="popover" data-trigger="focus" data-html="true" title="Estimated Governance Indicator Scores" data-content="Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3.</br></br> The WGI are composite indicators based on over 30 underlying data sources. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model."><span class="glyphicon glyphicon-question-sign glyphVert" aria-hidden="true"></span></a></div>');
+       .html('Estimated Score <div class="popvert"><a href="#" data-toggle="popover" data-trigger="focus" data-html="true" title="Estimated Governance Indicator Scores" data-content="Worldwide Governance Indicator scores are provided by the World Bank for six dimensions of governance. The data used are estimated scores on the aggregate indicator, in units of a standard normal distribution, ranging from approximately -3 to +3, the higher the better.</br></br> The WGI are composite indicators based on over 30 underlying data sources. These data sources are rescaled and combined to create the six aggregate indicators using a statistical methodology known as an unobserved components model."><span class="glyphicon glyphicon-question-sign glyphVert" aria-hidden="true"></span></a></div>');
 // hLabelD placed inside vizzy function to refresh
 // hLabelI placed inside vizzy function to refresh
 
@@ -631,17 +638,10 @@ function drawVisual(refreshLine) {
                                      clickclick();
                                  }
                       });
-//     // ---Animation---
-// 		if (refreshLine) {
-// 			var totalLength = path.node().getTotalLength();
-// 			path
-// 				.attr("stroke-dasharray", totalLength + " " + totalLength)
-// 				.attr("stroke-dashoffset", totalLength)
-// 				.transition()
-// 				.duration(500)
-// 				.ease(d3.easeLinear)
-// 				.attr("stroke-dashoffset", 0);
-// 		}                  
+    // ---Animation---
+		if (refreshLine) {
+			
+		}                  
         
     });
     
@@ -1230,11 +1230,14 @@ function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color)
             .style("opacity", .85)
             .style("top", y2(d2.value) + "px");
 
+        var dVal = Number(d2.value).toFixed(2);
+        if (dVal == 0) {
+            dVal = "unknown";
+        }
 
         tooltipI.html(getSelectedIndexValue("indicator") + " (estimated) for <strong>" + d0.country + "</strong>: " +
             Number(d0.value).toFixed(2));
-        tooltipD.html("Democracy Index score for <strong>" + d0.country + "</strong>: " +
-            Number(d2.value).toFixed(2));
+        tooltipD.html("Democracy Index score for <strong>" + d0.country + "</strong>: " + dVal);
         tooltipY.html(d0.year);
         tooltipG.html("GINI for <strong>" + d4.countryName +"</strong>: " + d4.recentValue);
         
@@ -1305,8 +1308,8 @@ function hoverLine(country, mousePosition, color) {
     
     d3.select(".line-" + country).style("stroke-width", "5px");
     d3.select(".d-line-" + country).style("stroke-width", "5px");
-    d3.selectAll(".labelC-" + country).style("opacity", "1").style("font-weight", "700");
-    d3.selectAll(".labelG-" + country).style("opacity", "1").style("font-weight", "700");
+    d3.selectAll(".labelC-" + country).transition().duration(200).ease(d3.easeLinear).style("opacity", "1").style("font-weight", "700").style("font-size", "12px");
+    d3.selectAll(".labelG-" + country).transition().duration(200).ease(d3.easeLinear).style("opacity", "1").style("font-weight", "700").style("font-size", "12px");
     d3.select(".g-line-" + country).style("stroke-width", "5px").style("opacity", 1).style("stroke-dasharray", "1,0");
     // d3.selectAll(".circle-" + country).attr("r", 5);
     
@@ -1358,7 +1361,8 @@ function mousedown() {
         tooltipD.style("display", "none");
         tooltipG.style("display", "none");
         d3.selectAll("path").style("stroke-width", "1.5px");
-        d3.selectAll(".labelC").style("opacity", ".3").style("font-weight", "400");
+        d3.selectAll(".labelC").transition().duration(200).ease(d3.easeLinear).style("opacity", ".3").style("font-weight", "400").style("font-size", "8px");
+        d3.selectAll(".labelG").transition().duration(200).ease(d3.easeLinear).style("opacity", ".3").style("font-weight", "400").style("font-size", "8px");
         d3.selectAll(".g-line").style("stroke-width", "1px").style("opacity", "0.5");
         d3.selectAll(".vertical-line").remove();
         d3.selectAll(".vertical-lineL").remove();
@@ -1440,25 +1444,4 @@ $(document).ready(function(){
         return '<div class="popover-title">Test</div>';
       }
     });
-    
-    // $('#iGE').popover({
-    //   container: "body",
-    //   placement: "bottom",
-    //   trigger: "focus",
-    //   html: true,
-    //   content: function () {
-    //     return '<div class="popover-title">Test</div>';
-    //   }
-    // });
-    
-    // $('#iPS').popover({
-    //   container: "body",
-    //   placement: "bottom",
-    //   trigger: "focus",
-    //   html: true,
-    //   content: function () {
-    //     return '<div class="popover-title">Test</div>';
-    //   }
-    // });
-    
 });
