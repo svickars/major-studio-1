@@ -468,7 +468,7 @@ function drawVisual(refreshLine) {
                              })
                              .text(dataPath.key)
                              .on("mousemove", function(d) {
-                                 mousemove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color(index))
+                                 labelsmove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color(index))
                              })
                              .on("mouseout", function(d) {
                                  mousedown();
@@ -564,7 +564,7 @@ function drawVisual(refreshLine) {
 	                            })
 	                            .text(dataPath.key)
                                 .on("mousemove", function(d) {
-                                        mousemove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], true, color(index))
+                                        labelsmove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], true, color(index))
                                     })
                                 .on("mouseout", function(d) {
                                     mousedown();
@@ -684,12 +684,12 @@ function drawVisual(refreshLine) {
 	                               return color(index)
 	                            })
 	                            .text(dataPath.key)
-                                // .on("mousemove", function(d) {
-                                //         mousemove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], true, color(index))
-                                //     })
-                                // .on("mouseout", function(d) {
-                                //     mousedown();
-                                // })
+                                .on("mousemove", function(d) {
+                                        labelsmove(dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], true, color(index))
+                                    })
+                                .on("mouseout", function(d) {
+                                    mousedown();
+                                })
                                 // .on("click", function(d) {
                                 //     if (clicked == false) {
                                 //         click(unCountry, dataPath.key, d3.mouse(this)[0], d3.mouse(this)[1], false, color(index))
@@ -1187,6 +1187,12 @@ function clickmove(indicator, mousePositionX, mousePositionY, isdemocratic, colo
     tooltipC.html("<div id='tooltipClick'><strong>" + d0.country + "<br><div id='tooltipClickSub'>" + d0.indicator + "</strong> in " + d0.year + " (" + Number(d0.value).toFixed(2) + ") is <strong>" + dAvg + "</strong> the African average and is " + dTrendI + "<BR><strong>Democratic Score</strong> in " + d0.year + " (" + dVal + ") is <strong>" + dAvg2 + "</strong> the African average and is " + dTrendD + "</div></div>");
 }
 
+function labelsmove(country, mousePositionX, mousepOsitionY, isdemocractic, color) {
+    if (clicked == false) {
+        labelsHoverLine(country, mousePositionX, color);
+    }
+}
+
 function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color) {
     if (clicked == false) {
         hoverLine(country, mousePositionX, color);
@@ -1302,6 +1308,14 @@ function clickHoverLine(indicator, mousePosition, color) {
        .style("stroke", color)
        .style("fill", "none");
 }
+
+function labelsHoverLine(country, mousePositionX, color) {
+    d3.select(".line-" + country).style("stroke-width", "5px");
+    d3.select(".d-line-" + country).style("stroke-width", "5px");
+    d3.selectAll(".labelC-" + country).transition().duration(200).ease(d3.easeLinear).style("opacity", "1").style("font-weight", "700").style("font-size", "12px");
+    d3.selectAll(".labelG-" + country).transition().duration(200).ease(d3.easeLinear).style("opacity", "1").style("font-weight", "700").style("font-size", "12px");
+    d3.select(".g-line-" + country).style("stroke-width", "5px").style("opacity", 1).style("stroke-dasharray", "1,0");
+};
 
 function hoverLine(country, mousePosition, color) {
     var x0 = x.invert(mousePosition);
