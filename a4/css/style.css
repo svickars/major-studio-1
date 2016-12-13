@@ -282,7 +282,8 @@ path {
 
 .g-line {
     opacity: 0.5;
-    stroke-width: 1px;
+    stroke-width: 1.0px;
+    /*display: none;*/
     /*stroke-linecap: round;*/
     /*stroke-dasharray: 4, 4;*/
 }

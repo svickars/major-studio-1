@@ -716,7 +716,7 @@ function drawVisual(refreshLine) {
                                      })
                                      .attr("r", 3)
                                      .style("stroke", color(i))
-                                     .style("stroke-width", "1px")
+                                     .style("stroke-width", "1.5px")
                                      .style("fill", "white")
                                     //  .on("mousemove", function(d) {
                                     //      mousemove(dataPath.key, d3.mouse(this)[0], true, color(index));
@@ -737,6 +737,7 @@ function drawVisual(refreshLine) {
                       .style("stroke", function(d, i) {
                           return countryColor[dataPath.key]
                       })
+                      .style("stroke-width", "1.5px")
                       .attr("d", valueline3)
                     //   .on("mouseover", function (d) {
                     //     //   path.style("stroke-width", "5px");
@@ -1245,7 +1246,7 @@ function mousemove(country, mousePositionX, mousePositionY, isdemocratic, color)
             Number(d0.value).toFixed(2));
         tooltipD.html("Democracy Index score for <strong>" + d0.country + "</strong>: " + dVal);
         tooltipY.html(d0.year);
-        tooltipG.html("GINI for <strong>" + d4.countryName +"</strong>: " + d4.recentValue);
+        tooltipG.html("GINI for <strong>" + d4.countryName +"</strong>: " + d4.recentValue + " (most recent score)");
         
     }
 }
@@ -1377,7 +1378,7 @@ function mousedown() {
         d3.selectAll("path").style("stroke-width", "1.5px");
         d3.selectAll(".labelC").transition().duration(200).ease(d3.easeLinear).style("opacity", ".3").style("font-weight", "400").style("font-size", "8px");
         d3.selectAll(".labelG").transition().duration(200).ease(d3.easeLinear).style("opacity", ".3").style("font-weight", "400").style("font-size", "8px");
-        d3.selectAll(".g-line").style("stroke-width", "1px").style("opacity", "0.5");
+        d3.selectAll(".g-line").style("stroke-width", "1.5px").style("opacity", "0.5");
         d3.selectAll(".vertical-line").remove();
         d3.selectAll(".vertical-lineL").remove();
         d3.selectAll(".lag").remove();
