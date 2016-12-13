@@ -152,6 +152,7 @@ var valueline3 = d3.line()
 	.x(function(d) {
 		return x(new Date(d.year, 0, 1));
 	})
+	.defined(function(d) { return d.lineValue; })
 	.y(function(d) {
 		return y2(d.lineValue);
 	});
@@ -735,7 +736,7 @@ function drawVisual(refreshLine) {
                       .datum(dataPath.values)
                       .attr("class", "g-line g-line-" + dataPath.key + " g-line-" + index)
                       .style("stroke", function(d, i) {
-                          return countryColor[dataPath.key]
+                            return countryColor[dataPath.key]
                       })
                       .style("stroke-width", "1.5px")
                       .attr("d", valueline3)
@@ -764,6 +765,8 @@ function drawVisual(refreshLine) {
                     //                  clickclick();
                     //              }
                     //   });
+        
+        
         if (showGini == false) {
             pathG.style("visibility", "hidden");
             countryLabelsG.style("visibility", "hidden");
