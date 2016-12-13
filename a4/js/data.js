@@ -22856,18 +22856,18 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.72,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.72,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -22883,7 +22883,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.72,
     "recentValue": 42.72
@@ -22892,7 +22892,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.72,
     "recentValue": 42.72
@@ -22901,7 +22901,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.72,
     "recentValue": 42.72
@@ -22910,7 +22910,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.72,
     "recentValue": 42.72
@@ -22919,7 +22919,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.72,
     "recentValue": 42.72
@@ -22928,7 +22928,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Angola",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.72,
     "recentValue": 42.72
@@ -22937,25 +22937,25 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 43.44,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 43.44,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.44,
     "recentValue": "unknown"
@@ -22964,18 +22964,18 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 43.44,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 43.44,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -22991,7 +22991,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.44,
     "recentValue": 43.44
@@ -23000,7 +23000,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.44,
     "recentValue": 43.44
@@ -23009,7 +23009,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Benin",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.44,
     "recentValue": 43.44
@@ -23018,27 +23018,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 60.46,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 60.46,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 60.46,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23054,7 +23054,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.46,
     "recentValue": 60.46
@@ -23063,7 +23063,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.46,
     "recentValue": 60.46
@@ -23072,7 +23072,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.46,
     "recentValue": 60.46
@@ -23081,7 +23081,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.46,
     "recentValue": 60.46
@@ -23090,7 +23090,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Botswana",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.46,
     "recentValue": 60.46
@@ -23099,27 +23099,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burkina Faso",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 39.76,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burkina Faso",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 39.76,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burkina Faso",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 39.76,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23135,25 +23135,25 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burkina Faso",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 39,
+    "lineValue": null,
     "recentValue": 39.76
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burkina Faso",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 38,
+    "lineValue": null,
     "recentValue": 39.76
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burkina Faso",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 37,
     "recentValue": 39.76
@@ -23162,9 +23162,9 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burkina Faso",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 36,
+    "lineValue": null,
     "recentValue": 39.76
   },
   {
@@ -23189,7 +23189,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23198,7 +23198,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23207,7 +23207,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23216,7 +23216,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23225,7 +23225,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23234,7 +23234,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23243,7 +23243,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23252,7 +23252,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Burundi",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.36,
     "recentValue": 33.36
@@ -23261,9 +23261,9 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 47.19,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23279,7 +23279,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 47.19,
     "recentValue": 47.19
@@ -23288,7 +23288,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 47.19,
     "recentValue": 47.19
@@ -23297,7 +23297,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 47.19,
     "recentValue": 47.19
@@ -23306,7 +23306,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 47.19,
     "recentValue": 47.19
@@ -23315,7 +23315,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 47.19,
     "recentValue": 47.19
@@ -23324,7 +23324,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 47.19,
     "recentValue": 47.19
@@ -23333,7 +23333,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cabo Verde",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 47.19,
     "recentValue": 47.19
@@ -23342,9 +23342,9 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cameroon",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.82,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23360,7 +23360,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cameroon",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 43.3,
     "recentValue": 42.82
@@ -23369,7 +23369,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cameroon",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 44,
     "recentValue": 42.82
@@ -23378,7 +23378,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cameroon",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 44.6,
     "recentValue": 42.82
@@ -23387,7 +23387,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cameroon",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 45.3,
     "recentValue": 42.82
@@ -23396,7 +23396,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cameroon",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 46,
     "recentValue": 42.82
@@ -23405,7 +23405,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Cameroon",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 46.54,
     "recentValue": 42.82
@@ -23423,18 +23423,18 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 56.24,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 56.24,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23450,7 +23450,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 56.24,
     "recentValue": 56.24
@@ -23459,7 +23459,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 56.24,
     "recentValue": 56.24
@@ -23468,7 +23468,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 56.24,
     "recentValue": 56.24
@@ -23477,7 +23477,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 56.24,
     "recentValue": 56.24
@@ -23486,7 +23486,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 56.24,
     "recentValue": 56.24
@@ -23495,7 +23495,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Central African Republic",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 56.24,
     "recentValue": 56.24
@@ -23504,45 +23504,45 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 43.32,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 43.32,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 43.32,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 43.32,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 43.32,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23558,7 +23558,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 43.32,
     "recentValue": 43.32
@@ -23567,7 +23567,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 43.32,
     "recentValue": 43.32
@@ -23576,7 +23576,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Chad",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 43.32,
     "recentValue": 43.32
@@ -23585,7 +23585,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23594,7 +23594,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23603,7 +23603,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23612,7 +23612,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23621,7 +23621,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23630,7 +23630,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23639,7 +23639,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23648,7 +23648,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23657,7 +23657,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Comoros",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23666,54 +23666,54 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.1,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.1,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.1,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.1,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.1,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 42.1,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23729,7 +23729,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.1,
     "recentValue": 42.1
@@ -23738,7 +23738,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Democratic Republic of the Congo",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 42.1,
     "recentValue": 42.1
@@ -23747,45 +23747,45 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 48.94,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 48.94,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 48.94,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 48.94,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 48.94,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23801,7 +23801,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 48.94,
     "recentValue": 48.94
@@ -23810,7 +23810,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 48.94,
     "recentValue": 48.94
@@ -23819,7 +23819,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Republic of the Congo",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 48.94,
     "recentValue": 48.94
@@ -23828,18 +23828,18 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 43.18,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 43.18,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -23855,7 +23855,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.18,
     "recentValue": 43.18
@@ -23864,7 +23864,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.18,
     "recentValue": 43.18
@@ -23873,7 +23873,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.18,
     "recentValue": 43.18
@@ -23882,7 +23882,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.18,
     "recentValue": 43.18
@@ -23891,7 +23891,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.18,
     "recentValue": 43.18
@@ -23900,7 +23900,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ivory Coast",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43.18,
     "recentValue": 43.18
@@ -23909,7 +23909,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23918,7 +23918,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23927,7 +23927,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23936,7 +23936,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23945,7 +23945,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23954,7 +23954,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23963,7 +23963,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23972,7 +23972,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23981,7 +23981,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Equatorial Guinea",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23990,7 +23990,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -23999,7 +23999,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24008,7 +24008,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24017,7 +24017,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24026,7 +24026,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24035,7 +24035,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24044,7 +24044,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24053,7 +24053,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24062,7 +24062,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Eritrea",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24071,36 +24071,36 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 33.17,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 33.17,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 33.17,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 33.17,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -24116,7 +24116,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.17,
     "recentValue": 33.17
@@ -24125,7 +24125,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.17,
     "recentValue": 33.17
@@ -24134,7 +24134,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.17,
     "recentValue": 33.17
@@ -24143,7 +24143,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ethiopia",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 33.17,
     "recentValue": 33.17
@@ -24152,7 +24152,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24161,7 +24161,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24170,7 +24170,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24179,7 +24179,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24188,7 +24188,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24197,7 +24197,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24206,7 +24206,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24215,7 +24215,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24224,7 +24224,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gabon",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24233,7 +24233,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24242,7 +24242,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24251,7 +24251,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24260,7 +24260,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24269,7 +24269,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24278,7 +24278,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24287,7 +24287,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24296,7 +24296,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24305,7 +24305,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Gambia",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24314,7 +24314,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24323,7 +24323,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24332,7 +24332,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24341,7 +24341,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24350,7 +24350,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24359,7 +24359,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24368,7 +24368,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24377,7 +24377,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24386,7 +24386,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Ghana",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24395,9 +24395,9 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 39.36,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -24413,7 +24413,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 38,
     "recentValue": 39.36
@@ -24422,7 +24422,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.5,
     "recentValue": 39.36
@@ -24431,7 +24431,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 35.5,
     "recentValue": 39.36
@@ -24440,7 +24440,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 34,
     "recentValue": 39.36
@@ -24458,7 +24458,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.73,
     "recentValue": 33.73
@@ -24467,7 +24467,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.73,
     "recentValue": 33.73
@@ -24476,36 +24476,36 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 50.66,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 50.66,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 50.66,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 50.66,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -24521,7 +24521,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 50.66,
     "recentValue": 50.66
@@ -24530,7 +24530,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 50.66,
     "recentValue": 50.66
@@ -24539,7 +24539,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 50.66,
     "recentValue": 50.66
@@ -24548,7 +24548,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Guinea-Bissau",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 50.66,
     "recentValue": 50.66
@@ -24557,7 +24557,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24566,7 +24566,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24575,7 +24575,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24584,7 +24584,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24593,7 +24593,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24602,7 +24602,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24611,7 +24611,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24620,7 +24620,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24629,7 +24629,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Kenya",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -24638,36 +24638,36 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 54.18,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 54.18,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 54.18,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 54.18,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -24683,7 +24683,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 54.18,
     "recentValue": 54.18
@@ -24692,7 +24692,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 54.18,
     "recentValue": 54.18
@@ -24701,7 +24701,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 54.18,
     "recentValue": 54.18
@@ -24710,7 +24710,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Lesotho",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 54.18,
     "recentValue": 54.18
@@ -24719,9 +24719,9 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 36.48,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -24737,7 +24737,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.48,
     "recentValue": 36.48
@@ -24746,7 +24746,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.48,
     "recentValue": 36.48
@@ -24755,7 +24755,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.48,
     "recentValue": 36.48
@@ -24764,7 +24764,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.48,
     "recentValue": 36.48
@@ -24773,7 +24773,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.48,
     "recentValue": 36.48
@@ -24782,7 +24782,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.48,
     "recentValue": 36.48
@@ -24791,7 +24791,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Liberia",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36.48,
     "recentValue": 36.48
@@ -24800,36 +24800,36 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Madagascar",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 40.63,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Madagascar",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 40.63,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Madagascar",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 40.63,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Madagascar",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 40.63,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -24845,7 +24845,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Madagascar",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 41.5,
     "recentValue": 40.63
@@ -24863,7 +24863,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Madagascar",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 42.65,
     "recentValue": 42.65
@@ -24872,7 +24872,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Madagascar",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 42.65,
     "recentValue": 42.65
@@ -24881,36 +24881,36 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 46.12,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 46.12,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 46.12,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 46.12,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -24926,7 +24926,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.12,
     "recentValue": 46.12
@@ -24935,7 +24935,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.12,
     "recentValue": 46.12
@@ -24944,7 +24944,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.12,
     "recentValue": 46.12
@@ -24953,7 +24953,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Malawi",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.12,
     "recentValue": 46.12
@@ -24971,7 +24971,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mali",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 37,
     "recentValue": 38.93
@@ -24980,7 +24980,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mali",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 35,
     "recentValue": 38.93
@@ -24998,7 +24998,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mali",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.04,
     "recentValue": 33.04
@@ -25007,7 +25007,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mali",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.04,
     "recentValue": 33.04
@@ -25016,7 +25016,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mali",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.04,
     "recentValue": 33.04
@@ -25025,7 +25025,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mali",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.04,
     "recentValue": 33.04
@@ -25034,7 +25034,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mali",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.04,
     "recentValue": 33.04
@@ -25043,18 +25043,18 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritania",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 35.69,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritania",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 35.69,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25070,7 +25070,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritania",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 35,
     "recentValue": 35.69
@@ -25079,7 +25079,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritania",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 34.5,
     "recentValue": 35.69
@@ -25088,7 +25088,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritania",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 34,
     "recentValue": 35.69
@@ -25097,7 +25097,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritania",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.5,
     "recentValue": 35.69
@@ -25106,7 +25106,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritania",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33,
     "recentValue": 35.69
@@ -25133,7 +25133,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritius",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.675,
     "recentValue": 35.65
@@ -25142,7 +25142,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritius",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.7,
     "recentValue": 35.65
@@ -25151,7 +25151,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritius",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.725,
     "recentValue": 35.65
@@ -25160,7 +25160,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritius",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.75,
     "recentValue": 35.65
@@ -25169,7 +25169,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritius",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.8,
     "recentValue": 35.65
@@ -25187,7 +25187,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritius",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.84,
     "recentValue": 35.84
@@ -25196,7 +25196,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mauritius",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.84,
     "recentValue": 35.84
@@ -25205,18 +25205,18 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 45.58,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 45.58,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25232,7 +25232,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45.58,
     "recentValue": 45.58
@@ -25241,7 +25241,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45.58,
     "recentValue": 45.58
@@ -25250,7 +25250,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45.58,
     "recentValue": 45.58
@@ -25259,7 +25259,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45.58,
     "recentValue": 45.58
@@ -25268,7 +25268,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45.58,
     "recentValue": 45.58
@@ -25277,7 +25277,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Mozambique",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45.58,
     "recentValue": 45.58
@@ -25286,27 +25286,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 60.97,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 60.97,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 60.97,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25322,7 +25322,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.97,
     "recentValue": 60.97
@@ -25331,7 +25331,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.97,
     "recentValue": 60.97
@@ -25340,7 +25340,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.97,
     "recentValue": 60.97
@@ -25349,7 +25349,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.97,
     "recentValue": 60.97
@@ -25358,7 +25358,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Namibia",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 60.97,
     "recentValue": 60.97
@@ -25367,9 +25367,9 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Niger",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 37.3,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25385,7 +25385,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Niger",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 36,
     "recentValue": 37.3
@@ -25394,7 +25394,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Niger",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 34,
     "recentValue": 37.3
@@ -25403,7 +25403,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Niger",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 32.5,
     "recentValue": 37.3
@@ -25421,7 +25421,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Niger",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 32.6,
     "recentValue": 31.45
@@ -25430,7 +25430,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Niger",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.3,
     "recentValue": 31.45
@@ -25448,27 +25448,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 42.97,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 42.97,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 42.97,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25484,7 +25484,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 42.97,
     "recentValue": 42.97
@@ -25493,7 +25493,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 42.97,
     "recentValue": 42.97
@@ -25502,7 +25502,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 42.97,
     "recentValue": 42.97
@@ -25511,7 +25511,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 42.97,
     "recentValue": 42.97
@@ -25520,7 +25520,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Nigeria",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 42.97,
     "recentValue": 42.97
@@ -25529,36 +25529,36 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Rwanda",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 51.34,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Rwanda",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 51.34,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Rwanda",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 51.34,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Rwanda",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 51.34,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25574,7 +25574,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Rwanda",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 51,
     "recentValue": 51.34
@@ -25583,7 +25583,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Rwanda",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 50.8,
     "recentValue": 51.34
@@ -25601,7 +25601,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Rwanda",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 50.44,
     "recentValue": 50.44
@@ -25610,36 +25610,36 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 30.82,
+    "lineValue":null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 30.82,
+    "lineValue":null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 30.82,
+    "lineValue":null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Central",
-    "lineValue": 30.82,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25655,7 +25655,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 30.82,
     "recentValue": 30.82
@@ -25664,7 +25664,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 30.82,
     "recentValue": 30.82
@@ -25673,7 +25673,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 30.82,
     "recentValue": 30.82
@@ -25682,7 +25682,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sao Tome and Principe",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Central",
     "lineValue": 30.82,
     "recentValue": 30.82
@@ -25691,45 +25691,45 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 40.29,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 40.29,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 40.29,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 40.29,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 40.29,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25745,7 +25745,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 40.29,
     "recentValue": 40.29
@@ -25754,7 +25754,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 40.29,
     "recentValue": 40.29
@@ -25763,7 +25763,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Senegal",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 40.29,
     "recentValue": 40.29
@@ -25781,7 +25781,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Seychelles",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 43,
     "recentValue": 42.77
@@ -25790,7 +25790,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Seychelles",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 43.5,
     "recentValue": 42.77
@@ -25799,7 +25799,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Seychelles",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 44,
     "recentValue": 42.77
@@ -25808,7 +25808,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Seychelles",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 44.5,
     "recentValue": 42.77
@@ -25817,7 +25817,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Seychelles",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45,
     "recentValue": 42.77
@@ -25826,7 +25826,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Seychelles",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 45.7,
     "recentValue": 42.77
@@ -25844,7 +25844,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Seychelles",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.82,
     "recentValue": 46.82
@@ -25853,45 +25853,45 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 33.99,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 33.99,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 33.99,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 33.99,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
-    "lineValue": 33.99,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -25907,7 +25907,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.99,
     "recentValue": 33.99
@@ -25916,7 +25916,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.99,
     "recentValue": 33.99
@@ -25925,7 +25925,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sierra Leone",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 33.99,
     "recentValue": 33.99
@@ -25934,7 +25934,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -25943,7 +25943,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -25952,7 +25952,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -25961,7 +25961,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -25970,7 +25970,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -25979,7 +25979,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -25988,7 +25988,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -25997,7 +25997,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -26006,7 +26006,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Somalia",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 0,
     "recentValue": "unknown"
@@ -26024,7 +26024,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Africa",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 64,
     "recentValue": 64.79
@@ -26042,7 +26042,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Africa",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 63.1,
     "recentValue": 63.01
@@ -26051,7 +26051,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Africa",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 63.22,
     "recentValue": 63.01
@@ -26069,7 +26069,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Africa",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 63.38,
     "recentValue": 63.38
@@ -26078,7 +26078,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Africa",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 63.38,
     "recentValue": 63.38
@@ -26087,7 +26087,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Africa",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 63.38,
     "recentValue": 63.38
@@ -26096,27 +26096,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 46.34,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 46.34,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 46.34,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -26132,7 +26132,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.34,
     "recentValue": 46.34
@@ -26141,7 +26141,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.34,
     "recentValue": 46.34
@@ -26150,7 +26150,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.34,
     "recentValue": 46.34
@@ -26159,7 +26159,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.34,
     "recentValue": 46.34
@@ -26168,7 +26168,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "South Sudan",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 46.34,
     "recentValue": 46.34
@@ -26177,27 +26177,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 35.39,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 35.39,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 35.39,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -26213,7 +26213,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.39,
     "recentValue": 35.39
@@ -26222,7 +26222,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.39,
     "recentValue": 35.39
@@ -26231,7 +26231,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.39,
     "recentValue": 35.39
@@ -26240,7 +26240,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.39,
     "recentValue": 35.39
@@ -26249,7 +26249,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Sudan",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 35.39,
     "recentValue": 35.39
@@ -26258,27 +26258,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 51.45,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 51.45,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Southern",
-    "lineValue": 51.45,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -26294,7 +26294,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 51.45,
     "recentValue": 51.45
@@ -26303,7 +26303,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 51.45,
     "recentValue": 51.45
@@ -26312,7 +26312,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 51.45,
     "recentValue": 51.45
@@ -26321,7 +26321,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 51.45,
     "recentValue": 51.45
@@ -26330,7 +26330,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Swaziland",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Southern",
     "lineValue": 51.45,
     "recentValue": 51.45
@@ -26339,9 +26339,9 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Tanzania",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 40.28,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -26357,7 +26357,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Tanzania",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 39.28,
     "recentValue": 40.28
@@ -26366,7 +26366,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Tanzania",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 38.8,
     "recentValue": 40.28
@@ -26375,7 +26375,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Tanzania",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 38.1,
     "recentValue": 40.28
@@ -26393,7 +26393,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Tanzania",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 37.78,
     "recentValue": 37.78
@@ -26402,7 +26402,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Tanzania",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 37.78,
     "recentValue": 37.78
@@ -26411,7 +26411,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Tanzania",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 37.78,
     "recentValue": 37.78
@@ -26429,7 +26429,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Togo",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 42.5,
     "recentValue": 42.21
@@ -26438,7 +26438,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Togo",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 43,
     "recentValue": 42.21
@@ -26447,7 +26447,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Togo",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 44,
     "recentValue": 42.21
@@ -26456,7 +26456,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Togo",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 45,
     "recentValue": 42.21
@@ -26474,7 +26474,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Togo",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 46.02,
     "recentValue": 46.02
@@ -26483,7 +26483,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Togo",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 46.02,
     "recentValue": 46.02
@@ -26492,7 +26492,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Togo",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Western",
     "lineValue": 46.02,
     "recentValue": 46.02
@@ -26501,27 +26501,27 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Uganda",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 44.2,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Uganda",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 44.2,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Uganda",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 44.2,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -26537,7 +26537,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Uganda",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 43,
     "recentValue": 44.2
@@ -26546,7 +26546,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Uganda",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 42,
     "recentValue": 44.2
@@ -26564,7 +26564,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Uganda",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 41.01,
     "recentValue": 41.01
@@ -26573,7 +26573,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Uganda",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 41.01,
     "recentValue": 41.01
@@ -26591,7 +26591,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zambia",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 54.9,
     "recentValue": 54.62
@@ -26600,7 +26600,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zambia",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 55.3,
     "recentValue": 54.62
@@ -26609,7 +26609,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zambia",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 55.5,
     "recentValue": 54.62
@@ -26627,7 +26627,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zambia",
     "year": 2011,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 55.62,
     "recentValue": 55.62
@@ -26636,7 +26636,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zambia",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 55.62,
     "recentValue": 55.62
@@ -26645,7 +26645,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zambia",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 55.62,
     "recentValue": 55.62
@@ -26654,7 +26654,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zambia",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 55.62,
     "recentValue": 55.62
@@ -26663,45 +26663,45 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2006,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 43.15,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2007,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 43.15,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2008,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 43.15,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2009,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 43.15,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2010,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
-    "lineValue": 43.15,
+    "lineValue": null,
     "recentValue": "unknown"
   },
   {
@@ -26717,7 +26717,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2012,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 43.15,
     "recentValue": 43.15
@@ -26726,7 +26726,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2013,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 43.15,
     "recentValue": 43.15
@@ -26735,7 +26735,7 @@ var g_data = [
     "indicator": "GINI index (World Bank estimate)",
     "countryName": "Zimbabwe",
     "year": 2014,
-    "value": "null",
+    "value": null,
     "region": "Eastern",
     "lineValue": 43.15,
     "recentValue": 43.15
