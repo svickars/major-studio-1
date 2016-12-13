@@ -5,7 +5,7 @@ Sub-Saharan Africa is transitioning toward more democratic leadership (four full
 
 <br/>
 ##### Research Question
->I am studying trends in governance indicator scores over the last 10 years because I want to find out how these trends lead to changes in a country's democratic status. I want to expand this to understand what defines a country as *free*, *partly free*, or *not free*. I am using corruption control, political stability, government effectiveness, and voice and accountability variables. My [visualization](https://svickars.github.io/major-studio-1/a3/) is based on the World Bank's Governance Indicator Data, World Income Inequality Database, and The Economist's Democracy Index.
+>I am studying trends in governance indicator scores over the last 10 years because I want to find out how these trends lead to changes in a country's democratic status. I want to expand this to understand what defines a country as *free*, *partly free*, or *not free*. I am using corruption control, political stability, government effectiveness, and voice and accountability variables. My [visualization](https://svickars.github.io/major-studio-1/a4/) is based on the World Bank's Governance Indicator Data, World Income Inequality Database, and The Economist's Democracy Index.
 
 <br/>
 ##### Visualization
